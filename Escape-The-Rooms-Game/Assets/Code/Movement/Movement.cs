@@ -23,10 +23,20 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
-            rb3d.AddForce(new Vector3(100, 0, 0));
+            rb3d.AddForce(new Vector3(0, 0, 1000));
         }
-
-
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            rb3d.AddForce(new Vector3(0, 0, -1000));
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            rb3d.AddForce(new Vector3(1000, 0, 0));
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            rb3d.AddForce(new Vector3(-1000, 0, 0));
+        }
 
     }
 }
