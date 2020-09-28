@@ -21,38 +21,26 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            rb3d.AddForce(new Vector3(0, 0, 250));
+            rb3d.AddForce(new Vector3(0, 0, 500));
         }
-        if (Input.GetKeyUp(KeyCode.W))
+       
+        if (Input.GetKey(KeyCode.S))
         {
-            rb3d.AddForce(new Vector3(0, 0, -250));
+            rb3d.AddForce(new Vector3(0, 0, -500));
         }
-        if (Input.GetKeyDown(KeyCode.S))
+       
+        if (Input.GetKey(KeyCode.D))
         {
-            rb3d.AddForce(new Vector3(0, 0, -250));
+            rb3d.AddForce(new Vector3(500, 0, 0));
         }
-        if (Input.GetKeyUp(KeyCode.W))
+        
+        if (Input.GetKey(KeyCode.A))
         {
-            rb3d.AddForce(new Vector3(0, 0, 250));
+            rb3d.AddForce(new Vector3(-500, 0, 0));
         }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            rb3d.AddForce(new Vector3(250, 0, 0));
-        }
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            rb3d.AddForce(new Vector3(-250, 0, 0));
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            rb3d.AddForce(new Vector3(-250, 0, 0));
-        }
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            rb3d.AddForce(new Vector3(250, 0, 0));
-        }
+        
 
 
 
