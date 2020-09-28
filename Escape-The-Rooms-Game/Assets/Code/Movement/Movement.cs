@@ -21,21 +21,21 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            rb3d.AddForce(new Vector3(0, 0, 1000));
+            transform.position = transform.position + new Vector3(0, 0, 0.1f);
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
-            rb3d.AddForce(new Vector3(0, 0, -1000));
+            transform.position = transform.position + new Vector3(0, 0, -0.1f);
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
-            rb3d.AddForce(new Vector3(1000, 0, 0));
+            transform.position = transform.position + new Vector3(0.1f, 0, 0);
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
-            rb3d.AddForce(new Vector3(-1000, 0, 0));
+            transform.position = transform.position + new Vector3(-0.1f, 0, 0);
         }
 
     }
