@@ -6,12 +6,13 @@ public class LookAround : MonoBehaviour
 {
 
     // speed of mouse
-    public float mouseSensitivity = 100f;
+    public float mouseSensitivity = 200f;
 
 
     // Make camera moving
     public Transform playerBody;
 
+    // So it follows the x axis
     float xRotation = 0f;
     // Start is called before the first frame update
     void Start()

@@ -23,22 +23,22 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb3d.AddForce(new Vector3(0, 0, 500));
+            rb3d.AddForce(new Vector3(0, 0, 500) * Time.deltaTime);
         }
        
         if (Input.GetKey(KeyCode.S))
         {
-            rb3d.AddForce(new Vector3(0, 0, -500));
+            rb3d.AddForce(new Vector3(0, 0, -500) * Time.deltaTime);
         }
        
         if (Input.GetKey(KeyCode.D))
         {
-            rb3d.AddForce(new Vector3(500, 0, 0));
+            rb3d.AddForce(new Vector3(500, 0, 0) * Time.deltaTime);
         }
         
         if (Input.GetKey(KeyCode.A))
         {
-            rb3d.AddForce(new Vector3(-500, 0, 0));
+            rb3d.AddForce(new Vector3(-500, 0, 0) * Time.deltaTime);
         }
         
 
