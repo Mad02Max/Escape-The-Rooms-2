@@ -5,9 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
-    public float speed = 3f;
-
-    public float negativSpeed = -3f;
+    float speed = 3f;
     private Rigidbody rb3d;
 
 
@@ -16,6 +14,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb3d = GetComponent <Rigidbody>();
+
     }
  
 
@@ -24,22 +23,22 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb3d.AddForce(new Vector3(0, 0, speed) * Time.deltaTime);
+            rb3d.AddForce(new Vector3(0, 0, 500) * Time.deltaTime);
         }
        
         if (Input.GetKey(KeyCode.S))
         {
-            rb3d.AddForce(new Vector3(0, 0, negativSpeed) * Time.deltaTime);
+            rb3d.AddForce(new Vector3(0, 0, -500) * Time.deltaTime);
         }
        
         if (Input.GetKey(KeyCode.D))
         {
-            rb3d.AddForce(new Vector3(speed, 0, 0) * Time.deltaTime);
+            rb3d.AddForce(new Vector3(500, 0, 0) * Time.deltaTime);
         }
         
         if (Input.GetKey(KeyCode.A))
         {
-            rb3d.AddForce(new Vector3(negativSpeed, 0, 0) * Time.deltaTime);
+            rb3d.AddForce(new Vector3(-500, 0, 0) * Time.deltaTime);
         }
         
 
