@@ -1062,7 +1062,10 @@ BoxCollider:
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of f44af69... Game Scene
 --- !u!1 &1642676048
 GameObject:
   m_ObjectHideFlags: 0
