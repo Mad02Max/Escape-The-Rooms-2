@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
+    //We are setting a speed to easier 
     public float speed = 3f;
 
     public float negativSpeed = -3f;
