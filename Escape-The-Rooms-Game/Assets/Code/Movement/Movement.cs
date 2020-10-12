@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     //We are setting a speed to more easily change it if needed. We are also setting a reverse speed for the same reason.
-    public float speed = 3f;
-    public float negativSpeed = -3f;
+    public float speed = 10f;
+    public float negativSpeed = -10f;
     
     //We are making the rigidbody a objekt to use it.
     private Rigidbody rb3d;
