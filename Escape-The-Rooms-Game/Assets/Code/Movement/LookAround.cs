@@ -14,6 +14,20 @@ public class LookAround : MonoBehaviour
 
     // So it follows the x axis
     float xRotation = 0f;
+
+    
+
+
+    /*float AngleAddition(float value)
+    {
+        float angle = value + 90;
+        return angle;
+    }*/
+
+    
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,12 +45,19 @@ public class LookAround : MonoBehaviour
 
         xRotation -= mouseY;
 
-        xRotation = Mathf.Clamp(xRotation, -90f, 90);
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         // So it turns around
         playerBody.Rotate(Vector3.up * mouseX);
+
+
+        
+
+
+
+
 
     }
 }

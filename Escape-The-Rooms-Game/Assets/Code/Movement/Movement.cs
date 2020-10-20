@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     //We are setting a speed to more easily change it if needed. We are also setting a reverse speed for the same reason.
-    public float speed = 10f;
-    public float negativSpeed = -10f;
+    public float speed = 1000f;
+    public float negativSpeed = -1000f;
     
     //We are making the rigidbody a objekt to use it.
     private Rigidbody rb3d;
@@ -29,24 +29,29 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb3d.AddForce(new Vector3(0, 0, speed) * Time.deltaTime);
+            rb3d.AddForce(transform.rotation * Vector3.forward * speed * Time.deltaTime);
+            
+        }
+       
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb3d.AddForce(transform.rotation * Vector3.left * speed * Time.deltaTime);
+
         }
        
         if (Input.GetKey(KeyCode.S))
         {
-            rb3d.AddForce(new Vector3(0, 0, negativSpeed) * Time.deltaTime);
+            rb3d.AddForce(transform.rotation * Vector3.back * speed * Time.deltaTime);
+
         }
-       
+        
         if (Input.GetKey(KeyCode.D))
         {
-            rb3d.AddForce(new Vector3(speed, 0, 0) * Time.deltaTime);
+            rb3d.AddForce(transform.rotation * Vector3.right * speed * Time.deltaTime);
+
         }
         
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb3d.AddForce(new Vector3(negativSpeed, 0, 0) * Time.deltaTime);
-        }
-        
+
 
 
 
