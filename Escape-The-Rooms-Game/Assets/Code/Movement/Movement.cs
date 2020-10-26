@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour
     //We are using "AddForce" to change the possition of the player. 
     //Here we are using "speed" and "negativeSpeed".
     //"Time.deltaTime" makes it so that the speed is the same across diffrent computers.
+    //We are using "transform.rotation" to make it so that the character is moving in relation to the direction one is looking.
     void Update()
     {
         if (Input.GetKey(KeyCode.W))
