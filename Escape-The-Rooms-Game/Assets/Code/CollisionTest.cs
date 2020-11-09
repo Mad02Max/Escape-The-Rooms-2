@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class CollisionTest : MonoBehaviour
 {
+    int counter = 0;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +22,10 @@ public class CollisionTest : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "CollisionTest")
+        if (collision.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            counter++;
+            Debug.Log(counter);
         }
     }
 
