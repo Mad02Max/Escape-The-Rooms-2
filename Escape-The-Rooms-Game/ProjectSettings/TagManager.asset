@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CrossHair
   - Cube
+  - CollisionTest
   layers:
   - Default
   - TransparentFX
