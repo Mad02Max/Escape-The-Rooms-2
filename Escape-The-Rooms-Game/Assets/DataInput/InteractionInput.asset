@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f083a92ab573076458070a63b48600a6, type: 3}
   m_Name: InteractionInput
   m_EditorClassIdentifier: 
+  p_interactedClicked: 0
+  p_interactedRelease: 0
