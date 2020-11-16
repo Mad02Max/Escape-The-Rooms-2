@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//All done by Caleb
+
 public class RigidbodyScriptForCubes : MonoBehaviour
 {
     //We are making the rigidbody a objekt to use it.
