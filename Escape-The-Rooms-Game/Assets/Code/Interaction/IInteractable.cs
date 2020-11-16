@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IInteractable : MonoBehaviour
+namespace VHS
 {
-    // Start is called before the first frame update
-    void Start()
+    public interface IInteractable
     {
-        
-    }
+        float HoldDuration { get; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        bool HoldInteract { get; }
+
+        bool MultipleUse { get; }
+
+        bool IsInteractable { get; }
+
+
+        void OnInteract();
     }
 }

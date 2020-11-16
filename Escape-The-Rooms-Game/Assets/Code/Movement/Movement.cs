@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
+//All done by Caleb
+
 public class Movement : MonoBehaviour
 {
     //We are setting a speed to more easily change it if needed. We are also setting a reverse speed for the same reason.

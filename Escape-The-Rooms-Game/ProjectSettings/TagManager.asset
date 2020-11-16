@@ -7,6 +7,8 @@ TagManager:
   - CrossHair
   - Cube
   - CollisionTest
+  - Platform
+  - TetrisPiece
   layers:
   - Default
   - TransparentFX
