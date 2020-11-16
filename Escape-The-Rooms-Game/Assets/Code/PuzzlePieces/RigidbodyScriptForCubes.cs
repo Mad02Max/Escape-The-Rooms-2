@@ -11,14 +11,14 @@ public class RigidbodyScriptForCubes : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
+    //Start is called before the first frame update
     //We are doing so the rigidbody objekt in visual studio is interacting with the rigidbody of the unity objekt.
     void Start()
     {
         rb3dn2 = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
+    //Update is called once per frame
     void Update()
     {
         

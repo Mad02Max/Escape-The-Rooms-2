@@ -12,13 +12,13 @@ public class CollisionTest : MonoBehaviour
     int counter = 0;
 
 
-    // Start is called before the first frame update
+    //Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    //Update is called once per frame
     //This checks if you have all the pieces on the board, and if you do; changes to a "win" screen.
     void Update()
     {
