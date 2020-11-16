@@ -41,7 +41,7 @@ namespace VHS
         #region Methods
         public void OnInteract()
         {
-            Debug.Log("INTERACTED" + gameObject.name);
+            Debug.Log("INTERACTED: " + gameObject.name);
         }
 
         #endregion
