@@ -317,7 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -429,7 +429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -541,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -684,7 +684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -796,7 +796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -908,7 +908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -1112,7 +1112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -1258,7 +1258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -1453,7 +1453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -1611,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -1723,7 +1723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -1835,7 +1835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -1947,7 +1947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -2159,7 +2159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -2271,7 +2271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -2383,7 +2383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -2495,7 +2495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
@@ -2607,7 +2607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555251170756564159, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: TetrisPiece
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7788bea7aec157543b9bee323ed47aa6, type: 3}

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class RigidbodyScriptForCubes : MonoBehaviour
 {
-
+    //We are making the rigidbody a objekt to use it.
     private Rigidbody rb3dn2;
 
 
 
     // Start is called before the first frame update
+    //We are doing so the rigidbody objekt in visual studio is interacting with the rigidbody of the unity objekt.
     void Start()
     {
         rb3dn2 = GetComponent<Rigidbody>();
@@ -21,6 +22,7 @@ public class RigidbodyScriptForCubes : MonoBehaviour
         
     }
 
+    //We are doing so that the tetris pieces can't move once they are on the platform.
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Platform")
