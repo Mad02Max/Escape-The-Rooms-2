@@ -11,9 +11,6 @@ namespace VHS
         [SerializeField] private InteractionInputData interactionInputData = null;
         [SerializeField] private InteractionData interactionData = null;
 
-        /*[Space, Header("UI")]
-        [SerializeField] private InteractionUIPanel uiPanel;*/
-
         [Space, Header("Ray Settings")]
         [SerializeField] private float rayDistance = 0f;
         [SerializeField] private float raySphereRadius = 0f;
@@ -61,21 +58,18 @@ namespace VHS
                     if (interactionData.IsEmpty())
                     {
                         interactionData.interactable = _interactable;
-                        //uiPanel.SetTooltip(_interactable.TooltipMessage);
                     }
                     else
                     {
                         if (!interactionData.IsSameInteractable(_interactable))
                         {
                             interactionData.interactable = _interactable;
-                            //uiPanel.SetTooltip(_interactable.TooltipMessage);
                         }
                     }
                 }
             }
             else
             {
-                //uiPanel.ResetUI();
                 interactionData.ResetData();
             }
 
@@ -97,7 +91,6 @@ namespace VHS
             {
                 m_interacting = false;
                 m_holdTimer = 0f;
-                //uiPanel.UpdateProgressBar(0f);
             }
 
             if (m_interacting)
@@ -110,7 +103,6 @@ namespace VHS
                     m_holdTimer += Time.deltaTime;
 
                     float heldPercent = m_holdTimer / interactionData.interactable.HoldDuration;
-                    //uiPanel.UpdateProgressBar(heldPercent);
 
                     if (heldPercent > 1f)
                     {
