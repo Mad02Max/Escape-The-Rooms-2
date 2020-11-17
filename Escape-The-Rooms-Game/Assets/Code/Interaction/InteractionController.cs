@@ -16,8 +16,6 @@ namespace VHS
         [SerializeField] private float raySphereRadius = 0f;
         [SerializeField] private LayerMask interactableLayer = ~0;
 
-
-        #region Private
         private Camera m_cam;
 
         private bool m_interacting;
@@ -25,7 +23,6 @@ namespace VHS
 
         #endregion
 
-        #endregion
 
         #region Built In Methods      
         void Awake()
