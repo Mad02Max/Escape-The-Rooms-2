@@ -329,7 +329,6 @@ MonoBehaviour:
   holdInteract: 0
   multipleUse: 0
   isInteractable: 1
-  inventory: {fileID: 11400000, guid: f48e016cddad97046a97c1bd6dc1610d, type: 2}
 --- !u!1 &573013307
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1169532578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,4 +1008,3 @@ MonoBehaviour:
   holdInteract: 1
   multipleUse: 0
   isInteractable: 1
-  inventory: {fileID: 11400000, guid: f48e016cddad97046a97c1bd6dc1610d, type: 2}
