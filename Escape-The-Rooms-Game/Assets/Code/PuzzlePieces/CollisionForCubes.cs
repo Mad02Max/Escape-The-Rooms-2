@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 
 //All done by Caleb
 
-public class CollisionTest : MonoBehaviour
-{
+public class CollisionForCubes : MonoBehaviour
+{ 
+    
     //This is here to count the puzzle pieces that are on the board, it does this since when all the pieces are there, you can advance.
     int counter = 0;
 
@@ -15,7 +16,7 @@ public class CollisionTest : MonoBehaviour
     //Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     //Update is called once per frame
