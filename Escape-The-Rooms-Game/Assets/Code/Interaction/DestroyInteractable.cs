@@ -7,8 +7,6 @@ namespace VHS
     public class DestroyInteractable : InteractableBase
     {
 
-        public InventoryObject inventory;
-
         public override void OnInteract()
         {
             base.OnInteract();
