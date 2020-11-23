@@ -11,6 +11,7 @@ public class CollisionForCubes : MonoBehaviour
     
     //This is here to count the puzzle pieces that are on the board, it does this since when all the pieces are there, you can advance.
     int counter = 0;
+    //int max = 34;
 
 
     //Start is called before the first frame update
@@ -23,20 +24,45 @@ public class CollisionForCubes : MonoBehaviour
     //This checks if you have all the pieces on the board, and if you do; changes to a "win" screen.
     void Update()
     {
-        if (counter == 34)
+        //max--;
+
+        /*if (counter == 34)
         {
             SceneManager.LoadScene(sceneName: "Victory");
-        }
+        }*/
+
+        /*if (counter > 34)
+        {
+            counter = 34;
+        }*/
+        
     }
 
     //This checks so that when the puzzle pieces colides with the puzzle, the counter gets added to.
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "TetrisPiece")
+        if (collision.gameObject.tag == "TetrisPiece" == true)
         {
             counter++;
             Debug.Log(counter);
+            //max++;
+            //Debug.Log(max);
         }
+        /*if (collision.gameObject.tag == "TetrisPiece" == false)
+        {
+            counter--;           
+            //max++;
+            //Debug.Log(max);
+        }*/
+    }
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "TetrisPiece")
+        {
+            counter--;
+            Debug.Log(counter);
+        }
+
     }
 
 
