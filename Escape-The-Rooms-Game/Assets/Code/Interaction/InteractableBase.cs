@@ -12,17 +12,19 @@ namespace VHS
 
         #region Variables
 
-            public float holdDuration;
+            [SerializeField] private float holdDuration;
 
         
             [Space]
 
 
-            public bool holdInteract;
+            [SerializeField] private bool holdInteract;
 
-            public bool multipleUse;
+            [SerializeField] private bool multipleUse;
 
-            public bool isInteractable;
+            [SerializeField] private bool isInteractable;
+
+            [SerializeField] private string text = "Interact" ;
 
         #endregion
 
@@ -35,6 +37,8 @@ namespace VHS
             public bool MultipleUse => multipleUse;
 
             public bool IsInteractable => isInteractable;
+
+        public string textMessage => text;
 
         #endregion
 

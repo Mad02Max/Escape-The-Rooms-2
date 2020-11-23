@@ -13,6 +13,7 @@ namespace VHS
 
 
         [Space, Header("UI")]
+        [SerializeField] private InteractionUI uIPanel;
 
         [Space, Header("Ray Settings")]
         [SerializeField] private float rayDistance = 0f;
@@ -21,8 +22,8 @@ namespace VHS
 
         private Camera m_cam;
 
-        private bool m_interacting;
-        private float m_holdTimer = 0f;
+        private bool p_interacting;
+        private float p_holdTimer = 0f;
 
         #endregion
 
@@ -58,18 +59,27 @@ namespace VHS
                     if (interactionData.IsEmpty())
                     {
                         interactionData.interactable = _interactable;
+
+                        uIPanel.SetText(_interactable.textMessage);                    
+                   
                     }
                     else
                     {
                         if (!interactionData.IsSameInteractable(_interactable))
                         {
                             interactionData.interactable = _interactable;
+
+                            uIPanel.SetText(_interactable.textMessage);
+
                         }
+
                     }
                 }
+                
             }
             else
             {
+                uIPanel.ResetUI();
                 interactionData.ResetData();
             }
 
@@ -83,37 +93,45 @@ namespace VHS
 
             if (interactionInputData.interactedClicked)
             {
-                m_interacting = true;
-                m_holdTimer = 0f;
+                p_interacting = true;
+
+                p_holdTimer = 0f;
             }
 
             if (interactionInputData.interactedRealease)
             {
-                m_interacting = false;
-                m_holdTimer = 0f;
+                p_interacting = false;
+
+                p_holdTimer = 0f;
+
+                uIPanel.UpdateProgressBar(p_holdTimer);
             }
 
-            if (m_interacting)
+            if (p_interacting)
             {
                 if (!interactionData.interactable.IsInteractable)
                     return;
 
                 if (interactionData.interactable.HoldInteract)
                 {
-                    m_holdTimer += Time.deltaTime;
+                    p_holdTimer += Time.deltaTime;
 
-                    float heldPercent = m_holdTimer / interactionData.interactable.HoldDuration;
+                    float heldPercent = p_holdTimer / interactionData.interactable.HoldDuration;
+                    
+                    uIPanel.UpdateProgressBar(heldPercent);
 
                     if (heldPercent > 1f)
                     {
                         interactionData.Interact();
-                        m_interacting = false;
+
+                        p_interacting = false;
                     }
                 }
                 else
                 {
                     interactionData.Interact();
-                    m_interacting = false;
+
+                    p_interacting = false;
                 }
             }
         }

@@ -14,6 +14,7 @@ namespace VHS
 
         bool IsInteractable { get; }
 
+        string textMessage { get; }
 
         void OnInteract();
     }

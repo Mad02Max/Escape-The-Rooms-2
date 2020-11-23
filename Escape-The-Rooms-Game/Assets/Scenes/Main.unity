@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 415902487}
   - component: {fileID: 415902486}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: InteractableText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,6 +457,7 @@ MonoBehaviour:
   holdInteract: 0
   multipleUse: 0
   isInteractable: 1
+  text: Interact
 --- !u!1 &505475888
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionInputData: {fileID: 11400000, guid: 07c38753ea9c3ba4ca094c395fcf2555, type: 2}
   interactionData: {fileID: 11400000, guid: 35633e8759a5c2948a35c77e08a84915, type: 2}
+  uIPanel: {fileID: 746678050}
   rayDistance: 5
   raySphereRadius: 0.4
   interactableLayer:
@@ -698,8 +700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b69701e9fddb6f4984fd5d6367ad78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 0}
-  textMeshProUGUI: {fileID: 0}
+  progressBar: {fileID: 2030749696}
+  textMeshProUGUI: {fileID: 415902486}
 --- !u!1 &782401119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,3 +1328,4 @@ MonoBehaviour:
   holdInteract: 1
   multipleUse: 0
   isInteractable: 1
+  text: Hold interact
