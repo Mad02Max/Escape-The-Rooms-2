@@ -11,6 +11,9 @@ namespace VHS
         [SerializeField] private InteractionInputData interactionInputData = null;
         [SerializeField] private InteractionData interactionData = null;
 
+
+        [Space, Header("UI")]
+
         [Space, Header("Ray Settings")]
         [SerializeField] private float rayDistance = 0f;
         [SerializeField] private float raySphereRadius = 0f;
