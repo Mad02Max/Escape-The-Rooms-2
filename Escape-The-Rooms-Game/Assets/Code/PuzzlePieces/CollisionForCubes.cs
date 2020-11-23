@@ -23,9 +23,9 @@ public class CollisionForCubes : MonoBehaviour
     //This checks if you have all the pieces on the board, and if you do; changes to a "win" screen.
     void Update()
     {
-        if (counter == 144)
+        if (counter == 34)
         {
-            SceneManager.LoadScene(sceneName: "Win");
+            SceneManager.LoadScene(sceneName: "Victory");
         }
     }
 
