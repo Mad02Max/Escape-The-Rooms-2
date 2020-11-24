@@ -55,7 +55,7 @@ public class CammeraSwitching : MonoBehaviour
                 puzzCam.enabled = true;
                 charCam.enabled = false;
             }
-            
+            //
           
         }
 
