@@ -799,6 +799,8 @@ GameObject:
   - component: {fileID: 971537884}
   - component: {fileID: 971537883}
   - component: {fileID: 971537887}
+  - component: {fileID: 971537889}
+  - component: {fileID: 971537888}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -899,7 +901,33 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
-  inventory: {fileID: 0}
+  inventory: {fileID: 11400000, guid: f48e016cddad97046a97c1bd6dc1610d, type: 2}
+--- !u!114 &971537888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971537882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10420bd788d1133458a311a8ec22d2d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 6ee1478bdef55924ea643319b10746e9, type: 2}
+--- !u!114 &971537889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971537882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10420bd788d1133458a311a8ec22d2d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
 --- !u!1 &1124256432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1440,7 @@ GameObject:
   - component: {fileID: 1542028295}
   - component: {fileID: 1542028294}
   - component: {fileID: 1542028298}
+  - component: {fileID: 1542028300}
   m_Layer: 0
   m_Name: FirstPersoneCam
   m_TagString: Player
@@ -1513,6 +1542,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542028300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542028293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24f702f5338a7f4ca677004c2343dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 11400000, guid: f48e016cddad97046a97c1bd6dc1610d, type: 2}
 --- !u!1 &1567570179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,6 +2150,7 @@ GameObject:
   - component: {fileID: 2045593252}
   - component: {fileID: 2045593251}
   - component: {fileID: 2045593255}
+  - component: {fileID: 2045593256}
   m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
@@ -2208,4 +2251,17 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Hold Interact
-  inventory: {fileID: 0}
+  inventory: {fileID: 11400000, guid: f48e016cddad97046a97c1bd6dc1610d, type: 2}
+--- !u!114 &2045593256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045593250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10420bd788d1133458a311a8ec22d2d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 67c82e8cbc21fde449e43c8ad20233c2, type: 2}
