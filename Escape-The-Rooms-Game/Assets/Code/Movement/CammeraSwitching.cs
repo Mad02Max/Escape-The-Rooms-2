@@ -20,7 +20,7 @@ public class CammeraSwitching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       /* if (FirstPersoneCam == true)
+        if (FirstPersoneCam == true)
         {
             charCam.enabled = true;
             puzzCam.enabled = false;
@@ -44,9 +44,9 @@ public class CammeraSwitching : MonoBehaviour
                 PuzzleCamra = false;
                 GetComponent<Movement>().moveYes = true;
             }
-        }*/
+        }
 
-        if (Input.GetKey(KeyCode.C))
+        /*if (Input.GetKey(KeyCode.C))
         {
             if (FirstPersoneCam == false)
             {
@@ -60,7 +60,7 @@ public class CammeraSwitching : MonoBehaviour
             }
             //
           
-        }
+        }*/
 
         
     }
