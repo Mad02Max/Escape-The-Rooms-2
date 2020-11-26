@@ -9,6 +9,7 @@ public class CammeraSwitching : MonoBehaviour
     public Camera charCam;
     public Camera puzzCam;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,7 @@ public class CammeraSwitching : MonoBehaviour
             {
                 FirstPersoneCam = false;
                 PuzzleCamra = true;
+                GetComponent<Movement>().moveYes = false;
             }
         }
 
@@ -40,6 +42,7 @@ public class CammeraSwitching : MonoBehaviour
             {
                 FirstPersoneCam = true;
                 PuzzleCamra = false;
+                GetComponent<Movement>().moveYes = true;
             }
         }
         
