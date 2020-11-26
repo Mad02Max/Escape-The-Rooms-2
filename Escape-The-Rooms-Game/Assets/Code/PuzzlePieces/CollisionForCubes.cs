@@ -11,7 +11,6 @@ public class CollisionForCubes : MonoBehaviour
     
     //This is here to count the puzzle pieces that are on the board, it does this since when all the pieces are there, you can advance.
     int counter = 0;
-    //int max = 34;
 
 
     //Start is called before the first frame update
@@ -26,16 +25,11 @@ public class CollisionForCubes : MonoBehaviour
     {
         //max--;
 
-        /*if (counter == 34)
+        if (counter == 144)
         {
             SceneManager.LoadScene(sceneName: "Victory");
-        }*/
-
-        /*if (counter > 34)
-        {
-            counter = 34;
-        }*/
-        
+        }
+      
     }
 
     //This checks so that when the puzzle pieces colides with the puzzle, the counter gets added to.
@@ -45,16 +39,12 @@ public class CollisionForCubes : MonoBehaviour
         {
             counter++;
             Debug.Log(counter);
-            //max++;
-            //Debug.Log(max);
+
         }
-        /*if (collision.gameObject.tag == "TetrisPiece" == false)
-        {
-            counter--;           
-            //max++;
-            //Debug.Log(max);
-        }*/
     }
+
+
+    //This makes it so that if a piece is removed from the board, the counter removes the same number as cubes. 
     void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "TetrisPiece")
