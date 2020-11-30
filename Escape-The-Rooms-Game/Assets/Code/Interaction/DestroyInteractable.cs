@@ -11,14 +11,14 @@ namespace VHS
         {
             base.OnInteract();
 
-            Destroy(gameObject);
-
             var item = GetComponent<Item>();
 
             if (item)
             {
                 inventory.AddItem(item.item, 1); 
             }
+
+            Destroy(gameObject);
 
         }
 

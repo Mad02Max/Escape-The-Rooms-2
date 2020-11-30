@@ -38,7 +38,7 @@ public class CammeraSwitching : MonoBehaviour
             charCam.enabled = false;
             puzzCam.enabled = true;
 
-            if (Input.GetKey(KeyCode.Q))
+            if (Input.GetKey(KeyCode.C))
             {
                 FirstPersoneCam = true;
                 PuzzleCamra = false;
