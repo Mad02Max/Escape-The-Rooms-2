@@ -6,50 +6,43 @@ namespace VHS
 {
     public class OpenPuzzel : InteractableBase
     {
-        bool FirstPersoneCam;
-        bool PuzzleCamra;
-        public Camera charCam;
-        public Camera puzzCam;
+        public Camera characterCam;
+        public Camera puzzleCam;
 
+        //public Movement movement;
 
         // Start is called before the first frame update
         void Awake()
         {
-            FirstPersoneCam = true;
-            PuzzleCamra = false;
+            characterCam.enabled = true;
+
+            puzzleCam.enabled = false;
         }
         public override void OnInteract()
         {
             base.OnInteract();
 
+            characterCam.enabled = false;
 
-            if (FirstPersoneCam == true)
+            puzzleCam.enabled = true;
+
+            //movement.moveYes = false;
+
+            //player.SetActive(false);
+        }
+
+        public void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.C))
             {
-                charCam.enabled = true;
-                puzzCam.enabled = false;
+                characterCam.enabled = true;
 
-                if (Input.GetKey(KeyCode.C))
-                {
-                    FirstPersoneCam = false;
-                    PuzzleCamra = true;
-                    GetComponent<Movement>().moveYes = false;
-                }
+                puzzleCam.enabled = false;
+
+                //movement.moveYes = true;
+
+                //player.SetActive(false);
             }
-
-            if (PuzzleCamra == true)
-            {
-                charCam.enabled = false;
-                puzzCam.enabled = true;
-
-                if (Input.GetKey(KeyCode.C))
-                {
-                    FirstPersoneCam = true;
-                    PuzzleCamra = false;
-                    GetComponent<Movement>().moveYes = true;
-                }
-            }
-
-
         }
 
     }

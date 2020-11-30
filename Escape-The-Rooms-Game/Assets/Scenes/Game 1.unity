@@ -204,6 +204,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &392088601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392088594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c917890a4b85d54791514c77bd28ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdDuration: 0
+  holdInteract: 0
+  multipleUse: 1
+  isInteractable: 1
+  text: Interact
+  characterCam: {fileID: 173667572}
+  puzzleCam: {fileID: 1442717289}
 --- !u!1 &436267108 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e03e43d28108e4c4dbebdd7490b9b916, type: 3}
@@ -676,9 +695,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Platform
       objectReference: {fileID: 0}
+    - target: {fileID: -3018508254227586887, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
       propertyPath: m_Name
       value: Puzzle_1_Box_For_cubes
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424625907325184559, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2903262768755658291, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
       propertyPath: m_LocalPosition.z
@@ -833,6 +864,7 @@ GameObject:
   - component: {fileID: 971537885}
   - component: {fileID: 971537884}
   - component: {fileID: 971537883}
+  - component: {fileID: 971537888}
   - component: {fileID: 971537887}
   m_Layer: 8
   m_Name: Cube
@@ -926,7 +958,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 971537882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c917890a4b85d54791514c77bd28ea9, type: 3}
+  m_Script: {fileID: 11500000, guid: 10420bd788d1133458a311a8ec22d2d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 04af4bb0fb2778e458433cd70050315e, type: 2}
+--- !u!114 &971537888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971537882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb84cb92592fc1346bea9ebf9eedbe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   holdDuration: 0
@@ -934,8 +979,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
-  charCam: {fileID: 173667572}
-  puzzCam: {fileID: 1442717289}
+  inventory: {fileID: 11400000, guid: f48e016cddad97046a97c1bd6dc1610d, type: 2}
 --- !u!114 &1124100826 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2453659241821862233, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
@@ -1534,7 +1578,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633929438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 357a4520d4c090845b2417d8c0227a22, type: 3}
   m_Name: 
@@ -2057,4 +2101,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10420bd788d1133458a311a8ec22d2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 67c82e8cbc21fde449e43c8ad20233c2, type: 2}
+  item: {fileID: 11400000, guid: c663c78e234b06c43a79deca28d837bd, type: 2}
