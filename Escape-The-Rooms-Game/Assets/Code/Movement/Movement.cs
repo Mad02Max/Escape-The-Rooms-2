@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 //All done by Caleb
+namespace VHS
+{
+
 
 public class Movement : MonoBehaviour
 {
@@ -70,4 +73,5 @@ public class Movement : MonoBehaviour
         }
 
     }
+}
 }

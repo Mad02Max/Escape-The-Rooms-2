@@ -20,7 +20,7 @@ namespace VHS
         [SerializeField] private float raySphereRadius = 0f;
         [SerializeField] private LayerMask interactableLayer = ~0;
 
-        private Camera m_cam;
+        private Camera p_cam;
 
         private bool p_interacting;
         private float p_holdTimer = 0f;
@@ -31,7 +31,7 @@ namespace VHS
         #region Built In Methods      
         void Awake()
         {
-            m_cam = FindObjectOfType<Camera>();
+            p_cam = FindObjectOfType<Camera>();
         }
 
         void Update()
@@ -45,7 +45,7 @@ namespace VHS
         #region Custom methods         
         void CheckForInteractable()
         {
-            Ray _ray = new Ray(m_cam.transform.position, m_cam.transform.forward);
+            Ray _ray = new Ray(p_cam.transform.position, p_cam.transform.forward);
             RaycastHit _hitInfo;
 
             bool _hitSomething = Physics.SphereCast(_ray, raySphereRadius, out _hitInfo, rayDistance, interactableLayer);

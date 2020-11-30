@@ -30,6 +30,20 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
         Container.Add(new InventorySlot(database.getId[_item], _item, _amount));
 
     }
+
+    public void RemoveItem(ItemObject _item, int _amount)
+    {
+
+        for(int i = Container.Count; i > 0; i--)
+        {
+            if (Container[i].item == _item)
+            {
+                Container[i].RemoveAmount(_amount);
+                return;
+            }
+        }
+
+    }
     #endregion
 
     private void OnEnable()
@@ -108,6 +122,11 @@ public class InventorySlot
     public void AddAmount(int value)
     {
         amount += value;
+    }
+
+    public void RemoveAmount(int value)
+    {
+        amount = value;
     }
 
 }
