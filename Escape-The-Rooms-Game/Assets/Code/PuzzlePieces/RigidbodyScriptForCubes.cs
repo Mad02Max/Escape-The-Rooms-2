@@ -30,7 +30,6 @@ public class RigidbodyScriptForCubes : MonoBehaviour
         if (collision.gameObject.tag == "Platform")
         {
             rb3dn2.constraints = RigidbodyConstraints.FreezeAll;
-            rb3dn2.isKinematic = true;
         }
     }
 

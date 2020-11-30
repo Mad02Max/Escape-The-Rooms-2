@@ -6,8 +6,8 @@ public class MovePieces : MonoBehaviour
 {
     private Rigidbody rigidPieces;
     public bool movePiece;
-    float speed = 1f;
-    float negativeSpeed = -1f;
+    float speed = 0.08f;
+    float negativeSpeed = 0.08f;
 
 
 
@@ -25,42 +25,45 @@ public class MovePieces : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (movePiece == true)
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                transform.position = transform.position + new Vector3(speed, 0, 0);
-            }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                transform.position = transform.position + new Vector3(0, 0, speed);
-            }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
-            }
-
-
-
-
+            transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.position = transform.position + new Vector3(speed, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.position = transform.position + new Vector3(0, 0, 10);
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.position = transform.position + new Vector3(0, 0, -10);
         }
 
-
-
-
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Cursor")
+        /*if (movePiece == true)
         {
-            movePiece = true;
-        }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.position = new Vector4(-1, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.position = new Vector4(1, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                transform.position = new Vector4(0, 0, 1);
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                transform.position = new Vector4(0, 0, -1);
+            }
+
+
+
+
+        }*/
     }
-
-
 }
