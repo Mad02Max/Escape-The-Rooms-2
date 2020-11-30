@@ -6,6 +6,8 @@ public class MovePieces : MonoBehaviour
 {
     private Rigidbody rigidPieces;
     public bool movePiece;
+    float speed = 0.08f;
+    float negativeSpeed = 0.08f;
 
 
 
@@ -25,11 +27,11 @@ public class MovePieces : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.position = transform.position + new Vector3(-1, 0, 0);
+            transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.position = transform.position + new Vector3(10, 0, 0);
+            transform.position = transform.position + new Vector3(speed, 0, 0);
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
