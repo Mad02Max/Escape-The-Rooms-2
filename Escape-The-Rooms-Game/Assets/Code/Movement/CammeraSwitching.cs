@@ -30,6 +30,7 @@ public class CammeraSwitching : MonoBehaviour
                 FirstPersoneCam = false;
                 PuzzleCamra = true;
                 GetComponent<Movement>().moveYes = false;
+                GetComponent<MovePieces>().movePiece = true;
             }
         }
 
@@ -43,6 +44,7 @@ public class CammeraSwitching : MonoBehaviour
                 FirstPersoneCam = true;
                 PuzzleCamra = false;
                 GetComponent<Movement>().moveYes = true;
+                GetComponent<MovePieces>().movePiece = false;
             }
         }
 
