@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovePieces : MonoBehaviour
+public class Box1 : MonoBehaviour
 {
     private Rigidbody rigidPieces;
     public bool movePiece;
     float speed = 1f;
     float negativeSpeed = -1f;
+    public int moveTest = 0;
 
 
 
@@ -45,7 +46,7 @@ public class MovePieces : MonoBehaviour
             }
 
 
-
+            
 
         }
 
@@ -54,11 +55,29 @@ public class MovePieces : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
+    {
+        if (gameObject.tag == "Cursor")
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                movePiece = true;
+                moveTest++;
+            }
+        }
+    }
+
+
+
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Cursor")
         {
-            movePiece = true;
+            if (Input.GetKey(KeyCode.Space))
+            {
+                movePiece = true;
+                moveTest++;
+            }
         }
     }
 
