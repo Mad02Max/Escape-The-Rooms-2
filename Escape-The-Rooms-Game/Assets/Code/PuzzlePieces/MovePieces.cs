@@ -29,15 +29,15 @@ public class MovePieces : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.position = transform.position + new Vector3(1, 0, 0);
+            transform.position = transform.position + new Vector3(10, 0, 0);
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.position = transform.position + new Vector3(0, 0, 1);
+            transform.position = transform.position + new Vector3(0, 0, 10);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.position = transform.position + new Vector3(0, 0, -1);
+            transform.position = transform.position + new Vector3(0, 0, -10);
         }
 
         /*if (movePiece == true)
