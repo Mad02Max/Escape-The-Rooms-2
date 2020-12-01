@@ -6,6 +6,11 @@ TagManager:
   tags:
   - CrossHair
   - Cube
+  - CollisionTest
+  - Platform
+  - TetrisPiece
+  - Cursor
+  - Box1
   layers:
   - Default
   - TransparentFX
@@ -15,7 +20,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Interactable
   - 
   - 
   - 
