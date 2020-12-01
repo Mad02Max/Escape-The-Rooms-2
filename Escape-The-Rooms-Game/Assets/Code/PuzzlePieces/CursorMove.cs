@@ -42,6 +42,7 @@ public class CursorMove : MonoBehaviour
             rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
         }
 
+
         /*if (movePiece == true)
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -68,7 +69,7 @@ public class CursorMove : MonoBehaviour
         if (collision.gameObject.tag == "Platform")
         {
             rigidCur.constraints = RigidbodyConstraints.FreezeAll;
-            rigidCur.isKinematic = true;
+            //rigidCur.isKinematic = true;
         }
     }
 

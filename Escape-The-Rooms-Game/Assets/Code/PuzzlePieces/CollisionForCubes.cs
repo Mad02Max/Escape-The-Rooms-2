@@ -48,12 +48,13 @@ public class CollisionForCubes : MonoBehaviour
             //max++;
             //Debug.Log(max);
         }
-        /*if (collision.gameObject.tag == "TetrisPiece" == false)
+        if (collision.gameObject.tag == "Box1" == true)
         {
-            counter--;           
-            //max++;
-            //Debug.Log(max);
-        }*/
+            counter = counter + 4;
+            Debug.Log(counter);
+        }
+
+
     }
     void OnCollisionExit(Collision collision)
     {
@@ -62,6 +63,13 @@ public class CollisionForCubes : MonoBehaviour
             counter--;
             Debug.Log(counter);
         }
+        
+        if (collision.gameObject.tag == "Box1")
+        {
+            counter = counter - 4;
+            Debug.Log(counter);
+        }
+
 
     }
 

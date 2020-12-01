@@ -9,6 +9,7 @@ public class Box1 : MonoBehaviour
     float speed = 1f;
     float negativeSpeed = -1f;
     public int moveTest = 0;
+    public bool space;
 
 
 
@@ -21,6 +22,7 @@ public class Box1 : MonoBehaviour
     public void Awake()
     {
         movePiece = false;
+        space = true;
     }
 
     // Update is called once per frame
@@ -30,19 +32,19 @@ public class Box1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
+                rigidPieces.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                transform.position = transform.position + new Vector3(speed, 0, 0);
+                rigidPieces.transform.position = transform.position + new Vector3(speed, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                transform.position = transform.position + new Vector3(0, 0, speed);
+                rigidPieces.transform.position = transform.position + new Vector3(0, 0, speed);
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
+                rigidPieces.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
             }
 
 
@@ -55,21 +57,36 @@ public class Box1 : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionStay(Collision collision)
     {
-        if (gameObject.tag == "Cursor")
+        if (collision.gameObject.tag == "Cursor")
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (space == true)
             {
-                movePiece = true;
-                moveTest++;
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    movePiece = true;
+                    moveTest++;
+                    //space = false;
+                }
             }
+            /*if (space == false)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    movePiece = false;
+                    moveTest++;
+                    space = true;
+                }
+            }*/
+
         }
     }
 
 
 
-    void OnCollisionEnter(Collision collision)
+
+    /*void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Cursor")
         {
@@ -79,7 +96,7 @@ public class Box1 : MonoBehaviour
                 moveTest++;
             }
         }
-    }
+    }*/
 
 
 }
