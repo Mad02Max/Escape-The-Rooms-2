@@ -10,7 +10,10 @@ TagManager:
   - Platform
   - TetrisPiece
   - Cursor
-  - Box1
+  - 4
+  - 1
+  - 3
+  - 5
   layers:
   - Default
   - TransparentFX

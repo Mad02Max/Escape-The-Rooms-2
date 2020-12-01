@@ -33,16 +33,24 @@ public class CollisionForCubes : MonoBehaviour
     //This checks so that when the puzzle pieces colides with the puzzle, the counter gets added to.
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "TetrisPiece" == true)
+        if (collision.gameObject.tag == "4")
+        {
+            counter = counter + 4;
+            Debug.Log(counter);
+        }
+        if (collision.gameObject.tag == "1")
         {
             counter++;
             Debug.Log(counter);
-            //max++;
-            //Debug.Log(max);
         }
-        if (collision.gameObject.tag == "Box1" == true)
+        if (collision.gameObject.tag == "3")
         {
-            counter = counter + 4;
+            counter = counter + 3;
+            Debug.Log(counter);
+        }
+        if (collision.gameObject.tag == "5")
+        {
+            counter = counter + 5;
             Debug.Log(counter);
         }
 
@@ -50,18 +58,27 @@ public class CollisionForCubes : MonoBehaviour
     }
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "TetrisPiece")
-        {
-            counter--;
-            Debug.Log(counter);
-        }
         
-        if (collision.gameObject.tag == "Box1")
+        if (collision.gameObject.tag == "4")
         {
             counter = counter - 4;
             Debug.Log(counter);
         }
-
+        if (collision.gameObject.tag == "1")
+        {            
+            counter--;
+            Debug.Log(counter);
+        }
+        if (collision.gameObject.tag == "3")
+        {
+            counter = counter - 3;
+            Debug.Log(counter);
+        }
+        if (collision.gameObject.tag == "5")
+        {
+            counter = counter - 5;
+            Debug.Log(counter);
+        }
 
     }
 

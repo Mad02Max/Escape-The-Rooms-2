@@ -5,7 +5,8 @@ using UnityEngine;
 public class Box1 : MonoBehaviour
 {
     private Rigidbody rigidPieces;
-    public bool movePiece;
+    private Transform pieceTrans;
+    public bool movePiece;    
     float speed = 1f;
     float negativeSpeed = -1f;
     public int moveTest = 0;
@@ -17,6 +18,7 @@ public class Box1 : MonoBehaviour
     void Start()
     {
         rigidPieces = GetComponent<Rigidbody>();
+        pieceTrans = GetComponent<Transform>();
     }
 
     public void Awake()
@@ -47,6 +49,14 @@ public class Box1 : MonoBehaviour
                 rigidPieces.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
             }
 
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                pieceTrans.transform.Rotate(0, -90, 0);
+            }
+            if (Input.GetKeyDown(KeyCode.Y))
+            {
+                pieceTrans.transform.Rotate(0, 90, 0);
+            }
 
             
 

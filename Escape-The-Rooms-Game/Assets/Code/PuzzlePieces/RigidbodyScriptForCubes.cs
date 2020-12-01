@@ -18,6 +18,11 @@ public class RigidbodyScriptForCubes : MonoBehaviour
         rb3dn2 = GetComponent<Rigidbody>();
     }
 
+    private void Awake()
+    {
+
+    }
+
     //Update is called once per frame
     void Update()
     {
