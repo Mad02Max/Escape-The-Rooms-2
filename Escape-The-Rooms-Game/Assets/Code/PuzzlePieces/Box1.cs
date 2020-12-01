@@ -61,25 +61,27 @@ public class Box1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cursor")
         {
-            if (space == true)
+            /*if (space == true)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetKey(KeyCode.Space))
                 {
                     movePiece = true;
                     moveTest++;
-                    //space = false;
-                }
-            }
-            /*if (space == false)
-            {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    movePiece = false;
-                    moveTest++;
-                    space = true;
+                    space = false;
                 }
             }*/
-
+            if (Input.GetKey(KeyCode.Space))
+            {
+                movePiece = true;
+                moveTest++;
+                space = false;
+            }
+            if (Input.GetKey(KeyCode.Return))
+            {
+                movePiece = false;
+                moveTest++;
+                space = false;
+            }
         }
     }
 
