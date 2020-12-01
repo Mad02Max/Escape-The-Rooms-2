@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     }
     IEnumerator Waiter()
     {
-        yield return new WaitForSeconds(300);
+        yield return new WaitForSeconds(900);
         Destroy(gameObject);
 
     }

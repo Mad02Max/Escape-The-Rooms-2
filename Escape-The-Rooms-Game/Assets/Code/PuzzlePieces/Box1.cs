@@ -11,6 +11,7 @@ public class Box1 : MonoBehaviour
     float negativeSpeed = -1f;
     public int moveTest = 0;
     public bool space;
+    private Renderer re;
 
 
 
@@ -19,6 +20,8 @@ public class Box1 : MonoBehaviour
     {
         rigidPieces = GetComponent<Rigidbody>();
         pieceTrans = GetComponent<Transform>();
+        //re = GetComponent<Renderer>();
+        //re.material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
     }
 
     public void Awake()
@@ -89,7 +92,25 @@ public class Box1 : MonoBehaviour
                 moveTest++;
                 space = false;
             }
+
+            
         }
+
+        if (collision.gameObject.tag == "Cursor" )
+        {
+            if (collision.gameObject.tag == "4")
+            {
+                if (Input.GetKey(KeyCode.RightShift))
+                {
+                    movePiece = true;
+                    moveTest++;
+                    space = false;
+                }
+            }
+        }
+
+
+
     }
 
 
