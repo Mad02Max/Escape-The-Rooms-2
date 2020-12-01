@@ -57,9 +57,6 @@ public class Box1 : MonoBehaviour
             {
                 pieceTrans.transform.Rotate(0, 90, 0);
             }
-
-            
-
         }
 
 
