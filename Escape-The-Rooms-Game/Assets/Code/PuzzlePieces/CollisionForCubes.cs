@@ -24,10 +24,10 @@ public class CollisionForCubes : MonoBehaviour
     //This checks if you have all the pieces on the board, and if you do; changes to a "win" screen.
     void Update()
     {
-        /*if (counter == 34)
+        if (counter == 144)
         {
-            SceneManager.LoadScene(sceneName: "Victory");
-        }*/
+            StartCoroutine(Waiter());
+        }
     }
 
     //This checks so that when the puzzle pieces colides with the puzzle, the counter gets added to.
@@ -81,6 +81,14 @@ public class CollisionForCubes : MonoBehaviour
         }
 
     }
+
+    IEnumerator Waiter()
+    {
+        yield return new WaitForSeconds(15);
+        SceneManager.LoadScene(sceneName: "Victory");
+
+    }
+
 
 
 
