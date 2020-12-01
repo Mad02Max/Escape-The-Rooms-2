@@ -49,11 +49,11 @@ public class Box1 : MonoBehaviour
                 rigidPieces.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
             }
 
-            if (Input.GetKeyDown(KeyCode.T))
+            if (Input.GetKeyDown(KeyCode.V))
             {
                 pieceTrans.transform.Rotate(0, -90, 0);
             }
-            if (Input.GetKeyDown(KeyCode.Y))
+            if (Input.GetKeyDown(KeyCode.B))
             {
                 pieceTrans.transform.Rotate(0, 90, 0);
             }
@@ -83,7 +83,7 @@ public class Box1 : MonoBehaviour
                 moveTest++;
                 space = false;
             }
-            if (Input.GetKey(KeyCode.Return))
+            if (Input.GetKey(KeyCode.RightShift))
             {
                 movePiece = false;
                 moveTest++;

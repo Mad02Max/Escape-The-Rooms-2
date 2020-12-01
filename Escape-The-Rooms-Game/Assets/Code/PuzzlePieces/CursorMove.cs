@@ -69,7 +69,6 @@ public class CursorMove : MonoBehaviour
         if (collision.gameObject.tag == "Platform")
         {
             rigidCur.constraints = RigidbodyConstraints.FreezeAll;
-            //rigidCur.isKinematic = true;
         }
     }
 

@@ -53,6 +53,11 @@ public class CollisionForCubes : MonoBehaviour
             counter = counter + 5;
             Debug.Log(counter);
         }
+        if (collision.gameObject.tag == "2")
+        {
+            counter = counter + 2;
+            Debug.Log(counter);
+        }
 
 
     }
@@ -77,6 +82,11 @@ public class CollisionForCubes : MonoBehaviour
         if (collision.gameObject.tag == "5")
         {
             counter = counter - 5;
+            Debug.Log(counter);
+        }
+        if (collision.gameObject.tag == "2")
+        {
+            counter = counter - 2;
             Debug.Log(counter);
         }
 
