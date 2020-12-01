@@ -9,6 +9,8 @@ TagManager:
   - CollisionTest
   - Platform
   - TetrisPiece
+  - Cursor
+  - Box1
   layers:
   - Default
   - TransparentFX

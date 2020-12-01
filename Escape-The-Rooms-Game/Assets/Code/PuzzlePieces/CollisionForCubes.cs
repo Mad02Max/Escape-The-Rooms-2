@@ -24,18 +24,10 @@ public class CollisionForCubes : MonoBehaviour
     //This checks if you have all the pieces on the board, and if you do; changes to a "win" screen.
     void Update()
     {
-        //max--;
-
         /*if (counter == 34)
         {
             SceneManager.LoadScene(sceneName: "Victory");
         }*/
-
-        /*if (counter > 34)
-        {
-            counter = 34;
-        }*/
-        
     }
 
     //This checks so that when the puzzle pieces colides with the puzzle, the counter gets added to.
