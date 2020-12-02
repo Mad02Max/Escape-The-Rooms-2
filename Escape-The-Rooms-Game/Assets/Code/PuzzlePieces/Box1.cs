@@ -13,7 +13,7 @@ public class Box1 : MonoBehaviour
     public bool space;
     private Renderer re;
     public bool no;
-
+    public GameObject target;
 
 
     // Start is called before the first frame update
@@ -56,11 +56,11 @@ public class Box1 : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.V))
             {
-                pieceTrans.transform.Rotate(0, -90, 0);
+                pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, -90);
             }
             if (Input.GetKeyDown(KeyCode.B))
             {
-                pieceTrans.transform.Rotate(0, 90, 0);
+                pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, 90);
             }
         }
 
@@ -82,9 +82,9 @@ public class Box1 : MonoBehaviour
                     space = false;
                 }
             }*/
-            if (Input.GetKey(KeyCode.Space))
+            if (no == false)
             {
-                if (no == false)
+                if (Input.GetKey(KeyCode.Space))
                 {
                     movePiece = true;
                     moveTest++;

@@ -842,6 +842,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &139571503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1036,6 +1037,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &145331478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1265,6 +1267,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &185027274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2230,6 +2233,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &307550412
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2602,6 +2606,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &401920824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2779,6 +2784,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &421624142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2969,6 +2975,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &432032932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3440,6 +3447,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &503962617
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3779,6 +3787,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &551917648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4599,6 +4608,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &659404437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5285,6 +5295,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &739301833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5399,6 +5410,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &745113976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5602,6 +5614,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &759111180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5792,6 +5805,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &768270888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5901,6 +5915,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &771411646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6300,6 +6315,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &846453681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6895,6 +6911,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &947706893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7168,6 +7185,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &964010112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7866,6 +7884,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!1 &1051935883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3018508254227586887, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
@@ -8076,6 +8095,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1054289918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8266,6 +8286,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1073914925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8876,6 +8897,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1164904218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9216,6 +9238,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!1 &1211225844
 GameObject:
   m_ObjectHideFlags: 0
@@ -9706,6 +9729,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!1 &1265171623
 GameObject:
   m_ObjectHideFlags: 0
@@ -10008,6 +10032,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1272449185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11266,6 +11291,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1378541438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12300,6 +12326,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1505518834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12571,6 +12598,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1528145214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12761,6 +12789,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1536284554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13789,6 +13818,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1720834799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14100,6 +14130,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1748563555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14398,6 +14429,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1771928789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14656,6 +14688,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1807087052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14989,6 +15022,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &1878804133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15848,6 +15882,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &2020846176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16043,6 +16078,7 @@ MonoBehaviour:
   moveTest: 0
   space: 0
   no: 0
+  target: {fileID: 1265171623}
 --- !u!65 &2044346712
 BoxCollider:
   m_ObjectHideFlags: 0
