@@ -7,16 +7,18 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    //Starts the timer when the game starts. 
+    //Starts the timer when the game starts.
+    public int timer;
     void Start()
     {
+        timer = 600;
         StartCoroutine(Waiter());
     }
 
     //This is the timer
     IEnumerator Waiter()
     {
-        yield return new WaitForSeconds(600);
+        yield return new WaitForSeconds(timer);
         Destroy(gameObject);
 
     }

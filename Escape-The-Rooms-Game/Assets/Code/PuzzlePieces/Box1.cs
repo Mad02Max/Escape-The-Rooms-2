@@ -73,15 +73,7 @@ public class Box1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cursor")
         {
-            /*if (space == true)
-            {
-                if (Input.GetKey(KeyCode.Space))
-                {
-                    movePiece = true;
-                    moveTest++;
-                    space = false;
-                }
-            }*/
+            
             if (no == false)
             {
                 if (Input.GetKey(KeyCode.Space))
@@ -100,6 +92,9 @@ public class Box1 : MonoBehaviour
                     space = false;
                 }
             }
+
+            GetComponent<Renderer>().material.color = new Color32(255, 255, 0, 255);
+
         }
         
 
