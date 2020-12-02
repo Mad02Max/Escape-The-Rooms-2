@@ -2,37 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//By Caleb
+
 public class Box1 : MonoBehaviour
 {
+    //Creating a rigidbody and a transfom in visual studio.
+    //Creating a bool that will allow/hinder the pieces regarding movement.
+    //Creates a speed for that eventual movement.
+    //Creates a bool that will control the picking up/putting down of pieces
+    //Creates a gameobject to use as a point for rotation.
     private Rigidbody rigidPieces;
     private Transform pieceTrans;
     public bool movePiece;    
     float speed = 1f;
     float negativeSpeed = -1f;
-    public int moveTest = 0;
-    public bool space;
-    private Renderer re;
     public bool no;
     public GameObject target;
 
 
-    // Start is called before the first frame update
+    //Connects the visual studio rigidbody and transfom to the unity ones
     void Start()
     {
         rigidPieces = GetComponent<Rigidbody>();
         pieceTrans = GetComponent<Transform>();
-        //re = GetComponent<Renderer>();
-        //re.material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
     }
 
+    //Sets the bools to their starting value
     public void Awake()
     {
         movePiece = false;
-        space = true;
         no = false;
     }
 
-    // Update is called once per frame
+    //Makes the pieces able to move and rotate when movePiece is true
     void Update()
     {
         if (movePiece == true)
@@ -63,24 +65,21 @@ public class Box1 : MonoBehaviour
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, 90);
             }
         }
-
-
-
-
     }
+
+    //Makes it so that if the cursor is on a piece, "no" is false, and if the spacebar is pressed, the pieces will be able to move
+    //The pieces are therefore "picked up" by the cursor.
+    //Then they can be "dropped" by pressing rightshift.
 
     void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Cursor")
         {
-            
-            if (no == false)
+            if (Input.GetKey(KeyCode.Space))
             {
-                if (Input.GetKey(KeyCode.Space))
+                if (no == false)
                 {
                     movePiece = true;
-                    moveTest++;
-                    space = false;
                 }
             }
             if (Input.GetKey(KeyCode.RightShift))
@@ -88,18 +87,17 @@ public class Box1 : MonoBehaviour
                 if (no == false)
                 {
                     movePiece = false;
-                    moveTest++;
-                    space = false;
                 }
             }
 
+            //David did this(start)
             GetComponent<Renderer>().material.color = new Color32(255, 255, 0, 255);
-
+            //David did this(stop)
         }
-        
-
-        
     }
+
+    //There two methods change "no" into true and false. This makes it so that block can't be placed on other blocks.
+    //Should also make it so that no more than one piece can be picked up at a time, alas; it does not work.
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "1")
@@ -112,17 +110,7 @@ public class Box1 : MonoBehaviour
             no = true;
             Debug.Log("no = true");
         }
-        if (collision.gameObject.tag == "3")
-        {
-            no = true;
-            Debug.Log("no = true");
-        }
         if (collision.gameObject.tag == "4")
-        {
-            no = true;
-            Debug.Log("no = true");
-        }
-        if (collision.gameObject.tag == "5")
         {
             no = true;
             Debug.Log("no = true");
@@ -140,39 +128,10 @@ public class Box1 : MonoBehaviour
             no = false;
             Debug.Log("no = false");
         }
-        if (collision.gameObject.tag == "3")
-        {
-            no = false;
-            Debug.Log("no = false");
-        }
         if (collision.gameObject.tag == "4")
         {
             no = false;
             Debug.Log("no = false");
         }
-        if (collision.gameObject.tag == "5")
-        {
-            no = false;
-            Debug.Log("no = false");
-        }
     }
-
-
-
-
-
-
-    /*void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Cursor")
-        {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                movePiece = true;
-                moveTest++;
-            }
-        }
-    }*/
-
-
 }
