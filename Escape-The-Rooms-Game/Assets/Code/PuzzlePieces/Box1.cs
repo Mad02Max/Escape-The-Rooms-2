@@ -12,6 +12,7 @@ public class Box1 : MonoBehaviour
     public int moveTest = 0;
     public bool space;
     private Renderer re;
+    public bool no;
 
 
 
@@ -28,6 +29,7 @@ public class Box1 : MonoBehaviour
     {
         movePiece = false;
         space = true;
+        no = false;
     }
 
     // Update is called once per frame
@@ -82,36 +84,85 @@ public class Box1 : MonoBehaviour
             }*/
             if (Input.GetKey(KeyCode.Space))
             {
-                movePiece = true;
-                moveTest++;
-                space = false;
-            }
-            if (Input.GetKey(KeyCode.RightShift))
-            {
-                movePiece = false;
-                moveTest++;
-                space = false;
-            }
-
-            
-        }
-
-        if (collision.gameObject.tag == "Cursor" )
-        {
-            if (collision.gameObject.tag == "4")
-            {
-                if (Input.GetKey(KeyCode.RightShift))
+                if (no == false)
                 {
                     movePiece = true;
                     moveTest++;
                     space = false;
                 }
             }
+            if (Input.GetKey(KeyCode.RightShift))
+            {
+                if (no == false)
+                {
+                    movePiece = false;
+                    moveTest++;
+                    space = false;
+                }
+            }
         }
+        
 
-
-
+        
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "1")
+        {
+            no = true;
+            Debug.Log("no = true");
+        }
+        if (collision.gameObject.tag == "2")
+        {
+            no = true;
+            Debug.Log("no = true");
+        }
+        if (collision.gameObject.tag == "3")
+        {
+            no = true;
+            Debug.Log("no = true");
+        }
+        if (collision.gameObject.tag == "4")
+        {
+            no = true;
+            Debug.Log("no = true");
+        }
+        if (collision.gameObject.tag == "5")
+        {
+            no = true;
+            Debug.Log("no = true");
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "1")
+        {
+            no = false;
+            Debug.Log("no = false");
+        }
+        if (collision.gameObject.tag == "2")
+        {
+            no = false;
+            Debug.Log("no = false");
+        }
+        if (collision.gameObject.tag == "3")
+        {
+            no = false;
+            Debug.Log("no = false");
+        }
+        if (collision.gameObject.tag == "4")
+        {
+            no = false;
+            Debug.Log("no = false");
+        }
+        if (collision.gameObject.tag == "5")
+        {
+            no = false;
+            Debug.Log("no = false");
+        }
+    }
+
+
 
 
 
