@@ -2,27 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//All done by Caleb
+
 public class CursorMove : MonoBehaviour
 {
+    //Creates a rigidbody in visual studio.
+    //Creates an int for the speed of the cursor.
     private Rigidbody rigidCur;
-    //public bool movePiece;
     float speed = 1f;
     float negativeSpeed = -1f;
 
-
-
-    // Start is called before the first frame update
+    //Connects the visual studio rigidbody to the unity rigidbody.
     void Start()
     {
         rigidCur = GetComponent<Rigidbody>();
     }
 
-    public void Awake()
-    {
-        //movePiece = false;
-    }
-
-    // Update is called once per frame
+    //Makes the character able to move.
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -41,29 +37,9 @@ public class CursorMove : MonoBehaviour
         {
             rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
         }
-
-
-        /*if (movePiece == true)
-        {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                transform.position = transform.position + new Vector3(speed, 0, 0);
-            }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                transform.position = transform.position + new Vector3(0, 0, speed);
-            }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
-            }
-        }*/
     }
 
+    //Freezes the cursor's rigidbody constraints when it touches the playboard.
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Platform")

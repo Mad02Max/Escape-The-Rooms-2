@@ -3,22 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//All done by Caleb
+
 public class Timer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Starts the timer when the game starts. 
     void Start()
     {
         StartCoroutine(Waiter());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //This is the timer
     IEnumerator Waiter()
     {
-        yield return new WaitForSeconds(900);
+        yield return new WaitForSeconds(600);
         Destroy(gameObject);
 
     }

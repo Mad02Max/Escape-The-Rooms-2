@@ -21,18 +21,15 @@ public class Movement : MonoBehaviour
     
     //We are doing so the rigidbody objekt in visual studio is interacting with the rigidbody of the unity objekt.
     void Start()
-    {
-        
-        rb3d = GetComponent <Rigidbody>();
-        
+    {        
+        rb3d = GetComponent <Rigidbody>(); 
     }
 
     //Sets the bool deciding if movement is possible as true right when the game starts
     public void Awake()
     {
         moveYes = true;
-    }
- 
+    } 
 
     //We are using "AddForce" to change the possition of the player. 
     //Here we are using "speed" and "negativeSpeed".
@@ -49,25 +46,21 @@ public class Movement : MonoBehaviour
                 rb3d.AddForce(transform.rotation * Vector3.forward * speed * Time.deltaTime);
 
             }
-
             if (Input.GetKey(KeyCode.A))
             {
                 rb3d.AddForce(transform.rotation * Vector3.left * speed * Time.deltaTime);
 
             }
-
             if (Input.GetKey(KeyCode.S))
             {
                 rb3d.AddForce(transform.rotation * Vector3.back * speed * Time.deltaTime);
 
             }
-
             if (Input.GetKey(KeyCode.D))
             {
                 rb3d.AddForce(transform.rotation * Vector3.right * speed * Time.deltaTime);
 
             }
         }
-
     }
 }

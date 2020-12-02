@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//All done by Caleb
+
 public class MovePieces : MonoBehaviour
 {
+    //Creates a rigidbody in visual studio.
     private Rigidbody rigidPieces;
     public bool movePiece;
     float speed = 0.08f;
@@ -11,7 +14,6 @@ public class MovePieces : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
     void Start()
     {
         rigidPieces = GetComponent<Rigidbody>();
