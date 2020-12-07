@@ -13037,15 +13037,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184030621018, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: speed
-      value: 50000
+      value: 5000000
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184030621018, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: negativSpeed
-      value: 50000
+      value: 5000000
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184030621019, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: m_Drag
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422503184030621019, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
+      propertyPath: m_Mass
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184140048471, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: m_LocalRotation.x

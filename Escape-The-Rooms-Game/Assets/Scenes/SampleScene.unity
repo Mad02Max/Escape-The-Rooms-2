@@ -839,10 +839,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &139571503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1034,10 +1033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &145331478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1264,10 +1262,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &185027274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2198,6 +2195,7 @@ GameObject:
   - component: {fileID: 307550411}
   - component: {fileID: 307550410}
   - component: {fileID: 307550414}
+  - component: {fileID: 307550415}
   m_Layer: 0
   m_Name: BoxPiece
   m_TagString: 4
@@ -2230,10 +2228,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &307550412
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2281,6 +2278,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!23 &307550415
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307550409}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &316914935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,10 +2641,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &401920824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2781,10 +2818,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &421624142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2972,10 +3008,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &432032932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3444,10 +3479,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &503962617
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3784,10 +3818,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &551917648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4605,10 +4638,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &659404437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5292,10 +5324,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &739301833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5407,10 +5438,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &745113976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5611,10 +5641,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &759111180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5802,10 +5831,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &768270888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5912,10 +5940,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &771411646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6312,10 +6339,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &846453681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6908,10 +6934,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &947706893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7182,10 +7207,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &964010112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7881,10 +7905,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!1 &1051935883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3018508254227586887, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
@@ -8092,10 +8115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1054289918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8283,10 +8305,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1073914925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8894,10 +8915,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1164904218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9235,10 +9255,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!1 &1211225844
 GameObject:
   m_ObjectHideFlags: 0
@@ -9726,10 +9745,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!1 &1265171623
 GameObject:
   m_ObjectHideFlags: 0
@@ -9764,6 +9782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b266a9c07aaa8418bce07b03cbd1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorYes: 0
 --- !u!114 &1265171625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9776,6 +9795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70ad823b8cbc1914aadfeb6238b858f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
 --- !u!54 &1265171626
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10029,10 +10049,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1272449185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11288,10 +11307,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1378541438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12323,10 +12341,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1505518834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12595,10 +12612,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1528145214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12786,10 +12802,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1536284554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13815,10 +13830,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1720834799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14127,10 +14141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1748563555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14426,10 +14439,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1771928789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14685,10 +14697,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1807087052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15019,10 +15030,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &1878804133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15879,10 +15889,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &2020846176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16075,10 +16084,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePiece: 0
-  moveTest: 0
-  space: 0
   no: 0
   target: {fileID: 1265171623}
+  putDown: 0
 --- !u!65 &2044346712
 BoxCollider:
   m_ObjectHideFlags: 0
