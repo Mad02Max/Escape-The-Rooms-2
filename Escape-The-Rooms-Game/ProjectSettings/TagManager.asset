@@ -16,6 +16,7 @@ TagManager:
   - 5
   - 2
   - Floor
+  - PuzzleCamera
   layers:
   - Default
   - TransparentFX
