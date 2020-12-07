@@ -15,6 +15,9 @@ public class LookAround : MonoBehaviour
     // So it follows the x axis
     float xRotation = 0f;
 
+    //A bool deciding if you can look around (gjord av Caleb)
+    public bool lookYes;
+
     
 
 
@@ -34,23 +37,32 @@ public class LookAround : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    //Makes it so that you can look around when the game starts(gjord av Caleb).
+    public void Awake()
+    {
+        lookYes = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        // Get input from mouse
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        if (lookYes == true)
+        {
+            // Get input from mouse
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        // Make you look up and down
+            // Make you look up and down
 
-        xRotation -= mouseY;
+            xRotation -= mouseY;
 
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
-        // So it turns around
-        playerBody.Rotate(Vector3.up * mouseX);
+            // So it turns around
+            playerBody.Rotate(Vector3.up * mouseX);
+        }
 
 
         

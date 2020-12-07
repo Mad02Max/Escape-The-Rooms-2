@@ -8,6 +8,7 @@ public class CursorMove : MonoBehaviour
 {
     //Creates a rigidbody in visual studio.
     //Creates an int for the speed of the cursor.
+    //Creates a bool so that the cursor only can move when intended.
     private Rigidbody rigidCur;
     float speed = 1f;
     float negativeSpeed = -1f;
@@ -17,6 +18,12 @@ public class CursorMove : MonoBehaviour
     void Start()
     {
         rigidCur = GetComponent<Rigidbody>();
+    }
+
+    //Makes it so that you can't move the cursor(pink bo) unless in the pussle
+    public void Awake()
+    {
+        cursorYes = false;
     }
 
     //Makes the character able to move.

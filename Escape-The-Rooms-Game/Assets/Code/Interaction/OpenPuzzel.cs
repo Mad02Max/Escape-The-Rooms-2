@@ -26,12 +26,12 @@ namespace VHS
 
             puzzleCam.enabled = true;
 
-            //GetComponent<Movement>().moveYes = false;
+            //Gjord av Caleb
+            //Gör så att man bara kan röra karaktären, kameran och pussel cursor när man ska kunna
             GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().moveYes = false;
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().lookYes = false;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().cursorYes = true;
-
-
-            //player.SetActive(false);
+            //Slutet av gjort av Caleb
         }
 
         public void Update()
@@ -42,11 +42,12 @@ namespace VHS
 
                 puzzleCam.enabled = false;
 
-                //GetComponent<Movement>().moveYes = true;
+                //Gjord av Caleb
+                //Gör så att man bara kan röra karaktären, kameran och pussel cursor när man ska kunna
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().moveYes = true;
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().lookYes = true;
                 GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().cursorYes = false;
-
-                //player.SetActive(false);
+                //Slutet av gjort av Caleb
             }
         }
 
