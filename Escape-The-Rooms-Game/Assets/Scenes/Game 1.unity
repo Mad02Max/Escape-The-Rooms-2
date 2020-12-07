@@ -12967,6 +12967,10 @@ PrefabInstance:
       propertyPath: uIPanel
       value: 
       objectReference: {fileID: 1124100826}
+    - target: {fileID: 1422503184030621012, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
+      propertyPath: rayDistance
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1422503184030621014, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: m_Name
       value: FirstPersoneCam (1)
@@ -13033,11 +13037,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184030621018, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: speed
-      value: 22000
+      value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184030621018, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: negativSpeed
-      value: 22000
+      value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184030621019, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: m_Drag
