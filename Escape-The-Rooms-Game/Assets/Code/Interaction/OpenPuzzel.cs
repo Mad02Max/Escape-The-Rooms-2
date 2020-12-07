@@ -26,7 +26,9 @@ namespace VHS
 
             puzzleCam.enabled = true;
 
-            //movement.moveYes = false;
+            //GetComponent<Movement>().moveYes = false;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().moveYes = false; 
+
 
             //player.SetActive(false);
         }
@@ -39,7 +41,8 @@ namespace VHS
 
                 puzzleCam.enabled = false;
 
-                //movement.moveYes = true;
+                //GetComponent<Movement>().moveYes = true;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().moveYes = true;
 
                 //player.SetActive(false);
             }
