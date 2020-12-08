@@ -22,6 +22,7 @@ public class Box1 : MonoBehaviour
 
 
 
+
     //Connects the visual studio rigidbody and transfom to the unity ones
     void Start()
     {
@@ -34,6 +35,7 @@ public class Box1 : MonoBehaviour
     {
         movePiece = false;
         no = false;
+        boxYes = false;
     }
 
     //Makes the pieces able to move and rotate when movePiece is true
