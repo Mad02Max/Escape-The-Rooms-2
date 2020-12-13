@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Made by Caleb
+
 public class RemoveText : MonoBehaviour
 {
+    //Two public text, to show the tutorials,
     public Text tutorial1;
     public Text tutorial2;
+    
+    //Turning the tutorials on and off
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
