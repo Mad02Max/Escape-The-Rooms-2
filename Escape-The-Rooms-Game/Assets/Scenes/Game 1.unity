@@ -3081,6 +3081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+  timerDecider: 0
 --- !u!54 &403678879
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7542,7 +7543,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15.3, y: 0.5, z: 15.3}
+  m_Size: {x: 12, y: 0.5, z: 12}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &829154373
 Rigidbody:
@@ -14574,6 +14575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+  timerDecider: 0
 --- !u!1 &1650473230
 GameObject:
   m_ObjectHideFlags: 0
