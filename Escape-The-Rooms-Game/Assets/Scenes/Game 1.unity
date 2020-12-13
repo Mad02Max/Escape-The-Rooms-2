@@ -947,7 +947,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &110311868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1137,7 +1136,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &121023046
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1669,7 +1667,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &182769930
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2653,7 +2650,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &367321006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2748,7 +2744,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &374333261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3019,7 +3014,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &398010143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3487,7 +3481,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 0}
-  putDown: 0
 --- !u!1 &424341598
 GameObject:
   m_ObjectHideFlags: 0
@@ -4251,7 +4244,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &476071021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4659,7 +4651,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 0}
-  putDown: 0
 --- !u!1 &514565750
 GameObject:
   m_ObjectHideFlags: 0
@@ -4836,7 +4827,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &531409800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5417,7 +5407,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &613994929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6393,7 +6382,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 0}
-  putDown: 0
 --- !u!1 &710493714
 GameObject:
   m_ObjectHideFlags: 0
@@ -6638,7 +6626,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &727960289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7003,7 +6990,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &764465055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8047,7 +8033,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &854668914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8526,7 +8511,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &926089513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8635,7 +8619,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &943577620
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8811,7 +8794,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &947072317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9647,7 +9629,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &991679678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9776,6 +9757,107 @@ Transform:
   m_Father: {fileID: 1977122279}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1038512388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1038512389}
+  - component: {fileID: 1038512391}
+  - component: {fileID: 1038512390}
+  m_Layer: 5
+  m_Name: Tutorial2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1038512389
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038512388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1463044530}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 156, y: 55.444}
+  m_SizeDelta: {x: 242.37231, y: 281.50974}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1038512390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038512388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8680477, g: 0.9056604, b: 0.123033054, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Controls for puzzle:
+
+    Arrow Up = Up
+
+    Arrow Down = Down
+
+    Arrow
+    Left = Left
+
+    Arrow Right = Right
+
+    V = Rotate anti-clockwise
+
+    B =
+    Rotate clockwise
+
+    C = Exit puzzle, enter player camera
+
+    Spacebar = Pick
+    up piece(only able to do when cursor(pink box) is on other piece)
+
+    Right-shift
+    = Put Down(can only be done when a block is picked up, and not on another block. '
+--- !u!222 &1038512391
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038512388}
+  m_CullTransparentMesh: 0
 --- !u!1 &1038551207
 GameObject:
   m_ObjectHideFlags: 0
@@ -10160,7 +10242,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1147428996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10431,7 +10512,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1204048156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10864,7 +10944,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1266096948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11041,7 +11120,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1280684677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11381,7 +11459,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 0}
-  putDown: 0
 --- !u!1 &1306162257
 GameObject:
   m_ObjectHideFlags: 0
@@ -12429,7 +12506,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1396373284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12781,7 +12857,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1427398079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13319,6 +13394,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451369367}
   m_Mesh: {fileID: -4034538669550850240, guid: e724605941fa07a4a94cebf6e2024d50, type: 3}
+--- !u!1 &1458925191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1458925192}
+  - component: {fileID: 1458925194}
+  - component: {fileID: 1458925193}
+  m_Layer: 5
+  m_Name: Tutorial1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1458925192
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458925191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1463044530}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -113, y: 55.444}
+  m_SizeDelta: {x: 186.01233, y: 281.50943}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1458925193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458925191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8680477, g: 0.9056604, b: 0.123033054, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Controls for player:
+
+    W=Forward
+
+    A=Left
+
+    S=Back
+
+    D=Right
+
+    Tab=Inventory
+
+    E=Interact
+
+    Move
+    Mouse = Look around
+
+
+    Press "P" to remove these
+
+    And "O" to have the
+    appear'
+--- !u!222 &1458925194
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458925191}
+  m_CullTransparentMesh: 0
+--- !u!224 &1463044530 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2453659243182497325, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+  m_PrefabInstance: {fileID: 1954363541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1495651220
 GameObject:
   m_ObjectHideFlags: 0
@@ -13522,7 +13702,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1514211499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13907,7 +14086,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1545102344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14016,7 +14194,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1572062968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14576,6 +14753,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   timerDecider: 0
+--- !u!114 &1633929447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633929438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11513ed1b506f844fadad18fac31a2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorial1: {fileID: 1458925193}
+  tutorial2: {fileID: 1038512390}
 --- !u!1 &1650473230
 GameObject:
   m_ObjectHideFlags: 0
@@ -15573,7 +15764,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1719550658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15911,7 +16101,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1747923531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16101,7 +16290,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1794514053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16764,7 +16952,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &1919903841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17426,7 +17613,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &2013722873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17535,7 +17721,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &2020944475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18244,7 +18429,6 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 403678876}
-  putDown: 0
 --- !u!65 &2081224057
 BoxCollider:
   m_ObjectHideFlags: 0
