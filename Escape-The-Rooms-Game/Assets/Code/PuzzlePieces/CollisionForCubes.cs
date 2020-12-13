@@ -66,7 +66,7 @@ public class CollisionForCubes : MonoBehaviour
     //After this time, you win.
     IEnumerator Waiter()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(10);
         SceneManager.LoadScene(sceneName: "Victory");
     }
 }
