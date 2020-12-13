@@ -51,7 +51,8 @@ public class Timer : MonoBehaviour
     IEnumerator Waiter()
     {
         yield return new WaitForSeconds(timer);
-        Destroy(gameObject);
+        SceneManager.LoadScene(sceneName: "GameOver");
+        Cursor.lockState = CursorLockMode.None;
     }
 
 }
