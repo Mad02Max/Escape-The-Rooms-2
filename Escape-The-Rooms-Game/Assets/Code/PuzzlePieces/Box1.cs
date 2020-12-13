@@ -18,7 +18,6 @@ public class Box1 : MonoBehaviour
     float negativeSpeed = -1f;
     public bool no;
     public GameObject target;
-    public int putDown;
 
 
 
