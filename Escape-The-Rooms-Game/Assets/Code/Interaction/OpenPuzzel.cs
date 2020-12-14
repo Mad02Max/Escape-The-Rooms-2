@@ -25,8 +25,6 @@ namespace VHS
         }
         public override void OnInteract()
         {
-
-
             base.OnInteract();
 
 
