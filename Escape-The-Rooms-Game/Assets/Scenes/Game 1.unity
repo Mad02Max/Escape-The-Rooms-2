@@ -9777,7 +9777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1038512389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10263,7 +10263,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3948829241925583298, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
   m_PrefabInstance: {fileID: 1954363541}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1150278460
+--- !u!114 &1150278462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10277,7 +10277,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialObject1: {fileID: 1458925191}
   tutorialObject2: {fileID: 1038512388}
+  timerObject: {fileID: 1829411326}
   toggleTutorial: 0d000000
+  toggleTimer: 74000000
 --- !u!1 &1162637095
 GameObject:
   m_ObjectHideFlags: 0
@@ -13438,7 +13440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1458925192
 RectTransform:
   m_ObjectHideFlags: 0
