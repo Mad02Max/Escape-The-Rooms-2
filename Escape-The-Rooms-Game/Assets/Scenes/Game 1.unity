@@ -14909,10 +14909,14 @@ GameObject:
   m_StaticEditorFlags: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsActive: 1
 =======
   m_IsActive: 0
 >>>>>>> parent of 5fde4d5... open puzzle stuff + game build
+=======
+  m_IsActive: 1
+>>>>>>> parent of ea5f608... built game and added some items
 =======
   m_IsActive: 1
 >>>>>>> parent of ea5f608... built game and added some items
@@ -15000,10 +15004,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   mouseSensitivity: 500
 =======
   mouseSensitivity: 100
 >>>>>>> parent of 5fde4d5... open puzzle stuff + game build
+=======
+  mouseSensitivity: 500
+>>>>>>> parent of ea5f608... built game and added some items
 =======
   mouseSensitivity: 500
 >>>>>>> parent of ea5f608... built game and added some items
