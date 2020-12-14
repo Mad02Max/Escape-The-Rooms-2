@@ -6,11 +6,8 @@ public class InventoryInput : MonoBehaviour
 {
 
     [SerializeField] GameObject inventoryObject;
-    [SerializeField] GameObject tutorialObject1;
-    [SerializeField] GameObject tutorialObject2;
 
     [SerializeField] KeyCode[] toggleInventory;
-    [SerializeField] KeyCode[] toggleTutorial;
     // Update is called once per frame
     void Update()
     {
@@ -23,15 +20,5 @@ public class InventoryInput : MonoBehaviour
                 break;
             }
         }
-        for (int i = 0; i < toggleTutorial.Length; i++)
-        {
-            if (Input.GetKeyDown(toggleTutorial[i]))
-            {
-                tutorialObject1.SetActive(!tutorialObject1.activeSelf);
-                tutorialObject2.SetActive(!tutorialObject2.activeSelf);
-                break;
-            }
-        }
-
     }
 }

@@ -1,0 +1,25 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CanvasInput : MonoBehaviour
+{
+    [SerializeField] GameObject tutorialObject1;
+    [SerializeField] GameObject tutorialObject2;
+
+    [SerializeField] KeyCode[] toggleTutorial;
+    // Update is called once per frame
+    void Update()
+    {
+        for (int i = 0; i < toggleTutorial.Length; i++)
+        {
+            if (Input.GetKeyDown(toggleTutorial[i]))
+            {
+                tutorialObject1.SetActive(!tutorialObject1.activeSelf);
+                tutorialObject2.SetActive(!tutorialObject2.activeSelf);
+                break;
+            }
+        }
+
+    }
+}
