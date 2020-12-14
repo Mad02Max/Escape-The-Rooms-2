@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 //All done by Caleb
 
 public class Timer : MonoBehaviour
 {
     //Starts the timer when the game starts.
-    public int timer;
+    public float timer;
+    public Text timertext;
     public int timerDecider;
     void Start()
     {
@@ -43,16 +45,17 @@ public class Timer : MonoBehaviour
             }
             
         }
-
-        StartCoroutine(Waiter());
     }
 
-    //This is the timer
-    IEnumerator Waiter()
+    void Update()
     {
-        yield return new WaitForSeconds(timer);
-        SceneManager.LoadScene(sceneName: "GameOver");
-        Cursor.lockState = CursorLockMode.None;
-    }
+        timer = timer - 1 * Time.deltaTime;
+        timertext.text = "timer = " + timer;
 
+        if (timer <= 0)
+        {
+            SceneManager.LoadScene(sceneName: "GameOver");
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
 }
