@@ -44,6 +44,8 @@ namespace VHS
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
@@ -57,6 +59,14 @@ namespace VHS
 
             //puzzleCam.enabled = true;
 >>>>>>> parent of 6c2fd7b... crouch cam script
+=======
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
+            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;            
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
+=======
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
+            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;            
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
 =======
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
             GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;            
@@ -79,10 +89,18 @@ namespace VHS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         }        
 =======
         }
 >>>>>>> parent of 6c2fd7b... crouch cam script
+=======
+        }        
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
+=======
+        }        
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
 =======
         }        
 >>>>>>> parent of 5fde4d5... open puzzle stuff + game build
