@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Made by Caleb, copied from Max InventoryInput
+
 public class CanvasInput : MonoBehaviour
 {
     [SerializeField] GameObject tutorialObject1;
