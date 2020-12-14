@@ -64,6 +64,7 @@ public class CollisionForCubes : MonoBehaviour
 
     //This is the method that waits for x seconds. Curently: 15 sec.
     //After this time, you win.
+    //Unlocks the cursor so that the player can choose options in the menu
     IEnumerator Waiter()
     {
         yield return new WaitForSeconds(10);

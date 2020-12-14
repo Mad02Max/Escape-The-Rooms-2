@@ -8,10 +8,15 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    //Starts the timer when the game starts.
+    //A float for the timer so that it can be counted and showed properly.
+    //TimerText is the text that shows the timer.
+    //TimerDecider is the int that is randomised, then chooses the lenght of the timer.
     public float timer;
     public Text timertext;
     public int timerDecider;
+
+    //After entering the game(past the main menu) the int "timerDecider" is randomised between 1 and 100
+    //Depending on the number that is choosen, the float "timer" is different
     void Start()
     {
         timerDecider = Random.Range(1, 101);
@@ -47,6 +52,9 @@ public class Timer : MonoBehaviour
         }
     }
 
+    //In void update, I make it so that the timer is lowered by one second,I do this by using -1*Time.deltaTime
+    //That makes it so that the time that is removed from the timer is always one second.
+    //When the timer is at 0, the scene is switched and the cursor is activated.
     void Update()
     {
         timer = timer - 1 * Time.deltaTime;

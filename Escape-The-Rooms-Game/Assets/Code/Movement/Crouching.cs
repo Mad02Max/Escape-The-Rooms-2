@@ -15,6 +15,7 @@ public class Crouching : MonoBehaviour
     }
 
     //The actual crouching.
+    //The crouching is done by lowering the possition of the camera. 
     void Update()
     { 
         if (crouch == true)
