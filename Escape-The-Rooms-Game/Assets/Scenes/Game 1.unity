@@ -17398,6 +17398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3948829241925583298, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_Name
+      value: CanvasHandler
+      objectReference: {fileID: 0}
     - target: {fileID: 3948829241925583300, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
       propertyPath: toggleInventory.Array.size
       value: 2
