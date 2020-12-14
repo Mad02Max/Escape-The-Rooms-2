@@ -14908,10 +14908,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsActive: 1
 =======
   m_IsActive: 0
 >>>>>>> parent of 5fde4d5... open puzzle stuff + game build
+=======
+  m_IsActive: 1
+>>>>>>> parent of ea5f608... built game and added some items
 --- !u!4 &1652964189
 Transform:
   m_ObjectHideFlags: 0
@@ -14995,10 +14999,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   mouseSensitivity: 500
 =======
   mouseSensitivity: 100
 >>>>>>> parent of 5fde4d5... open puzzle stuff + game build
+=======
+  mouseSensitivity: 500
+>>>>>>> parent of ea5f608... built game and added some items
   playerBody: {fileID: 1633929442}
   lookYes: 0
 --- !u!1 &1666228134
