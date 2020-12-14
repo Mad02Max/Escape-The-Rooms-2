@@ -26,8 +26,12 @@ namespace VHS
         {
             base.OnInteract();
 
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
-            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;            
+            characterCam.enabled = false;
+
+            puzzleCam.enabled = true;
+
+            //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
+            //GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;            
 
             //Gjord av Caleb
             //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
@@ -39,6 +43,25 @@ namespace VHS
             GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled;
             GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled;
             //Slutet av gjort av Caleb
-        }        
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                characterCam.enabled = true;
+
+                puzzleCam.enabled = false;
+
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = !GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled;
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
+                GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
+                GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = !GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled;
+                GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled;
+                GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled;
+                GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled;
+            }
+        }
+
     }
 }
