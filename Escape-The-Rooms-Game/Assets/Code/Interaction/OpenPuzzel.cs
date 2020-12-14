@@ -50,9 +50,9 @@ namespace VHS
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = false;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = true;
             GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
-            GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = true;
+            /*GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = true;
             GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = true;
-            GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = true;
+            GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = true;*/
 
             //Slutet av gjort av Caleb
 
@@ -74,9 +74,9 @@ namespace VHS
                 GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = true;
                 GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = false;
                 GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = true;
-                GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = false;
+                /*GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = false;
                 GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = false;
-                GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = false;
+                GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = false;*/
 
 
                 crosshair.SetActive(true);

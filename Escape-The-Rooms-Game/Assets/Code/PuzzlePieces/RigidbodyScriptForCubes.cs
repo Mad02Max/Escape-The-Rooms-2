@@ -24,22 +24,22 @@ public class RigidbodyScriptForCubes : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             rb3dn2.constraints = RigidbodyConstraints.FreezeAll;
-            StartCoroutine(Waiter());
+            //StartCoroutine(Waiter());
         }
         if (collision.gameObject.tag == "Platform")
         {
             rb3dn2.constraints = RigidbodyConstraints.FreezeAll;
-            StartCoroutine(Waiter());
+            //StartCoroutine(Waiter());
         }
     }
 
     //Makes it so that the script is disabled 3 sec after start, this makes everything work later
-    IEnumerator Waiter()
+    /*IEnumerator Waiter()
     {
         yield return new WaitForSeconds(2);
         GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = false;
         GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = false;
-        GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = false;
+        GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = false;*/
     }
 
 
