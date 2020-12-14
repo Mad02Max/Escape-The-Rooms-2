@@ -94,7 +94,7 @@ public class Box1 : MonoBehaviour
             }
 
             //David did this(start)
-            GetComponent<Renderer>().material.color = new Color32(255, 255, 0, 255);
+            //GetComponent<Renderer>().material.color = new Color32(255, 255, 0, 255);
             //David did this(stop)
         }
     }
