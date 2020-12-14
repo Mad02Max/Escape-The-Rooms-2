@@ -42,6 +42,8 @@ namespace VHS
 
             base.OnInteract();
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
@@ -55,6 +57,14 @@ namespace VHS
 
             //puzzleCam.enabled = true;
 >>>>>>> parent of 6c2fd7b... crouch cam script
+=======
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
+            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;            
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
+=======
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
+            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;            
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
 
             //Gjord av Caleb
             //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
@@ -67,9 +77,17 @@ namespace VHS
             GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled;
             //Slutet av gjort av Caleb
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         }        
 =======
         }
 >>>>>>> parent of 6c2fd7b... crouch cam script
+=======
+        }        
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
+=======
+        }        
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
     }
 }
