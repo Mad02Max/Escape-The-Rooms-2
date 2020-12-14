@@ -12,42 +12,45 @@ public class CursorMove : MonoBehaviour
     private Rigidbody rigidCur;
     float speed = 1f;
     float negativeSpeed = -1f;
-    public bool cursorYes;
+    //public bool cursorYes;
 
     //Connects the visual studio rigidbody to the unity rigidbody.
+    //Starts the method "Waiter".
     void Start()
     {
         rigidCur = GetComponent<Rigidbody>();
+        StartCoroutine(Waiter());
     }
 
     //Makes it so that you can't move the cursor(pink bo) unless in the pussle
     public void Awake()
     {
-        cursorYes = false;
+        //cursorYes = false;
     }
 
     //Makes the character able to move.
     void Update()
     {
-        if (cursorYes == true)
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                rigidCur.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                rigidCur.transform.position = transform.position + new Vector3(speed, 0, 0);
-            }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                rigidCur.transform.position = transform.position + new Vector3(0, 0, speed);
-            }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
-            }
+            rigidCur.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
         }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            rigidCur.transform.position = transform.position + new Vector3(speed, 0, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            rigidCur.transform.position = transform.position + new Vector3(0, 0, speed);
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
+        }
+
+
+
+
     }
 
     //Freezes the cursor's rigidbody constraints when it touches the playboard.
@@ -57,6 +60,13 @@ public class CursorMove : MonoBehaviour
         {
             rigidCur.constraints = RigidbodyConstraints.FreezeAll;
         }
+    }
+
+    //Makes it so that the script is disabled 3 sec after start, this makes everything work later
+    IEnumerator Waiter()
+    {
+        yield return new WaitForSeconds(1);
+        GetComponent<CursorMove>().enabled = false;
     }
 
 

@@ -9,34 +9,50 @@ namespace VHS
         public Camera characterCam;
         public Camera puzzleCam;
 
+
+        /*[SerializeField] Camera characterCam;
+        [SerializeField] Camera puzzleCam;
+
+        [SerializeField] KeyCode[] toggleCamera;*/
+
         //public Movement movement;
 
         // Start is called before the first frame update
         void Awake()
         {
             characterCam.enabled = true;
-
             puzzleCam.enabled = false;
         }
         public override void OnInteract()
         {
+
+
             base.OnInteract();
 
-            characterCam.enabled = false;
 
-            puzzleCam.enabled = true;
+
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
+            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
+
+
+            //characterCam.enabled = false;
+
+            //puzzleCam.enabled = true;
 
             //Gjord av Caleb
             //Gör så att man bara kan röra karaktären, kameran och pussel cursor när man ska kunna
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().moveYes = false;
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().lookYes = false;
-            GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().cursorYes = true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = !GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled;
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
+            GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
+            GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled;
+            GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled;
+            GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled;
             //Slutet av gjort av Caleb
         }
 
         public void Update()
         {
-            if (Input.GetKeyDown(KeyCode.C))
+            /*if (Input.GetKeyDown(KeyCode.C))
             {
                 characterCam.enabled = true;
 
@@ -48,7 +64,16 @@ namespace VHS
                 GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().lookYes = true;
                 GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().cursorYes = false;
                 //Slutet av gjort av Caleb
-            }
+            }*/
+
+            /*if (Input.GetButtonDown("CameraSwitch"))
+            {
+                GetComponent<Camera>().enabled = !GetComponent<Camera>().enabled;
+                GetComponent<Camera>().enabled = !GetComponent<Camera>().enabled;
+            }*/
+
+
+
         }
 
     }
