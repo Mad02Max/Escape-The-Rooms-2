@@ -18,8 +18,7 @@ public class CursorMove : MonoBehaviour
     //Starts the method "Waiter".
     void Start()
     {
-        rigidCur = GetComponent<Rigidbody>();
-        StartCoroutine(Waiter());
+        rigidCur = GetComponent<Rigidbody>();        
     }
 
     //Makes it so that you can't move the cursor(pink bo) unless in the pussle
@@ -59,6 +58,7 @@ public class CursorMove : MonoBehaviour
         if (collision.gameObject.tag == "Platform")
         {
             rigidCur.constraints = RigidbodyConstraints.FreezeAll;
+            StartCoroutine(Waiter());
         }
     }
 
