@@ -13498,20 +13498,20 @@ MonoBehaviour:
 
     Tab=Inventory
 
-    E=Interact
+    E=Interact/Enter
+    puzzle
 
-    Move
-    Mouse = Look around
+    Move Mouse = Look around
 
     K = Crouch
 
     L = Un-crouch
 
 
-    Press "P" to remove
-    these
+    Press
+    "P" to remove these
 
-    And "O" to have the appear'
+    And "O" to have the appear again'
 --- !u!222 &1458925194
 CanvasRenderer:
   m_ObjectHideFlags: 0
