@@ -8526,7 +8526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a99278cafd88b4f8e2efd622a66fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crouch: 0
+  crouchCam: {fileID: 0}
 --- !u!1 &943577614
 GameObject:
   m_ObjectHideFlags: 0
@@ -14895,13 +14895,15 @@ GameObject:
   - component: {fileID: 1652964189}
   - component: {fileID: 1652964191}
   - component: {fileID: 1652964190}
+  - component: {fileID: 1652964192}
+  - component: {fileID: 1652964193}
   m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
+  m_Name: CrouchCamera
+  m_TagString: crouchCam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1652964189
 Transform:
   m_ObjectHideFlags: 0
@@ -14949,7 +14951,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 30
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -14967,6 +14969,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1652964192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652964188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a99278cafd88b4f8e2efd622a66fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crouchCam: {fileID: 1652964191}
+--- !u!114 &1652964193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652964188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a07bb2db02953ad40b56b580842113a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 500
+  playerBody: {fileID: 1633929442}
+  lookYes: 0
 --- !u!1 &1666228134
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,33 +6,23 @@ using UnityEngine;
 
 public class Crouching : MonoBehaviour
 {
-    //This bool is here to make it so that the player is only able to crouch a specifik amount.
-    public bool crouch;
+    //This Camera is to acces the camera that will make the crouching work.
+    public Camera crouchCam;
 
-    void Start()
+    //Starts the crouching camera as disabled.
+    private void Awake()
     {
-        crouch = true;
+        crouchCam.enabled = false;
     }
 
-    //The actual crouching.
-    //The crouching is done by lowering the possition of the camera. 
-    void Update()
-    { 
-        if (crouch == true)
+    //Changes between normal camera and crouching camera when "C" is pressed.
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                transform.position = transform.position + new Vector3(0, -20, 0);
-                crouch = false;
-            }
-        }
-        if (crouch == false)
-        {
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                transform.position = transform.position + new Vector3(0, 20, 0);
-                crouch = true;
-            }
+            GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Camera>().enabled;
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
         }
     }
+
 }

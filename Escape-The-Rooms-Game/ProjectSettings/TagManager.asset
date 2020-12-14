@@ -17,6 +17,7 @@ TagManager:
   - 2
   - Floor
   - PuzzleCamera
+  - crouchCam
   layers:
   - Default
   - TransparentFX
