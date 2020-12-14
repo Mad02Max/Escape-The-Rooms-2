@@ -13152,6 +13152,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1422503184030621019, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 1422503184140048471, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -14894,7 +14898,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1652964189}
   - component: {fileID: 1652964191}
-  - component: {fileID: 1652964190}
   - component: {fileID: 1652964192}
   - component: {fileID: 1652964193}
   m_Layer: 0
@@ -14918,14 +14921,6 @@ Transform:
   m_Father: {fileID: 1633929442}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1652964190
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652964188}
-  m_Enabled: 1
 --- !u!20 &1652964191
 Camera:
   m_ObjectHideFlags: 0
