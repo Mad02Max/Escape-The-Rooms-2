@@ -7550,6 +7550,7 @@ MonoBehaviour:
   text: Interact
   characterCam: {fileID: 173667572}
   puzzleCam: {fileID: 1442717289}
+  crouchCam: {fileID: 0}
 --- !u!1 &830466509
 GameObject:
   m_ObjectHideFlags: 0
@@ -9776,7 +9777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1038512389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13439,7 +13440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1458925192
 RectTransform:
   m_ObjectHideFlags: 0
