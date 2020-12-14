@@ -13774,10 +13774,16 @@ MonoBehaviour:
 
     C = Crouch
 
+<<<<<<< HEAD
     Press "enter" to hide/show
     tutorial
+=======
 
-    Predd "T" to hide/show timer'
+    Press
+    "P" to remove these
+>>>>>>> parent of 5f5beff... added text to tutorial
+
+    And "O" to have the appear again'
 --- !u!222 &1458925194
 CanvasRenderer:
   m_ObjectHideFlags: 0
