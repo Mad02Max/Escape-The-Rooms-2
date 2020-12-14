@@ -70,6 +70,6 @@ public class CollisionForCubes : MonoBehaviour
         yield return new WaitForSeconds(10);
         SceneManager.LoadScene(sceneName: "Victory");
         Cursor.lockState = CursorLockMode.None;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Timer>().timer = GameObject.FindGameObjectWithTag("Player").GetComponent<Timer>().timer;
+
     }
 }
