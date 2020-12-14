@@ -13503,11 +13503,15 @@ MonoBehaviour:
     Move
     Mouse = Look around
 
+    K = Crouch
 
-    Press "P" to remove these
+    L = Un-crouch
 
-    And "O" to have the
-    appear'
+
+    Press "P" to remove
+    these
+
+    And "O" to have the appear'
 --- !u!222 &1458925194
 CanvasRenderer:
   m_ObjectHideFlags: 0
