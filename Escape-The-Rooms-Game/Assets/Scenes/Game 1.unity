@@ -7550,7 +7550,6 @@ MonoBehaviour:
   text: Interact
   characterCam: {fileID: 173667572}
   puzzleCam: {fileID: 1442717289}
-  crouchCam: {fileID: 0}
 --- !u!1 &830466509
 GameObject:
   m_ObjectHideFlags: 0
@@ -9846,13 +9845,11 @@ MonoBehaviour:
     B =
     Rotate clockwise
 
-    C = Exit puzzle, enter player camera
+    Spacebar = Pick up piece(only able to do when cursor(pink
+    box) is on other piece)
 
-    Spacebar = Pick
-    up piece(only able to do when cursor(pink box) is on other piece)
-
-    Right-shift
-    = Put Down(can only be done when a block is picked up, and not on another block. '
+    Right-shift = Put Down(can only be done when a block
+    is picked up, and not on another block. '
 --- !u!222 &1038512391
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13509,17 +13506,15 @@ MonoBehaviour:
 
     Tab=Inventory
 
-    E=Interact/Enter
+    E=Interact/Enter/Exit
     puzzle
 
     Move Mouse = Look around
 
-    K = Crouch
+    C = Crouch
 
-    L = Un-crouch
-
-    Press
-    "enter" to hide/show tutorial
+    Press "enter" to hide/show
+    tutorial
 
     Predd "T" to hide/show timer'
 --- !u!222 &1458925194
