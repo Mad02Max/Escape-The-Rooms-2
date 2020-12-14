@@ -53,6 +53,7 @@ namespace VHS
             GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = true;
             GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = true;
             GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = true;
+
             //Slutet av gjort av Caleb
 
             crosshair.SetActive(false);
