@@ -37,7 +37,7 @@ public class RigidbodyScriptForCubes : MonoBehaviour
     IEnumerator Waiter()
     {
         yield return new WaitForSeconds(1);
-        GetComponent<Box1>().enabled = false;
+        GetComponent<CursorMove>().enabled = false;
     }
 
 
