@@ -9,10 +9,13 @@ public class Crouching : MonoBehaviour
     //This Camera is to acces the camera that will make the crouching work.
     public Camera crouchCam;
 
+    //Starts the crouching camera as disabled.
     private void Awake()
     {
         crouchCam.enabled = false;
     }
+
+    //Changes between normal camera and crouching camera when "C" is pressed.
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
