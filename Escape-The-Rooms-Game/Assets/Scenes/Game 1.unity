@@ -3040,6 +3040,7 @@ GameObject:
   - component: {fileID: 403678881}
   - component: {fileID: 403678880}
   - component: {fileID: 403678879}
+  - component: {fileID: 403678878}
   - component: {fileID: 403678877}
   m_Layer: 0
   m_Name: Cursor (1)
@@ -3060,6 +3061,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b266a9c07aaa8418bce07b03cbd1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  cursorYes: 0
+--- !u!114 &403678878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403678876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ad823b8cbc1914aadfeb6238b858f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  timerDecider: 0
+>>>>>>> parent of 6d65862... made the timer a float, also made it so that one can see the timer on the canvas
 --- !u!54 &403678879
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14788,8 +14807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70ad823b8cbc1914aadfeb6238b858f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 10
-  timertext: {fileID: 1829411328}
+  timer: 0
   timerDecider: 0
 --- !u!4 &1633929442 stripped
 Transform:
@@ -16634,6 +16652,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827367404}
   m_Mesh: {fileID: -4034538669550850240, guid: e724605941fa07a4a94cebf6e2024d50, type: 3}
+<<<<<<< HEAD
 --- !u!1 &1829411326
 GameObject:
   m_ObjectHideFlags: 0
@@ -16713,6 +16732,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829411326}
   m_CullTransparentMesh: 0
+=======
+>>>>>>> parent of 6d65862... made the timer a float, also made it so that one can see the timer on the canvas
 --- !u!1 &1841600099
 GameObject:
   m_ObjectHideFlags: 0
