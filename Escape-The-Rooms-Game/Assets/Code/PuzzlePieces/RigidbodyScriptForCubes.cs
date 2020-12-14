@@ -36,8 +36,10 @@ public class RigidbodyScriptForCubes : MonoBehaviour
     //Makes it so that the script is disabled 3 sec after start, this makes everything work later
     IEnumerator Waiter()
     {
-        yield return new WaitForSeconds(1);
-        GetComponent<Box1>().enabled = false;
+        yield return new WaitForSeconds(2);
+        GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = false;
+        GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = false;
+        GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = false;
     }
 
 
