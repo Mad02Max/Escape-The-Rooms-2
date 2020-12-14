@@ -14907,7 +14907,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
 --- !u!4 &1652964189
 Transform:
   m_ObjectHideFlags: 0
@@ -14990,7 +14994,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07bb2db02953ad40b56b580842113a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   mouseSensitivity: 500
+=======
+  mouseSensitivity: 100
+>>>>>>> parent of 5fde4d5... open puzzle stuff + game build
   playerBody: {fileID: 1633929442}
   lookYes: 0
 --- !u!1 &1666228134
