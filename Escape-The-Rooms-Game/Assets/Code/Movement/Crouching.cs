@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Made by Caleb
+
 public class Crouching : MonoBehaviour
 {
+    //This bool is here to make it so that the player is only able to crouch a specifik amount.
     public bool crouch;
 
     void Start()
@@ -11,7 +14,7 @@ public class Crouching : MonoBehaviour
         crouch = true;
     }
 
-
+    //The actual crouching.
     void Update()
     { 
         if (crouch == true)
