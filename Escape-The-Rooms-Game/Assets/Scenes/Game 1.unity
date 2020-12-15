@@ -7522,6 +7522,14 @@ MonoBehaviour:
   puzzleCam: {fileID: 1442717289}
   interactionUI: {fileID: 0}
   crosshair: {fileID: 0}
+  boxScript:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  boxScript2: []
+  boxScript3: []
 --- !u!1 &830466509
 GameObject:
   m_ObjectHideFlags: 0
@@ -13455,17 +13463,17 @@ MonoBehaviour:
 
     Tab=Inventory
 
-    E=Interact/Enter/
+    E=Interact/Enter
+    puzzle
 
-    F
-    = Exit puzzle
+    F = Exit puzzle
 
     Move Mouse = Look around
 
-    Press "enter" to hide/show tutorial
+    Press "enter"
+    to hide/show tutorial
 
-    Predd
-    "T" to hide/show timer'
+    Predd "T" to hide/show timer'
 --- !u!222 &1458925194
 CanvasRenderer:
   m_ObjectHideFlags: 0

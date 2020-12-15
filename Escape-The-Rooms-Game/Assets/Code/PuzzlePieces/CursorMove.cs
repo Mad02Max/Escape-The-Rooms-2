@@ -65,7 +65,7 @@ public class CursorMove : MonoBehaviour
     //Makes it so that the script is disabled 3 sec after start, this makes everything work later
     IEnumerator Waiter()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         GetComponent<CursorMove>().enabled = false;
     }
 

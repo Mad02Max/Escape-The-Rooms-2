@@ -15,6 +15,14 @@ namespace VHS
         public GameObject interactionUI;
 
         public GameObject crosshair;
+        GameObject[] fourPiece;
+        GameObject[] twoPiece;
+        GameObject[] onePiece;
+        public Box1[] boxScript;
+        public Box1[] boxScript2;
+        public Box1[] boxScript3;
+
+
 
         //Sets the cameras to what they should start as.
         void Awake()
@@ -22,9 +30,31 @@ namespace VHS
             characterCam.enabled = true;
             puzzleCam.enabled = false;
 
-            crosshair.SetActive(true);
+            //crosshair.SetActive(true);
 
-            interactionUI.SetActive(true);
+            //interactionUI.SetActive(true);
+
+            fourPiece = GameObject.FindGameObjectsWithTag("4");
+            twoPiece = GameObject.FindGameObjectsWithTag("2");
+            onePiece = GameObject.FindGameObjectsWithTag("1");
+            boxScript = new Box1[fourPiece.Length];
+            boxScript2 = new Box1[twoPiece.Length];
+            boxScript3 = new Box1[onePiece.Length];
+
+            for (int i = 0; i < fourPiece.Length; i++)
+            {
+                boxScript[i] = fourPiece[i].GetComponent<Box1>();
+            }
+            for (int i = 0; i < twoPiece.Length; i++)
+            {
+                boxScript2[i] = twoPiece[i].GetComponent<Box1>();
+            }
+            for (int i = 0; i < onePiece.Length; i++)
+            {
+                boxScript3[i] = onePiece[i].GetComponent<Box1>();
+            }
+
+
 
         }
 
@@ -35,33 +65,43 @@ namespace VHS
 
             base.OnInteract();
 
-            characterCam.enabled = false;
+            //characterCam.enabled = false;
 
-            puzzleCam.enabled = true;
+            //puzzleCam.enabled = true;
 
 
-            //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
-            //GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
+            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
 
 
             //Gjord av Caleb
             //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = false;
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = false;
-            GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = true;
-            GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
-            /*GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = true;
-            GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = true;
-            GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = true;*/
+            //GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = false;
+            //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = false;
+            //GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = true;
+            //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
 
-            //Slutet av gjort av Caleb
 
-            crosshair.SetActive(false);
+            
+            foreach(Box1 script in boxScript)
+            {
+                script.enabled = !script.enabled;
+            }
+            foreach (Box1 script in boxScript2)
+            {
+                script.enabled = !script.enabled;
+            }
+            foreach (Box1 script in boxScript3)
+            {
+                script.enabled = !script.enabled;
+            }
 
-            interactionUI.SetActive(false);
+            //crosshair.SetActive(false);
+
+            //interactionUI.SetActive(false);
         }
 
-        private void Update()
+        /*private void Update()
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -73,18 +113,28 @@ namespace VHS
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = true;
                 GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = true;
                 GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = false;
-                GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = true;
-                /*GameObject.FindGameObjectWithTag("1").GetComponent<Box1>().enabled = false;
-                GameObject.FindGameObjectWithTag("2").GetComponent<Box1>().enabled = false;
-                GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = false;*/
+                //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = true;
+
+                foreach (Box1 script in boxScript)
+                {
+                    script.enabled = !script.enabled;
+                }
+                foreach (Box1 script in boxScript2)
+                {
+                    script.enabled = !script.enabled;
+                }
+                foreach (Box1 script in boxScript3)
+                {
+                    script.enabled = !script.enabled;
+                }
 
 
-                crosshair.SetActive(true);
+                //crosshair.SetActive(true);
 
-                interactionUI.SetActive(true);
+                //interactionUI.SetActive(true);
 
             }
-        }
+        }*/
 
     }
 }
