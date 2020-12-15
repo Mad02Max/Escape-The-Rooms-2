@@ -24,7 +24,6 @@ public class RigidbodyScriptForCubes : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             rb3dn2.constraints = RigidbodyConstraints.FreezeAll;
-            Debug.Log("Collided");
             StartCoroutine(Waiter());
         }
     }

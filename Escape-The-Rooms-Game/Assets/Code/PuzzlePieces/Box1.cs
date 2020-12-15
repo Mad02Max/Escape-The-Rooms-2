@@ -77,7 +77,7 @@ public class Box1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cursor")
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (no == false)
                 {
@@ -85,7 +85,7 @@ public class Box1 : MonoBehaviour
 
                 }
             }
-            if (Input.GetKey(KeyCode.RightShift))
+            if (Input.GetKeyDown(KeyCode.RightShift))
             {
                 if (no == false)
                 {
@@ -103,6 +103,20 @@ public class Box1 : MonoBehaviour
     //Should also make it so that no more than one piece can be picked up at a time, alas; it does not work.
     private void OnCollisionEnter(Collision collision)
     {
+        /*while (collision.gameObject.tag == "1")
+        {
+            no = true;
+        }
+        while (collision.gameObject.tag == "2")
+        {
+            no = true;
+        }
+        while (collision.gameObject.tag == "4")
+        {
+            no = true;
+        }*/
+
+
         if (collision.gameObject.tag == "1")
         {
             no = true;
@@ -121,6 +135,20 @@ public class Box1 : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
+        /*while (collision.gameObject.tag == "1")
+        {
+            no = true;
+        }
+        while (collision.gameObject.tag == "2")
+        {
+            no = true;
+        }
+        while (collision.gameObject.tag == "4")
+        {
+            no = true;
+        }*/
+
+
         if (collision.gameObject.tag == "1")
         {
             no = false;
