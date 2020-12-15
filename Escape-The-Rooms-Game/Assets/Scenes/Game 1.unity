@@ -9738,7 +9738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1038512389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13398,7 +13398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1458925192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13463,17 +13463,15 @@ MonoBehaviour:
 
     Tab=Inventory
 
-    E=Interact/Enter
-    puzzle
+    E=Interact/Enter/Exit
 
-    F = Exit puzzle
+    Move
+    Mouse = Look around
 
-    Move Mouse = Look around
+    Press "enter" to hide/show tutorial
 
-    Press "enter"
-    to hide/show tutorial
-
-    Predd "T" to hide/show timer'
+    Predd "T" to
+    hide/show timer'
 --- !u!222 &1458925194
 CanvasRenderer:
   m_ObjectHideFlags: 0
