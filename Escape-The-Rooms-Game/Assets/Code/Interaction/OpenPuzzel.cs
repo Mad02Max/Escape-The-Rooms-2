@@ -33,6 +33,8 @@ namespace VHS
 
             puzzleCamActiveSelf = false;
 
+            puzzleCam.SetActive(false);
+
             //crosshair.SetActive(true);
 
             //interactionUI.SetActive(true);
@@ -84,7 +86,7 @@ namespace VHS
 
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
 
-            //GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
+            //  GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
 
 
             //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
