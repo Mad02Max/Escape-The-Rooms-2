@@ -9,8 +9,9 @@ namespace VHS
     public class OpenPuzzel : InteractableBase
     {
         //Creates cameras
-        public Camera characterCam;
-        public Camera puzzleCam;
+        public Camera charCam;
+        public GameObject characterCam;
+        public GameObject puzzleCam;
 
         public GameObject interactionUI;
 
@@ -27,8 +28,10 @@ namespace VHS
         //Sets the cameras to what they should start as.
         void Awake()
         {
-            characterCam.enabled = true;
-            puzzleCam.enabled = false;
+
+            characterCam.SetActive(true);
+
+            puzzleCam.SetActive(false);
 
             //crosshair.SetActive(true);
 
@@ -65,18 +68,28 @@ namespace VHS
 
             base.OnInteract();
 
+
+
+            characterCam.SetActive(!characterCam);
+
+            puzzleCam.SetActive(!puzzleCam);
+
             //characterCam.enabled = false;
 
             //puzzleCam.enabled = true;
 
+            //GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition(0.6, 40, -43);
 
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
-            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
 
+/*
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameObject>().SetActive() = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameObject>().SetActive();
+
+            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<GameObject>().SetActive() = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<GameObject>().SetActive();
+*/
 
             //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
             GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = !GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled;
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
+            //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
             //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
 
