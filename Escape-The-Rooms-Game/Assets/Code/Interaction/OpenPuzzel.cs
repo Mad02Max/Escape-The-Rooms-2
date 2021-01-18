@@ -13,8 +13,6 @@ namespace VHS
         public Camera characterCam;
         public GameObject puzzleCam;
 
-        private bool charCamActiveSelf;
-
         private bool puzzleCamActiveSelf;
 
         public GameObject interactionUI;
@@ -33,7 +31,6 @@ namespace VHS
         void Awake()
         {
 
-            charCamActiveSelf = true;
             puzzleCamActiveSelf = false;
 
             //crosshair.SetActive(true);
@@ -87,7 +84,7 @@ namespace VHS
 
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
 
-            //GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<GameObject>().SetActive() = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<GameObject>().SetActive();
+            //GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
 
 
             //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
