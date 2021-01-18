@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour
     //Makes it so that the player can't move when in the puzzle camera
     public bool moveYes;
 
+    public Text Position;
+
     
     //We are doing so the rigidbody objekt in visual studio is interacting with the rigidbody of the unity objekt.
     void Start()
@@ -62,6 +64,9 @@ public class Movement : MonoBehaviour
 
             }
         }
+
+        Position.text = "position is " + transform.position;
+
     }
 
     private void OnCollisionEnter(Collision collision)
