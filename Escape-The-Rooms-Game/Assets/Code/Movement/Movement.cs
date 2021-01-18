@@ -66,7 +66,6 @@ public class Movement : MonoBehaviour
         }
 
         Position.text = "position is " + transform.position;
-
     }
 
     private void OnCollisionEnter(Collision collision)
