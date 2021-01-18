@@ -146,6 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5500
   negativSpeed: -5500
+  moveYes: 0
+  Position: {fileID: 0}
 --- !u!54 &1422503184030621019
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -293,3 +295,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 500
   playerBody: {fileID: 1422503184030621016}
+  lookYes: 0

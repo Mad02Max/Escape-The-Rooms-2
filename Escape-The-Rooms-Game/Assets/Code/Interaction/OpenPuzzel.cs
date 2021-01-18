@@ -18,6 +18,7 @@ namespace VHS
         public GameObject interactionUI;
 
         public GameObject crosshair;
+
         GameObject[] fourPiece;
         GameObject[] twoPiece;
         GameObject[] onePiece;
@@ -31,11 +32,9 @@ namespace VHS
         void Awake()
         {
 
+            
+
             puzzleCamActiveSelf = false;
-
-            puzzleCam.SetActive(false);
-
-            //crosshair.SetActive(true);
 
             //interactionUI.SetActive(true);
 
@@ -70,8 +69,6 @@ namespace VHS
 
             base.OnInteract();
 
-
-
             //characterCam.SetActive(!charCamActiveSelf);
 
             puzzleCam.SetActive(!puzzleCamActiveSelf);
@@ -91,7 +88,7 @@ namespace VHS
 
             //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
             GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = !GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled;
-            //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
             //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
 
