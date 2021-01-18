@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     //We are setting a speed to more easily change it if needed. We are also setting a reverse speed for the same reason.
-    public float speed = 1000f;
-    public float negativSpeed = -1000f;
+    public float speed = 5000000f;
+    public float negativSpeed = -5000000f;
     
     //We are making the rigidbody a objekt to use it.
     private Rigidbody rb3d;
@@ -63,4 +63,11 @@ public class Movement : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Colliding");
+    }
+
+
 }
