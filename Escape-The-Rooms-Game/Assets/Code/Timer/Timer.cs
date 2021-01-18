@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //Made by Caleb
 
@@ -57,6 +58,17 @@ public class Timer : MonoBehaviour
     {
         timer = timer - 1 * Time.deltaTime;
         timerText.text = "timer = " + timer;
+
+        if (timer <= 0)
+        {
+            SceneManager.LoadScene(sceneName: "GameOver");
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        if (Input.GetKey(KeyCode.Alpha8))
+        {
+            timer = 0;
+        }
 
     }
 }
