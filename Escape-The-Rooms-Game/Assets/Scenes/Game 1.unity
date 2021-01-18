@@ -13363,7 +13363,9 @@ MonoBehaviour:
     Press "enter" to hide/show tutorial
 
     Predd "T" to
-    hide/show timer'
+    hide/show timer
+
+    Press "8"= instant game over'
 --- !u!222 &1458925194
 CanvasRenderer:
   m_ObjectHideFlags: 0
