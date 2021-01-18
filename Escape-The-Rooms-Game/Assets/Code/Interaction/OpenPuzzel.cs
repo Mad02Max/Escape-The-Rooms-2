@@ -9,9 +9,13 @@ namespace VHS
     public class OpenPuzzel : InteractableBase
     {
         //Creates cameras
-        public Camera charCam;
-        public GameObject characterCam;
+        
+        public Camera characterCam;
         public GameObject puzzleCam;
+
+        private bool charCamActiveSelf;
+
+        private bool puzzleCamActiveSelf;
 
         public GameObject interactionUI;
 
@@ -29,9 +33,8 @@ namespace VHS
         void Awake()
         {
 
-            characterCam.SetActive(true);
-
-            puzzleCam.SetActive(false);
+            charCamActiveSelf = true;
+            puzzleCamActiveSelf = false;
 
             //crosshair.SetActive(true);
 
@@ -70,9 +73,9 @@ namespace VHS
 
 
 
-            characterCam.SetActive(!characterCam);
+            //characterCam.SetActive(!charCamActiveSelf);
 
-            puzzleCam.SetActive(!puzzleCam);
+            puzzleCam.SetActive(!puzzleCamActiveSelf);
 
             //characterCam.enabled = false;
 
@@ -81,11 +84,11 @@ namespace VHS
             //GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition(0.6, 40, -43);
 
 
-/*
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameObject>().SetActive() = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameObject>().SetActive();
 
-            GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<GameObject>().SetActive() = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<GameObject>().SetActive();
-*/
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
+
+            //GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<GameObject>().SetActive() = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<GameObject>().SetActive();
+
 
             //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
             GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = !GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled;
