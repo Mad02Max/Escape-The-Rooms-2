@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
     //Makes it so that the player can't move when in the puzzle camera
     public bool moveYes;
 
+    //This will show the players cordinates, it is here for testing reasons
     public Text Position;
 
     
@@ -39,6 +40,7 @@ public class Movement : MonoBehaviour
     //We are using "transform.rotation" to make it so that the character is moving in relation to the direction one is looking.
     //"moveYes" makes is there so that you are only able to move when it is true. That is because it is turned off when the camera is-
     //-switched to the puzzle camera, as you shouldn't be able to move then
+    //There is lines of codes that makes it so that the console/log shows when a button is pressed.
     void Update()
     {
         if (moveYes == true)
@@ -65,13 +67,15 @@ public class Movement : MonoBehaviour
             }
         }
 
+        //Text telling player cordinate
         Position.text = "position is " + transform.position;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    //Writes in the log when player is colliding with something.
+    /*private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Colliding");
-    }
+    }*/
 
 
 }
