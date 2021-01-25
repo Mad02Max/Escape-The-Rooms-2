@@ -38,25 +38,7 @@ namespace VHS
 
             //interactionUI.SetActive(true);
 
-            fourPiece = GameObject.FindGameObjectsWithTag("4");
-            twoPiece = GameObject.FindGameObjectsWithTag("2");
-            onePiece = GameObject.FindGameObjectsWithTag("1");
-            boxScript = new Box1[fourPiece.Length];
-            boxScript2 = new Box1[twoPiece.Length];
-            boxScript3 = new Box1[onePiece.Length];
-
-            for (int i = 0; i < fourPiece.Length; i++)
-            {
-                boxScript[i] = fourPiece[i].GetComponent<Box1>();
-            }
-            for (int i = 0; i < twoPiece.Length; i++)
-            {
-                boxScript2[i] = twoPiece[i].GetComponent<Box1>();
-            }
-            for (int i = 0; i < onePiece.Length; i++)
-            {
-                boxScript3[i] = onePiece[i].GetComponent<Box1>();
-            }
+            
 
 
 
@@ -94,11 +76,13 @@ namespace VHS
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
             //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
 
+            //GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled;
 
 
             foreach (Box1 script in boxScript)
             {
                 script.enabled = !script.enabled;
+                //Debug.Log("ScriptPå");
             }
             foreach (Box1 script in boxScript2)
             {
@@ -113,6 +97,31 @@ namespace VHS
 
             //interactionUI.SetActive(false);
         }
+
+
+        private void Update()
+        {
+            fourPiece = GameObject.FindGameObjectsWithTag("4");
+            twoPiece = GameObject.FindGameObjectsWithTag("2");
+            onePiece = GameObject.FindGameObjectsWithTag("1");
+            boxScript = new Box1[fourPiece.Length];
+            boxScript2 = new Box1[twoPiece.Length];
+            boxScript3 = new Box1[onePiece.Length];
+
+            for (int i = 0; i < fourPiece.Length; i++)
+            {
+                boxScript[i] = fourPiece[i].GetComponent<Box1>();
+            }
+            for (int i = 0; i < twoPiece.Length; i++)
+            {
+                boxScript2[i] = twoPiece[i].GetComponent<Box1>();
+            }
+            for (int i = 0; i < onePiece.Length; i++)
+            {
+                boxScript3[i] = onePiece[i].GetComponent<Box1>();
+            }
+        }
+
 
     }
 }

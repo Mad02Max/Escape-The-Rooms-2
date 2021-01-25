@@ -43,27 +43,33 @@ public class Box1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
+                Debug.Log("Left");
                 rigidPieces.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
+                Debug.Log("Right");
                 rigidPieces.transform.position = transform.position + new Vector3(speed, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
+                Debug.Log("Up");
                 rigidPieces.transform.position = transform.position + new Vector3(0, 0, speed);
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
+                Debug.Log("Down");
                 rigidPieces.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
             }
 
             if (Input.GetKeyDown(KeyCode.V))
             {
+                Debug.Log("V");
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, -90);
             }
             if (Input.GetKeyDown(KeyCode.B))
             {
+                Debug.Log("B");
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, 90);
             }
         }
@@ -77,22 +83,13 @@ public class Box1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cursor")
         {
-            Debug.Log("Collides with cursor");
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("Space is pressed");
                 if (no == false)
                 {
-                    movePiece = true;
+                    movePiece = !movePiece;
 
-                }
-            }
-            if (Input.GetKeyDown(KeyCode.RightShift))
-            {
-                Debug.Log("RightShift is pressed");
-                if (no == false)
-                {
-                    movePiece = false;
                 }
             }
 
@@ -107,29 +104,10 @@ public class Box1 : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        /*if (collision.gameObject.tag == "Cursor")
+        if (collision.gameObject.tag == "Cursor")
         {
-            Debug.Log("Collides with cursor");
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Debug.Log("Space is pressed");
-                if (no == false)
-                {
-                    movePiece = true;
-
-                }
-            }
-            if (Input.GetKeyDown(KeyCode.RightShift))
-            {
-                Debug.Log("RightShift is pressed");
-                if (no == false)
-                {
-                    movePiece = false;
-                }
-            }
-
-            
-        }*/
+            Debug.Log("Collides with Cursor");
+        }
 
         if (collision.gameObject.tag == "1")
         {
@@ -168,4 +146,6 @@ public class Box1 : MonoBehaviour
             Debug.Log("no = false");
         }
     }
+
+    
 }
