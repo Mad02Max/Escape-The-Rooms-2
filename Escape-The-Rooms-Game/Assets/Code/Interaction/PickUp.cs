@@ -6,6 +6,7 @@ namespace VHS
 {
     public class PickUp : InteractableBase
     {
+
         public GameObject piece;
 
         public GameObject pos;
@@ -15,7 +16,7 @@ namespace VHS
         {
             base.OnInteract();
 
-            Instantiate(piece, transform.position(new Vector3(pos)), Quaternion.identity);
+            Instantiate(piece, pos.transform.position, Quaternion.identity);
 
             Destroy(gameObject);
 
