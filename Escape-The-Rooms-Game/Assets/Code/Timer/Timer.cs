@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     public int timeDefiner;
     public Text timerText;
 
-    //time definer is randomly decided, and timer is decided as such.
+    //Time definer is randomly decided, and timer is decided as such.
     void Start()
     {
         timeDefiner = Random.Range(1, 101);
@@ -48,12 +48,12 @@ public class Timer : MonoBehaviour
                     }
                 }
             }
-        }
-
-        
+        }        
     }
 
     //The timer counts down
+    //Shows the timer
+    //Makes the scene change to game over once timer is equal or lower than 0
     void Update()
     {
         timer = timer - 1 * Time.deltaTime;
