@@ -46,22 +46,22 @@ public class Movement : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 rb3d.AddForce(transform.rotation * Vector3.forward * speed * Time.deltaTime);
-                Debug.Log("W is pressed");
+                //Debug.Log("W is pressed");
             }
             if (Input.GetKey(KeyCode.A))
             {
                 rb3d.AddForce(transform.rotation * Vector3.left * speed * Time.deltaTime);
-                Debug.Log("A is pressed");
+                //Debug.Log("A is pressed");
             }
             if (Input.GetKey(KeyCode.S))
             {
                 rb3d.AddForce(transform.rotation * Vector3.back * speed * Time.deltaTime);
-                Debug.Log("S is pressed");
+                //Debug.Log("S is pressed");
             }
             if (Input.GetKey(KeyCode.D))
             {
                 rb3d.AddForce(transform.rotation * Vector3.right * speed * Time.deltaTime);
-                Debug.Log("D is pressed");
+                //Debug.Log("D is pressed");
             }
         }
 
