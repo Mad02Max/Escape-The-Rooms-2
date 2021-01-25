@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1520968
 AudioListener:
   m_ObjectHideFlags: 0
@@ -17318,6 +17318,38 @@ PrefabInstance:
     - target: {fileID: 2453659241606016201, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453659242834082724, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453659242834082724, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453659242834082725, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453659242834082725, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_fontSize
+      value: 17.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453659242834082725, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.047080822
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453659242834082725, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.36312476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453659242834082725, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453659242834082725, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4285488396
       objectReference: {fileID: 0}
     - target: {fileID: 2453659243182497325, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
       propertyPath: m_LocalPosition.x
