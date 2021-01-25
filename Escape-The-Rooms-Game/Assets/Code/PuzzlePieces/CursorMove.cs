@@ -60,6 +60,11 @@ public class CursorMove : MonoBehaviour
             rigidCur.constraints = RigidbodyConstraints.FreezeAll;
             StartCoroutine(Waiter());
         }
+        if (collision.gameObject.tag == "Floor")
+        {
+            rigidCur.constraints = RigidbodyConstraints.FreezeAll;
+            StartCoroutine(Waiter());
+        }
     }
 
     //Makes it so that the script is disabled 3 sec after start, this makes everything work later

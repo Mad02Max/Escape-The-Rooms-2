@@ -77,6 +77,7 @@ public class Box1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cursor")
         {
+            Debug.Log("Collides with cursor");
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("Space is pressed");
@@ -105,19 +106,30 @@ public class Box1 : MonoBehaviour
     //Should also make it so that no more than one piece can be picked up at a time, alas; it does not work.
     private void OnCollisionEnter(Collision collision)
     {
-        /*while (collision.gameObject.tag == "1")
-        {
-            no = true;
-        }
-        while (collision.gameObject.tag == "2")
-        {
-            no = true;
-        }
-        while (collision.gameObject.tag == "4")
-        {
-            no = true;
-        }*/
 
+        /*if (collision.gameObject.tag == "Cursor")
+        {
+            Debug.Log("Collides with cursor");
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Space is pressed");
+                if (no == false)
+                {
+                    movePiece = true;
+
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.RightShift))
+            {
+                Debug.Log("RightShift is pressed");
+                if (no == false)
+                {
+                    movePiece = false;
+                }
+            }
+
+            
+        }*/
 
         if (collision.gameObject.tag == "1")
         {
@@ -137,18 +149,7 @@ public class Box1 : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
-        /*while (collision.gameObject.tag == "1")
-        {
-            no = true;
-        }
-        while (collision.gameObject.tag == "2")
-        {
-            no = true;
-        }
-        while (collision.gameObject.tag == "4")
-        {
-            no = true;
-        }*/
+        
 
 
         if (collision.gameObject.tag == "1")

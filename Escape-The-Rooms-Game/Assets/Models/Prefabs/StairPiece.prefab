@@ -309,7 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePiece: 0
   no: 0
-  target: {fileID: 0}
+  target: {fileID: 8899170275235072542, guid: 19f79051e931fc8489c7578e6ebcc42b, type: 3}
 --- !u!114 &3451568717871629350
 MonoBehaviour:
   m_ObjectHideFlags: 0
