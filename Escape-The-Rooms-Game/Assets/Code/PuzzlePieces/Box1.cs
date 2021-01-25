@@ -79,6 +79,7 @@ public class Box1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                Debug.Log("Space is pressed");
                 if (no == false)
                 {
                     movePiece = true;
@@ -87,6 +88,7 @@ public class Box1 : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.RightShift))
             {
+                Debug.Log("RightShift is pressed");
                 if (no == false)
                 {
                     movePiece = false;
