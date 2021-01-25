@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 //Made by Max and Caleb
 
@@ -83,7 +84,7 @@ namespace VHS
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
             GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled = !GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled;
-            GameObject.FindGameObjectWithTag("UI").GetComponent<InteractionUI>().enabled = !GameObject.FindGameObjectWithTag("UI").GetComponent<InteractionUI>().enabled;
+            //GameObject.FindGameObjectWithTag("UI").GetComponent<textMeshPro>().enabled = !GameObject.FindGameObjectWithTag("UI").GetComponent<textMeshPro>().enabled;
             //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
 
             //GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled;
