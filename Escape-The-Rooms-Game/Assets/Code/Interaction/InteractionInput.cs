@@ -13,6 +13,7 @@ public class InteractionInput : ScriptableObject
     private bool p_interactedReleased;
 
 
+    // Checks if it is clicked/held
     public bool interactedClicked
     {
         get => p_interactedClicked;
@@ -20,6 +21,7 @@ public class InteractionInput : ScriptableObject
         set => p_interactedClicked = value;
     }
 
+    // Checks if it key released
     public bool interactedReleased
     {
         get => p_interactedReleased;
@@ -27,6 +29,7 @@ public class InteractionInput : ScriptableObject
         set => p_interactedReleased = value;
     }
 
+    // Resets Clicked and relesed
     public void Reset()
     {
         p_interactedClicked = false;

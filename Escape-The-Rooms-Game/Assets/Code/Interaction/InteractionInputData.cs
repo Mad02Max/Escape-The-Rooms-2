@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace VHS
 {
+
+    // Checks if key is pressed or held and if released
+
     [CreateAssetMenu(fileName = "Interaction", menuName = "InteractionSST/InputData")]
     public class InteractionInputData : ScriptableObject
     {
