@@ -32,6 +32,8 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
     }
     #endregion
 
+
+    // Gets DataBase
     private void OnEnable()
     {
 #if UNITY_EDITOR
@@ -42,6 +44,8 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
     }
 
     #region Save/Load methods
+   
+    // Saves the contens of the inventory
     public void Save()
     {
         string saveData = JsonUtility.ToJson(this, true);
@@ -56,6 +60,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
         fileStream.Close();
     }
 
+    // Loads the contenst of the saved inventory
     public void Load()
     {
         if (File.Exists(string.Concat(Application.persistentDataPath, savePath)))
@@ -74,6 +79,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
     #region SerializationResiver methods
     public void OnAfterDeserialize()
     {
+        // Hämtar items från databasen.
         for (int i = 0; i < Container.Count; i++)
             Container[i].item = database.getItem[Container[i].id];
     }
@@ -90,6 +96,8 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 [System.Serializable]
 public class InventorySlot
 {
+
+    // Gives the objects an id
 
     public int id;
 

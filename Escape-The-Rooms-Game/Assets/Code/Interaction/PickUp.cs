@@ -16,8 +16,11 @@ namespace VHS
         {
             base.OnInteract();
 
+            // Where the object can spawn
             Instantiate(piece, pos.transform.position, Quaternion.identity);
 
+
+            // Destroys object
             Destroy(gameObject);
 
         }

@@ -33,7 +33,7 @@ namespace VHS
         {
 
             
-
+            // sets the cam to inactiv;
             puzzleCamActiveSelf = false;
 
             //interactionUI.SetActive(true);
@@ -71,6 +71,8 @@ namespace VHS
 
             //characterCam.SetActive(!charCamActiveSelf);
 
+
+            // Activerar Puzzle Cameran och stänger av den
             puzzleCam.SetActive(!puzzleCamActiveSelf);
 
             //characterCam.enabled = false;
@@ -111,41 +113,6 @@ namespace VHS
 
             //interactionUI.SetActive(false);
         }
-
-        /*private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-
-                characterCam.enabled = true;
-
-                puzzleCam.enabled = false;
-
-                GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = true;
-                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = true;
-                GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = false;
-                //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = true;
-
-                foreach (Box1 script in boxScript)
-                {
-                    script.enabled = !script.enabled;
-                }
-                foreach (Box1 script in boxScript2)
-                {
-                    script.enabled = !script.enabled;
-                }
-                foreach (Box1 script in boxScript3)
-                {
-                    script.enabled = !script.enabled;
-                }
-
-
-                //crosshair.SetActive(true);
-
-                //interactionUI.SetActive(true);
-
-            }
-        }*/
 
     }
 }

@@ -12,10 +12,13 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+
+        // Save Inventory Button
         if (Input.GetKeyDown(KeyCode.Space))
         {
             inventory.Save();
         }
+        // Load Inventory Button
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             inventory.Load();
@@ -33,6 +36,8 @@ public class Player : MonoBehaviour
         }
     }*/
 
+
+    // Clears inventory
     private void OnApplicationQuit()
     {
         inventory.Container.Clear();
