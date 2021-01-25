@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 //Made by Max and Caleb
 
@@ -16,6 +18,8 @@ namespace VHS
         private bool puzzleCamActiveSelf;
 
         public GameObject interactionUI;
+
+        private bool active = true;
 
         public GameObject crosshair;
 
@@ -57,6 +61,11 @@ namespace VHS
             // Activerar Puzzle Cameran och stänger av den
             puzzleCam.SetActive(!puzzleCamActiveSelf);
 
+
+            /*interactionUI.SetActive(!active);
+            crosshair.SetActive(!active);*/
+
+
             //characterCam.enabled = false;
 
             //puzzleCam.enabled = true;
@@ -74,6 +83,8 @@ namespace VHS
             GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = !GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled;
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
+            GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled = !GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled;
+            //GameObject.FindGameObjectWithTag("UI").GetComponent<TextMeshPro>().enabled = !GameObject.FindGameObjectWithTag("UI").GetComponent<TextMeshPro>().enabled;
             //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
 
             //GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled;
