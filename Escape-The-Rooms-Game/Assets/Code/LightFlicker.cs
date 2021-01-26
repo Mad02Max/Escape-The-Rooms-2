@@ -9,6 +9,13 @@ public class LightFlicker : MonoBehaviour
     public int rng;
     public float timer;
     public int timerReal;
+    
+    public float r;
+    public float g;
+    public float b;
+    public float rc;
+    public float gc;
+    public float bc;
 
     public void Awake()
     {
@@ -16,6 +23,7 @@ public class LightFlicker : MonoBehaviour
         spot = GetComponent<Light>();
         Roller();
         Timer();
+        
     }
 
     public void Update()
@@ -35,12 +43,15 @@ public class LightFlicker : MonoBehaviour
         }
 
 
-
+        
 
         timer = timer - 1 * Time.deltaTime;
         if (timer <= 0)
         {
             on = !on;
+            //Color newColor = new Vector4(rc, gc, bc);
+            spot.color = new Vector4(rc, gc, bc);
+            Roller2();
             Roller();
             Timer();
         }
@@ -54,7 +65,16 @@ public class LightFlicker : MonoBehaviour
     public void Timer()
     {
         timer = rng;
-        
+    }
+    
+    public void Roller2()
+    {
+        r = Random.Range(1, 256);
+        g = Random.Range(1, 256);
+        b = Random.Range(1, 256);
+        rc = r / 255f;
+        gc = g / 255f;
+        bc = b / 255f;
     }
 
 }
