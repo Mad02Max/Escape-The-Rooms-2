@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//By Caleb
+
 public class LightFlicker : MonoBehaviour
 {
+    //There is a bool created, for turning the lights on and off.
+    //The actual light, but as a visual studio object.
+    //A random number generator, to change the intervals of light being on and off.
+    //A timer that aids in the above reason
     public bool on;
     public Light spot;
     public int rng;
     public float timer;
-    public int timerReal;
-    
+
+    //These were made just because I was bored, they can change the colour of the light, at random.
     public float r;
     public float g;
     public float b;
@@ -17,13 +23,14 @@ public class LightFlicker : MonoBehaviour
     public float gc;
     public float bc;
 
+    //In awake, the light is turned on, the visual studio light is connected to the unity light.
+    //and the two methods controlling the random flickering is activated for the first time.
     public void Awake()
     {
         on = true;
         spot = GetComponent<Light>();
         Roller();
         Timer();
-        
     }
 
     public void Update()
@@ -49,8 +56,8 @@ public class LightFlicker : MonoBehaviour
         if (timer <= 0)
         {
             on = !on;
-            //spot.color = new Vector4(rc, gc, bc);
-            //Roller2();
+            spot.color = new Vector4(rc, gc, bc);
+            Roller2();
             Roller();
             Timer();
         }
@@ -66,7 +73,7 @@ public class LightFlicker : MonoBehaviour
         timer = rng;
     }
     
-    /*public void Roller2()
+    public void Roller2()
     {
         r = Random.Range(1, 256);
         g = Random.Range(1, 256);
@@ -74,6 +81,6 @@ public class LightFlicker : MonoBehaviour
         rc = r / 255f;
         gc = g / 255f;
         bc = b / 255f;
-    }*/
+    }
 
 }
