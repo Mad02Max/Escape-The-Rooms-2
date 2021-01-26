@@ -5,8 +5,6 @@ using UnityEngine;
 namespace VHS
 {
     [CreateAssetMenu(fileName = "Interaction Data", menuName = "InteractionSST/InteractionData")]
-    
-    // does so the interaction data gets used and reset after use
     public class InteractionData : ScriptableObject
     {
 

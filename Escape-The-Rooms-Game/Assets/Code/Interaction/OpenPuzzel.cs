@@ -63,8 +63,8 @@ namespace VHS
             puzzleCam.SetActive(!puzzleCamActiveSelf);
 
 
-            //interactionUI.SetActive(!active);
-            //crosshair.SetActive(!active);
+            /*interactionUI.SetActive(!active);
+            crosshair.SetActive(!active);*/
 
 
             //characterCam.enabled = false;
@@ -80,12 +80,12 @@ namespace VHS
             //  GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
 
 
-            //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna. -Caleb och Max
+            //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna. -Caleb
             GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = !GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled;
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
             GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled = !GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled;
-            GameObject.FindGameObjectWithTag("UI").GetComponent<TextMeshProUGUI>().enabled = !GameObject.FindGameObjectWithTag("UI").GetComponent<TextMeshProUGUI>().enabled;
+            //GameObject.FindGameObjectWithTag("UI").GetComponent<textMeshPro>().enabled = !GameObject.FindGameObjectWithTag("UI").GetComponent<textMeshPro>().enabled;
 
             //Makes the scripts for movement on the pieces turn off and on, same way as main-camera above. -Caleb
             foreach (Box1 script in boxScript)
@@ -100,6 +100,10 @@ namespace VHS
             {
                 script.enabled = !script.enabled;
             }
+
+            //crosshair.SetActive(false);
+
+            //interactionUI.SetActive(false);
         }
 
         //Constantly updates the arayes for the puzzle pieces

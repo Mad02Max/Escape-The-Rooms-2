@@ -7,8 +7,6 @@ using TMPro;
 
 namespace VHS
 {
-
-    // gets the text and progress info so it can be displayed to the player
     public class InteractionUI : MonoBehaviour
     {
 

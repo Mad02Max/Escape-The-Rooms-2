@@ -2591,7 +2591,6 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-<<<<<<< HEAD
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &844908586
@@ -6411,8 +6410,6 @@ MeshFilter:
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-=======
->>>>>>> 3e548a4aaf194a4b7a479cc8dabf748a7a047e2a
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
@@ -6442,11 +6439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2453659241821862235, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
       propertyPath: m_TagString
-<<<<<<< HEAD
       value: UI
-=======
-      value: Untagged
->>>>>>> 3e548a4aaf194a4b7a479cc8dabf748a7a047e2a
       objectReference: {fileID: 0}
     - target: {fileID: 2453659242834082724, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6488,13 +6481,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: UI
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
-    - target: {fileID: 2453659242834082727, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
->>>>>>> 3e548a4aaf194a4b7a479cc8dabf748a7a047e2a
     - target: {fileID: 2453659243182497325, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
