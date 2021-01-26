@@ -66,8 +66,7 @@ public class LookAround : MonoBehaviour
             playerBody.Rotate(Vector3.up * mouseX);
         }
 
-        // Caleb 
-        // Makes the mouse sensetivity higher and lower
+
 
         if (Input.GetKeyDown(KeyCode.N))
         {
@@ -79,8 +78,7 @@ public class LookAround : MonoBehaviour
         }
 
 
-        // Caleb
-        // Shows what the sensetivity is
+
         mS.text = "mouse sensitivity = " + mouseSensitivity;
     }
 }
