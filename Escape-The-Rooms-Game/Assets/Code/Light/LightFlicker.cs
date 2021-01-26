@@ -14,6 +14,7 @@ public class LightFlicker : MonoBehaviour
     public Light spot;
     public int rng;
     public float timer;
+    public bool scriptWork;
 
     //These were made just because I was bored, they can change the colour of the light, at random.
     public float r;
@@ -27,6 +28,7 @@ public class LightFlicker : MonoBehaviour
     //and the two methods controlling the random flickering is activated for the first time.
     public void Awake()
     {
+        scriptWork = true;
         on = true;
         spot = GetComponent<Light>();
         Roller();
@@ -35,32 +37,44 @@ public class LightFlicker : MonoBehaviour
 
     public void Update()
     {
-        if (on == false)
+        if (scriptWork == true)
         {
-            spot.enabled = false;
-        }
-        if (on == true)
-        {
-            spot.enabled = true;
+            if (on == false)
+            {
+                spot.enabled = false;
+            }
+            if (on == true)
+            {
+                spot.enabled = true;
+            }
+
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                on = !on;
+            }
+
+            //CALEB!!!! GÖR SÅ ATT DEN SÄTTER PÅ SNABBARE, VÄNLIGA HÄLSNINGAR; DIG SJÄLV
+
+
+            timer = timer - 1 * Time.deltaTime;
+            if (timer <= 0)
+            {
+                on = !on;
+                spot.color = new Vector4(rc, gc, bc);
+                Roller2();
+                Roller();
+                Timer();
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.K))
         {
-            on = !on;
+            scriptWork = !scriptWork;
         }
 
-        //CALEB!!!! GÖR SÅ ATT DEN SÄTTER PÅ SNABBARE, VÄNLIGA HÄLSNINGAR; DIG SJÄLV
-        
 
-        timer = timer - 1 * Time.deltaTime;
-        if (timer <= 0)
-        {
-            on = !on;
-            spot.color = new Vector4(rc, gc, bc);
-            Roller2();
-            Roller();
-            Timer();
-        }
+
+
     }
 
     public void Roller()
