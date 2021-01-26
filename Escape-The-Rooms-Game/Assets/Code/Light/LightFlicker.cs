@@ -12,7 +12,7 @@ public class LightFlicker : MonoBehaviour
     //A timer that aids in the above reason
     public bool on;
     public Light spot;
-    public int rng;
+    public float rng;
     public float timer;
     public bool scriptWork;
 
@@ -79,7 +79,7 @@ public class LightFlicker : MonoBehaviour
 
     public void Roller()
     {
-        rng = Random.Range(1, 4);
+        rng = Random.Range(0.5f, 3);
     }
 
     public void Timer()

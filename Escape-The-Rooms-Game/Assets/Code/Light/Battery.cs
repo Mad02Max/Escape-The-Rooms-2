@@ -10,9 +10,11 @@ public class Battery : MonoBehaviour
     public bool on;
     public Text batterText;
 
+
     public void Awake()
     {
         on = false;
+        currentBattery = batteryLife;
     }
 
     public void Update()
