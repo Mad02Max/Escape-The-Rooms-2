@@ -42,16 +42,15 @@ public class LightFlicker : MonoBehaviour
             on = !on;
         }
 
-
+        //CALEB!!!! GÖR SÅ ATT DEN SÄTTER PÅ SNABBARE, VÄNLIGA HÄLSNINGAR; DIG SJÄLV
         
 
         timer = timer - 1 * Time.deltaTime;
         if (timer <= 0)
         {
             on = !on;
-            //Color newColor = new Vector4(rc, gc, bc);
-            spot.color = new Vector4(rc, gc, bc);
-            Roller2();
+            //spot.color = new Vector4(rc, gc, bc);
+            //Roller2();
             Roller();
             Timer();
         }
@@ -67,7 +66,7 @@ public class LightFlicker : MonoBehaviour
         timer = rng;
     }
     
-    public void Roller2()
+    /*public void Roller2()
     {
         r = Random.Range(1, 256);
         g = Random.Range(1, 256);
@@ -75,6 +74,6 @@ public class LightFlicker : MonoBehaviour
         rc = r / 255f;
         gc = g / 255f;
         bc = b / 255f;
-    }
+    }*/
 
 }
