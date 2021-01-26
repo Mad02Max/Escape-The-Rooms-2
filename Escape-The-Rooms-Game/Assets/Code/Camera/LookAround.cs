@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LookAround : MonoBehaviour
 {
 
     // speed of mouse
-    public float mouseSensitivity = 200f;
+    public float mouseSensitivity = 400f;
+    public Text mS;
 
 
     // Make camera moving
@@ -65,11 +67,18 @@ public class LookAround : MonoBehaviour
         }
 
 
-        
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            mouseSensitivity = mouseSensitivity - 10;
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            mouseSensitivity = mouseSensitivity + 10;
+        }
 
 
 
-
-
+        mS.text = "mouse sensitivity = " + mouseSensitivity;
     }
 }
