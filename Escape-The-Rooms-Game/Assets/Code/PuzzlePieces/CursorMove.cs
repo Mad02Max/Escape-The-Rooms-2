@@ -8,23 +8,14 @@ public class CursorMove : MonoBehaviour
 {
     //Creates a rigidbody in visual studio.
     //Creates an int for the speed of the cursor.
-    //Creates a bool so that the cursor only can move when intended.
     private Rigidbody rigidCur;
     float speed = 1f;
     float negativeSpeed = -1f;
-    //public bool cursorYes;
 
     //Connects the visual studio rigidbody to the unity rigidbody.
-    //Starts the method "Waiter".
     void Start()
     {
         rigidCur = GetComponent<Rigidbody>();        
-    }
-
-    //Makes it so that you can't move the cursor(pink bo) unless in the pussle
-    public void Awake()
-    {
-        //cursorYes = false;
     }
 
     //Makes the character able to move.
@@ -46,13 +37,11 @@ public class CursorMove : MonoBehaviour
         {
             rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
         }
-
-
-
-
     }
 
-    //Freezes the cursor's rigidbody constraints when it touches the playboard.
+    //Freezes the cursor's rigidbody constraints when it touches the playboard, or the "table".
+    //Since the cursor starts in the air and falls, this makes it so that it's position will be exactly as needed.
+    //Also starts the waiter method, which will turn of the script till further input.
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Platform")
@@ -67,7 +56,7 @@ public class CursorMove : MonoBehaviour
         }
     }
 
-    //Makes it so that the script is disabled 3 sec after start, this makes everything work later
+    //Makes it so that the script is disabled 1 sec after start, this makes everything work later
     IEnumerator Waiter()
     {
         yield return new WaitForSeconds(1);

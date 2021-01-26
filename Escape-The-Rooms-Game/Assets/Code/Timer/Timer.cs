@@ -53,7 +53,8 @@ public class Timer : MonoBehaviour
 
     //The timer counts down
     //Shows the timer
-    //Makes the scene change to game over once timer is equal or lower than 0
+    //Makes the scene change to game over once timer is equal or lower than 0. Also unlocks the cursor.
+    //Instant death button, for testing
     void Update()
     {
         timer = timer - 1 * Time.deltaTime;

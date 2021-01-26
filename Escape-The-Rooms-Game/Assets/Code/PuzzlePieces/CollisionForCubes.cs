@@ -7,14 +7,13 @@ using UnityEngine.SceneManagement;
 //All done by Caleb
 
 public class CollisionForCubes : MonoBehaviour
-{ 
-    
+{   
     //This is here to count the puzzle pieces that are on the board, it does this since when all the pieces are there, you can advance.
     int counter = 0;
 
     //This checks if you have all the pieces on the board, and if you do; changes to a "win" screen.
     //If you have all the pieces, a method will start, that method makes it so that the game waits for x seconds.
-    //This is here because otherwise you would just need to tuch the board with the piece to have it count.
+    //This is here because otherwise you would just need to tuch the board with the last piece to have it count.
     void Update()
     {
         if (counter == 144)
@@ -62,7 +61,7 @@ public class CollisionForCubes : MonoBehaviour
         }
     }
 
-    //This is the method that waits for x seconds. Curently: 15 sec.
+    //This is the method that waits for x seconds. Curently: 10 sec.
     //After this time, you win.
     //Unlocks the cursor so that the player can choose options in the menu
     IEnumerator Waiter()

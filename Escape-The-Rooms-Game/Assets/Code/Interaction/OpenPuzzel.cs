@@ -23,6 +23,7 @@ namespace VHS
 
         public GameObject crosshair;
 
+        //Creates the arayes for the three differently tagged puzzle pieces.
         GameObject[] fourPiece;
         GameObject[] twoPiece;
         GameObject[] onePiece;
@@ -73,27 +74,23 @@ namespace VHS
             //GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.localPosition(0.6, 40, -43);
 
 
-
+            //Makes the main camera the opposite of what it was, on will turn off, off will turn on. -Caleb
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().enabled;
 
             //  GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled = !GameObject.FindGameObjectWithTag("PuzzleCamera").GetComponent<Camera>().enabled;
 
 
-            //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna
+            //Gör så att man bara kan röra karaktären, kameran, pussel cursor, pussel bitar, och "croucha" när man ska kunna. -Caleb
             GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = !GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled;
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
             GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled = !GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled;
             //GameObject.FindGameObjectWithTag("UI").GetComponent<textMeshPro>().enabled = !GameObject.FindGameObjectWithTag("UI").GetComponent<textMeshPro>().enabled;
-            //GameObject.FindGameObjectWithTag("crouchCam").GetComponent<Crouching>().enabled = false;
 
-            //GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled = !GameObject.FindGameObjectWithTag("4").GetComponent<Box1>().enabled;
-
-
+            //Makes the scripts for movement on the pieces turn off and on, same way as main-camera above. -Caleb
             foreach (Box1 script in boxScript)
             {
                 script.enabled = !script.enabled;
-                //Debug.Log("ScriptPå");
             }
             foreach (Box1 script in boxScript2)
             {
@@ -109,7 +106,7 @@ namespace VHS
             //interactionUI.SetActive(false);
         }
 
-
+        //Constantly updates the arayes for the puzzle pieces
         private void Update()
         {
             fourPiece = GameObject.FindGameObjectsWithTag("4");

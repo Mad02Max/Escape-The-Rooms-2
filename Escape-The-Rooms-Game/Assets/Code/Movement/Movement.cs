@@ -70,12 +70,4 @@ public class Movement : MonoBehaviour
         //Text telling player cordinate
         Position.text = "position is " + transform.position;
     }
-
-    //Writes in the log when player is colliding with something.
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Colliding");
-    }*/
-
-
 }

@@ -8,7 +8,7 @@ public class Box1 : MonoBehaviour
 {
     //Creating a rigidbody and a transfom in visual studio.
     //Creating a bool that will allow/hinder the pieces regarding movement.
-    //Creates a speed for that eventual movement.
+    //Creates a float for speed for that eventual movement.
     //Creates a bool that will control the picking up/putting down of pieces
     //Creates a gameobject to use as a point for rotation.
     private Rigidbody rigidPieces;
@@ -19,10 +19,8 @@ public class Box1 : MonoBehaviour
     public bool no;
     public GameObject target;
 
-
-
-
     //Connects the visual studio rigidbody and transfom to the unity ones
+    //Sets the target for rotation. 
     void Start()
     {
         rigidPieces = GetComponent<Rigidbody>();
@@ -44,33 +42,26 @@ public class Box1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                Debug.Log("Left");
                 rigidPieces.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                Debug.Log("Right");
                 rigidPieces.transform.position = transform.position + new Vector3(speed, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                Debug.Log("Up");
                 rigidPieces.transform.position = transform.position + new Vector3(0, 0, speed);
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                Debug.Log("Down");
                 rigidPieces.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
             }
-
             if (Input.GetKeyDown(KeyCode.V))
             {
-                Debug.Log("V");
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, -90);
             }
             if (Input.GetKeyDown(KeyCode.B))
             {
-                Debug.Log("B");
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, 90);
             }
         }
@@ -78,19 +69,16 @@ public class Box1 : MonoBehaviour
 
     //Makes it so that if the cursor is on a piece, "no" is false, and if the spacebar is pressed, the pieces will be able to move
     //The pieces are therefore "picked up" by the cursor.
-    //Then they can be "dropped" by pressing rightshift.
-
+    //Then they can be "dropped" by pressing space
     void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Cursor")
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("Space is pressed");
                 if (no == false)
                 {
                     movePiece = !movePiece;
-
                 }
             }
 
@@ -104,10 +92,9 @@ public class Box1 : MonoBehaviour
     //Should also make it so that no more than one piece can be picked up at a time, alas; it does not work.
     private void OnCollisionEnter(Collision collision)
     {
-
         if (collision.gameObject.tag == "Cursor")
-        {
-            Debug.Log("Collides with Cursor");
+        {       
+            //Don't delete this if-statement
         }
 
         if (collision.gameObject.tag == "1")
@@ -128,9 +115,6 @@ public class Box1 : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
-        
-
-
         if (collision.gameObject.tag == "1")
         {
             no = false;
@@ -146,7 +130,5 @@ public class Box1 : MonoBehaviour
             no = false;
             Debug.Log("no = false");
         }
-    }
-
-    
+    }    
 }

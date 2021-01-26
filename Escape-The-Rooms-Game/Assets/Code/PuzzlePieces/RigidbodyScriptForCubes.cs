@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class RigidbodyScriptForCubes : MonoBehaviour
 {
-    //We are making the rigidbody a objekt to use it.
+    //We are making the rigidbody a object to use it.
     private Rigidbody rb3dn2;
 
-    //We are doing so the rigidbody objekt in visual studio is interacting with the rigidbody of the unity objekt.
+    //We are doing so the rigidbody object in visual studio is interacting with the rigidbody of the unity objekt.
     void Start()
     {
         rb3dn2 = GetComponent<Rigidbody>();
@@ -28,13 +28,10 @@ public class RigidbodyScriptForCubes : MonoBehaviour
         }
     }
 
-    //Makes it so that the script is disabled 3 sec after start, this makes everything work later
+    //Makes it so that the script is disabled 1 sec after start, this makes everything work later
     IEnumerator Waiter()
     {
         yield return new WaitForSeconds(1);
         GetComponent<Box1>().enabled = false;
     }
-
-
-
 }
