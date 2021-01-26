@@ -5634,7 +5634,6 @@ MonoBehaviour:
   spot: {fileID: 1673539946}
   rng: 0
   timer: 0
-  timerReal: 0
   r: 0
   g: 0
   b: 0
@@ -7137,7 +7136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1970043399
 AudioListener:
   m_ObjectHideFlags: 0
