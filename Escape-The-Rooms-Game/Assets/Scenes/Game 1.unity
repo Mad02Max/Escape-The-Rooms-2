@@ -2053,7 +2053,12 @@ MonoBehaviour:
     Predd "T" to
     hide/show timer
 
-    Press "8"= instant game over'
+    Press "8"= instant game over
+
+    N = mouse sensitivity
+    -10
+
+    M = mouse sensitivity +10'
 --- !u!222 &1458925194
 CanvasRenderer:
   m_ObjectHideFlags: 0
