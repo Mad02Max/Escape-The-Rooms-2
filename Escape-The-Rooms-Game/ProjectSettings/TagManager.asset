@@ -25,6 +25,7 @@ TagManager:
   - Wall4
   - Crosshair
   - UI
+  - Light
   layers:
   - Default
   - TransparentFX

@@ -5186,9 +5186,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1673539947}
   - component: {fileID: 1673539946}
+  - component: {fileID: 1673539948}
   m_Layer: 0
   m_Name: Spot Light
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5207,8 +5208,8 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 100000
-  m_SpotAngle: 140
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 100
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -5262,12 +5263,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673539945}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 180, z: 2}
+  m_LocalPosition: {x: 0, y: 120, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1673539948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673539945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6bdccf8e50bc84583aad1ab7f79b92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on: 0
+  spot: {fileID: 1673539946}
+  rng: 0
+  timer: 0
+  timerReal: 0
 --- !u!1 &1685539421
 GameObject:
   m_ObjectHideFlags: 0
