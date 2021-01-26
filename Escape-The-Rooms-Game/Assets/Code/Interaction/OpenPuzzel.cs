@@ -85,7 +85,7 @@ namespace VHS
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled = !GameObject.FindGameObjectWithTag("MainCamera").GetComponent<LookAround>().enabled;
             GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled = !GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().enabled;
             GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled = !GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>().enabled;
-            //GameObject.FindGameObjectWithTag("UI").GetComponent<textMeshPro>().enabled = !GameObject.FindGameObjectWithTag("UI").GetComponent<textMeshPro>().enabled;
+            GameObject.FindGameObjectWithTag("UI").GetComponent<TextMeshProUGUI>().enabled = !GameObject.FindGameObjectWithTag("UI").GetComponent<TextMeshProUGUI>().enabled;
 
             //Makes the scripts for movement on the pieces turn off and on, same way as main-camera above. -Caleb
             foreach (Box1 script in boxScript)

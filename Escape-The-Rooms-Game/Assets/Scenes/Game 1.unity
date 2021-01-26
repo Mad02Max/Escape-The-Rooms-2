@@ -6439,7 +6439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2453659241821862235, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2453659242834082724, guid: 0cf456b2c49e2ae428f3b2c0130bdc8d, type: 3}
       propertyPath: m_SizeDelta.x
