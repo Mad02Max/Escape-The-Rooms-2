@@ -1354,7 +1354,7 @@ MonoBehaviour:
     Spacebar = Pick up piece(only able to do when cursor(pink
     box) is on other piece)
 
-    Right-shift = Put Down(can only be done when a block
+    Spacebar = Put Down(can only be done when a block
     is picked up, and not on another block. '
 --- !u!222 &1038512391
 CanvasRenderer:
