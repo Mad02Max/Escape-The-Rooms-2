@@ -5,6 +5,8 @@ using UnityEngine;
 
 namespace VHS
 {
+
+    // Manages the input data from the player
     public class InputHandeler : MonoBehaviour
     {
 
