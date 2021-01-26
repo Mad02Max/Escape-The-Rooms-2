@@ -27,6 +27,7 @@ public class Box1 : MonoBehaviour
     {
         rigidPieces = GetComponent<Rigidbody>();
         pieceTrans = GetComponent<Transform>();
+        target = GameObject.FindGameObjectWithTag("Cursor");
     }
 
     //Sets the bools to their starting value
