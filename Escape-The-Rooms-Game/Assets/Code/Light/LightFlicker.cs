@@ -62,8 +62,8 @@ public class LightFlicker : MonoBehaviour
             if (timer <= 0)
             {
                 on = !on;
-                spot.color = new Vector4(rc, gc, bc);
-                Roller2();
+                //spot.color = new Vector4(rc, gc, bc);
+                //Roller2();
                 Roller();
                 Timer();
             }
