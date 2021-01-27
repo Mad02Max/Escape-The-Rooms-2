@@ -35,6 +35,10 @@ public class LightFlicker : MonoBehaviour
         Timer();
     }
 
+    //Here it checks so wethever on if true or false, depending on what it is; the light is the same.
+    //Under it lowers the timer between the flickering, and once that timer is 0, it switches "on" to the opposite of what it is,
+    //It also starts the two methods, which changes the timing, and starts the timer.
+    //It also currently changes colour, but that was just because I was bored.
     public void Update()
     {
         if (scriptWork == true)
@@ -48,11 +52,6 @@ public class LightFlicker : MonoBehaviour
                 spot.enabled = true;
             }
 
-            if (Input.GetKeyDown(KeyCode.X))
-            {
-                on = !on;
-            }
-
             //CALEB!!!! GÖR SÅ ATT DEN SÄTTER PÅ SNABBARE, VÄNLIGA HÄLSNINGAR; DIG SJÄLV
 
 
@@ -60,8 +59,8 @@ public class LightFlicker : MonoBehaviour
             if (timer <= 0)
             {
                 on = !on;
-                spot.color = new Vector4(rc, gc, bc);
-                Roller2();
+                //spot.color = new Vector4(rc, gc, bc);
+                //Roller2();
                 Roller();
                 Timer();
             }
