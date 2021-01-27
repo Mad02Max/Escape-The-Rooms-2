@@ -76,16 +76,19 @@ public class LightFlicker : MonoBehaviour
 
     }
 
+    //Randomise rng.
     public void Roller()
     {
         rng = Random.Range(0.5f, 3);
     }
 
+    //Makes timer equal to rng
     public void Timer()
     {
         timer = rng;
     }
     
+    //This is the thing that makes the colour random
     public void Roller2()
     {
         r = Random.Range(1, 256);

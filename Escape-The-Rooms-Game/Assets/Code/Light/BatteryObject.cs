@@ -14,7 +14,8 @@ namespace VHS
         {
             base.OnInteract();
 
-            GameObject.FindGameObjectWithTag("Flashlight").GetComponent<Battery>().batteryLife = GameObject.FindGameObjectWithTag("Flashlight").GetComponent<Battery>().batteryLife + 10;
+            GameObject.FindGameObjectWithTag("Flashlight").GetComponent<Battery>().batteryLife = 
+            GameObject.FindGameObjectWithTag("Flashlight").GetComponent<Battery>().batteryLife + 90;
 
             Destroy(gameObject);
         }

@@ -431,12 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2958c91c1b51aa0468f1aa166b7eff5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holdDuration: 0
-  holdInteract: 0
-  multipleUse: 0
-  isInteractable: 0
-  text: Interact
-  batteryLife: 10
+  batteryLife: 90
   currentBattery: 0
   on: 0
   batterText: {fileID: 1355695761}
@@ -978,7 +973,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211955434}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.3, y: 21.17, z: -35}
+  m_LocalPosition: {x: 10.3, y: 20.5, z: -35}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1671,7 +1666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291303010}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.2, y: 21.17, z: -35}
+  m_LocalPosition: {x: 15.2, y: 20.5, z: -35}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4337,7 +4332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141783099}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22, y: 21.17, z: -35}
+  m_LocalPosition: {x: 22, y: 20.5, z: -35}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
