@@ -19,14 +19,9 @@ public class Battery : MonoBehaviour
 
     public void Update()
     {
-        if (on == false)
-        {
-            currentBattery = currentBattery;
-        }
         if (on == true)
         {
             batteryLife = batteryLife - 1 * Time.deltaTime;
-            currentBattery = batteryLife;
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
@@ -34,6 +29,7 @@ public class Battery : MonoBehaviour
             on = !on;
         }
 
+        currentBattery = batteryLife;
         batterText.text = "Seconds left in battery = " + currentBattery;
 
 
