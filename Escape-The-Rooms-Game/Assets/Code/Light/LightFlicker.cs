@@ -16,6 +16,9 @@ public class LightFlicker : MonoBehaviour
     public float timer;
     public bool scriptWork;
 
+    public float start;
+    public float end;
+
     //These were made just because I was bored, they can change the colour of the light, at random.
     public float r;
     public float g;
@@ -59,8 +62,8 @@ public class LightFlicker : MonoBehaviour
             if (timer <= 0)
             {
                 on = !on;
-                //spot.color = new Vector4(rc, gc, bc);
-                //Roller2();
+                spot.color = new Vector4(rc, gc, bc);
+                Roller2();
                 Roller();
                 Timer();
             }
@@ -79,7 +82,7 @@ public class LightFlicker : MonoBehaviour
     //Randomise rng.
     public void Roller()
     {
-        rng = Random.Range(0.5f, 3);
+        rng = Random.Range(start, end);
     }
 
     //Makes timer equal to rng

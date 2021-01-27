@@ -6215,6 +6215,8 @@ MonoBehaviour:
   rng: 0
   timer: 0
   scriptWork: 0
+  start: 2
+  end: 8
   r: 0
   g: 0
   b: 0
