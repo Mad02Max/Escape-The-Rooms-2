@@ -9,17 +9,29 @@ namespace VHS
 
         public bool key = false;
 
+        public GameObject piece1;
+
+        public GameObject pos1;
+
+        private void Update()
+        {
+            
+        }
+
         public override void OnInteract()
         {
-            base.OnInteract();
+            if(key == true)
+            {
+                base.OnInteract();
 
-            // Where the object can spawn
-            //Instantiate(piece, pos.transform.position, Quaternion.identity);
+                // Where the object can spawn
+                Instantiate(piece1, pos1.transform.position, Quaternion.identity);
 
 
-            // Destroys object
-            Destroy(gameObject);
+                // Destroys object
+                Destroy(gameObject);
 
+            }
         }
 
     }
