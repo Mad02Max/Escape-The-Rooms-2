@@ -4,6 +4,8 @@ using UnityEngine;
 
 namespace VHS
 {
+
+    // gets all of the information needed for the interactable objects
     public interface IInteractable
     {
         float HoldDuration { get; }
