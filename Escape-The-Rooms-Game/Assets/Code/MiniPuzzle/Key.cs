@@ -8,17 +8,17 @@ namespace VHS
 {
     public class Key : InteractableBase
     {
-        public GameObject keyObject;
+        //public GameObject keyObject;
         GameObject[] chests;
-        public MinipuzzlePickUp[] pickUpScript;
+        public MiniPuzzleScript[] pickUpScript;
 
         public void Awake()
         {
             chests = GameObject.FindGameObjectsWithTag("MiniPuzzle");
-            pickUpScript = new MinipuzzlePickUp[chests.Length];
+            pickUpScript = new MiniPuzzleScript[chests.Length];
             for (int i = 0; i < chests.Length; i++)
             {
-                pickUpScript[i] = chests[i].GetComponent<MinipuzzlePickUp>();
+                pickUpScript[i] = chests[i].GetComponent<MiniPuzzleScript>();
             }
         }
 
@@ -27,7 +27,7 @@ namespace VHS
             base.OnInteract();
 
 
-            foreach (MinipuzzlePickUp script in pickUpScript)
+            foreach (MiniPuzzleScript script in pickUpScript)
             {
                 script.enabled = !script.enabled;
             }

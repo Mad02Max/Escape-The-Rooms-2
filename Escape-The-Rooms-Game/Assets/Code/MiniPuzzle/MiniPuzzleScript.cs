@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace VHS
 {
-    public class MinipuzzlePickUp : InteractableBase
+    public class MiniPuzzleScript : InteractableBase
     {
         public GameObject piece1;
 
@@ -24,7 +24,7 @@ namespace VHS
 
         public override void OnInteract()
         {
-           
+
             base.OnInteract();
 
             // Where the object can spawn
@@ -38,7 +38,7 @@ namespace VHS
             Destroy(gameObject);
 
         }
-        
+
 
     }
 }
