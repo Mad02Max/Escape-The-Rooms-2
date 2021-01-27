@@ -1,18 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
-public class Key : MonoBehaviour
+namespace VHS
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Key : InteractableBase
     {
-        
-    }
+        public GameObject keyObject;
+        GameObject[] chests;
+        public MinipuzzlePickUp[] pickUpScript;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void Awake()
+        {
+            chests = GameObject.FindGameObjectsWithTag("MiniPuzzle");
+            pickUpScript = new MinipuzzlePickUp[chests.Length];
+            for (int i = 0; i < chests.Length; i++)
+            {
+                pickUpScript[i] = chests[i].GetComponent<MinipuzzlePickUp>();
+            }
+        }
+
+        public override void OnInteract()
+        {
+            base.OnInteract();
+
+
+            foreach (MinipuzzlePickUp script in pickUpScript)
+            {
+                script.enabled = !script.enabled;
+            }
+
+            Destroy(gameObject);
+        }
     }
 }
