@@ -365,7 +365,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38488872}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -4989,7 +4989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1458925192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5069,7 +5069,9 @@ MonoBehaviour:
     N = mouse sensitivity
     -10
 
-    M = mouse sensitivity +10'
+    M = mouse sensitivity +10
+
+    Q = Turning flaslight on/off'
 --- !u!222 &1458925194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5077,7 +5079,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458925191}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!1 &1462066102
 GameObject:
   m_ObjectHideFlags: 0
