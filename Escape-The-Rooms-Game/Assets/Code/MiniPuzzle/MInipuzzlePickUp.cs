@@ -6,33 +6,39 @@ namespace VHS
 {
     public class MinipuzzlePickUp : InteractableBase
     {
-
-        public bool key = false;
-
         public GameObject piece1;
 
         public GameObject pos1;
 
-        private void Update()
-        {
-            
-        }
+        public GameObject piece2;
+
+        public GameObject pos2;
+
+        public GameObject piece3;
+
+        public GameObject pos3;
+
+        public GameObject piece4;
+
+        public GameObject pos4;
 
         public override void OnInteract()
         {
-            if(key == true)
-            {
-                base.OnInteract();
+           
+            base.OnInteract();
 
-                // Where the object can spawn
-                Instantiate(piece1, pos1.transform.position, Quaternion.identity);
+            // Where the object can spawn
+            Instantiate(piece1, pos1.transform.position, Quaternion.identity);
+            Instantiate(piece2, pos2.transform.position, Quaternion.identity);
+            Instantiate(piece3, pos3.transform.position, Quaternion.identity);
+            Instantiate(piece4, pos4.transform.position, Quaternion.identity);
 
 
-                // Destroys object
-                Destroy(gameObject);
+            // Destroys object
+            Destroy(gameObject);
 
-            }
         }
+        
 
     }
 }
