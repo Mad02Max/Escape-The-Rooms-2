@@ -8,6 +8,7 @@ public class CanvasInput : MonoBehaviour
 {
     [SerializeField] GameObject tutorialObject1;
     [SerializeField] GameObject tutorialObject2;
+    [SerializeField] GameObject mouseSensitivity;
     [SerializeField] GameObject timerObject;
 
     [SerializeField] KeyCode[] toggleTutorial;
@@ -21,6 +22,7 @@ public class CanvasInput : MonoBehaviour
             {
                 tutorialObject1.SetActive(!tutorialObject1.activeSelf);
                 tutorialObject2.SetActive(!tutorialObject2.activeSelf);
+                mouseSensitivity.SetActive(!mouseSensitivity.activeSelf);
                 break;
             }
         }

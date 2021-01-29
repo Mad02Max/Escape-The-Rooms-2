@@ -18,6 +18,8 @@ public class Battery : MonoBehaviour
     public Text batterText;
     public Light flashlight;
 
+    public Slider batterySlider;
+
 
 
     //Turns on to false at the start.
@@ -63,6 +65,9 @@ public class Battery : MonoBehaviour
         currentBattery = batteryLife;
         batterText.text = "Seconds left in battery = " + currentBattery;
 
+
+
+        batterySlider.value = currentBattery;
     }
 
 }
