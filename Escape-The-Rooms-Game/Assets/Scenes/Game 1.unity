@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1520970}
   - component: {fileID: 1520969}
-  - component: {fileID: 1520968}
   m_Layer: 0
   m_Name: PuzzleCam
   m_TagString: PuzzleCamera
@@ -141,14 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!81 &1520968
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520967}
-  m_Enabled: 1
 --- !u!20 &1520969
 Camera:
   m_ObjectHideFlags: 0
