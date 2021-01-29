@@ -1,18 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectiveScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Text objectiveText;
+
+    public void Start()
     {
-        
+        StartCoroutine(Waiter());
     }
 
-    // Update is called once per frame
-    void Update()
+
+    IEnumerator Waiter()
     {
-        
+        yield return new WaitForSeconds(15);
+        Destroy(gameObject);
     }
+
+
+
 }
