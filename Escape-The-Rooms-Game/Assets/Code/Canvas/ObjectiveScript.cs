@@ -15,7 +15,7 @@ public class ObjectiveScript : MonoBehaviour
 
     IEnumerator Waiter()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(30);
         Destroy(gameObject);
     }
 
