@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: fb5e749444d65ee4cac4a8e650d16c60
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1895333364673635815
+    second: Escape_the_rooms_HUD_0
+  - first:
+      213: 7176081928089469629
+    second: Escape_the_rooms_HUD_1
+  - first:
+      213: -9113358020986500224
+    second: Escape_the_rooms_HUD_2
+  - first:
+      213: -8689700417032784888
+    second: Escape_the_rooms_HUD_3
+  - first:
+      213: 8637397633124524970
+    second: StartReal
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -87,7 +102,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Escape_the_rooms_HUD_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1125
+        width: 1894
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5615c37a39d4a10800000000000000
+      internalID: 1895333364673635815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escape_the_rooms_HUD_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1465
+        width: 1023
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db28fda3e70969360800000000000000
+      internalID: 7176081928089469629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escape_the_rooms_HUD_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1504
+        width: 189
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b84202a29d68180800000000000000
+      internalID: -9113358020986500224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escape_the_rooms_HUD_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1463
+        width: 296
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804723eb28bf76780800000000000000
+      internalID: -8689700417032784888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartReal
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1399
+        width: 1549
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3ef2a62633ed770800000000000000
+      internalID: 8637397633124524970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
