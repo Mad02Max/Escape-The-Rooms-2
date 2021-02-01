@@ -12,12 +12,12 @@ public class Battery : MonoBehaviour
     //Creates a bool for whetever the light is on or off.
     //Creates a text to show the battery life.
     //Creates a life to interact with unity.
+    //Creates a slider for showing the batter.
     public float batteryLife = 90;
     public float currentBattery;
     public bool on;
     public Text batterText;
     public Light flashlight;
-
     public Slider batterySlider;
 
 
@@ -38,6 +38,7 @@ public class Battery : MonoBehaviour
     //Makes it so that the battery can't go below 0, and so that when it is 0; on becomes false.
     //Makes current battery equal to battery life at all times.
     //Changes the text that shows battery life.
+    //Makes the slider equal to the battery at all times.
     public void Update()
     {
         if (on == false)
@@ -64,8 +65,6 @@ public class Battery : MonoBehaviour
 
         currentBattery = batteryLife;
         batterText.text = "Seconds left in battery = " + currentBattery;
-
-
 
         batterySlider.value = currentBattery;
     }
