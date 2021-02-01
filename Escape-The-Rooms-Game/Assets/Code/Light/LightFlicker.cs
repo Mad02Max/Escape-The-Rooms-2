@@ -10,14 +10,16 @@ public class LightFlicker : MonoBehaviour
     //The actual light, but as a visual studio object.
     //A random number generator, to change the intervals of light being on and off.
     //A timer that aids in the above reason
+    //Creates a minimum(start), and maximum(end) for what the rng value can be,
     public bool on;
     public Light spot;
     public float rng;
     public float timer;
-    public bool scriptWork;
+    public float start = 2f;
+    public float end = 8f;
 
-    public float start;
-    public float end;
+    //This was just for testing, turning the flickering on/off.
+    public bool scriptWork;
 
     //These were made just because I was bored, they can change the colour of the light, at random.
     public float r;
@@ -55,9 +57,6 @@ public class LightFlicker : MonoBehaviour
                 spot.enabled = true;
             }
 
-            //CALEB!!!! GÖR SÅ ATT DEN SÄTTER PÅ SNABBARE, VÄNLIGA HÄLSNINGAR; DIG SJÄLV
-
-
             timer = timer - 1 * Time.deltaTime;
             if (timer <= 0)
             {
@@ -73,10 +72,6 @@ public class LightFlicker : MonoBehaviour
         {
             scriptWork = !scriptWork;
         }
-
-
-
-
     }
 
     //Randomise rng.
