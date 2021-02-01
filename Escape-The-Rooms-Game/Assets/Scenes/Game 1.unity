@@ -1117,7 +1117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &243630636
 Light:
   m_ObjectHideFlags: 0
@@ -4217,9 +4217,9 @@ MonoBehaviour:
   tutorialObject1: {fileID: 1458925191}
   tutorialObject2: {fileID: 1038512388}
   mouseSensitivity: {fileID: 252938276}
-  timerObject: {fileID: 1829411326}
+  timerObject: {fileID: 0}
   toggleTutorial: 0d000000
-  toggleTimer: 74000000
+  toggleTimer: 
 --- !u!1001 &1243548905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5257,7 +5257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184140048470, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: mouseSensitivity
-      value: 400
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184140048470, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: mS
@@ -5491,11 +5491,6 @@ MonoBehaviour:
     Mouse = Look around
 
     Press "enter" to hide/show tutorial
-
-    Predd "T" to
-    hide/show timer
-
-    Press "8"= instant game over
 
     N = mouse sensitivity
     -10

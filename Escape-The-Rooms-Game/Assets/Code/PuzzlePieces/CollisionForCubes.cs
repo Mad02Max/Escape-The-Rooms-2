@@ -66,7 +66,7 @@ public class CollisionForCubes : MonoBehaviour
     //Unlocks the cursor so that the player can choose options in the menu
     IEnumerator Waiter()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene(sceneName: "Victory");
         Cursor.lockState = CursorLockMode.None;
 

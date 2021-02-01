@@ -68,10 +68,10 @@ public class LightFlicker : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        /*if (Input.GetKeyDown(KeyCode.K))
         {
             scriptWork = !scriptWork;
-        }
+        }*/
     }
 
     //Randomise rng.
