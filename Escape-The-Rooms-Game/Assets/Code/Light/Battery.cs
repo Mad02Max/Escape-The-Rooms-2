@@ -66,8 +66,6 @@ public class Battery : MonoBehaviour
         currentBattery = batteryLife;
         batterText.text = "Seconds left in battery = " + currentBattery;
 
-
-
         batterySlider.value = currentBattery;
     }
 
