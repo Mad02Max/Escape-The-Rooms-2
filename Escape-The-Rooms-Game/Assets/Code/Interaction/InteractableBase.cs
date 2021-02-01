@@ -12,6 +12,8 @@ namespace VHS
 
         #region Variables
 
+        // Variabels
+
             [SerializeField] private float holdDuration;
 
         
@@ -29,8 +31,9 @@ namespace VHS
         #endregion
 
         #region Properties
-            public float HoldDuration => holdDuration;
 
+        // uses the varables
+            public float HoldDuration => holdDuration;
 
             public bool HoldInteract => holdInteract;
 
@@ -43,6 +46,8 @@ namespace VHS
         #endregion
 
         #region Methods
+
+        // Sends a chat message in the console to se if it gets interacted
         public virtual void OnInteract()
         {
             Debug.Log("INTERACTED: " + gameObject.name);
