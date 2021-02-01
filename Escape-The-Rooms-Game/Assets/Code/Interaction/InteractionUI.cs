@@ -14,7 +14,7 @@ namespace VHS
 
         [SerializeField] private TextMeshProUGUI textMeshProUGUI;
 
-
+        // Sets the text for an object
         public void SetText(string text)
         {
 
@@ -22,11 +22,13 @@ namespace VHS
 
         }
 
+        // Updates the progressbar
         public void UpdateProgressBar(float fillAmount)
         {
             progressBar.fillAmount = fillAmount;
         }
 
+        // Resets the progressbar
         public void ResetUI()
         {
 

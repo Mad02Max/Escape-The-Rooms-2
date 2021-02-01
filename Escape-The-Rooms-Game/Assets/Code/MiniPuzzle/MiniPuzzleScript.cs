@@ -6,13 +6,14 @@ namespace VHS
 {
     public class MiniPuzzleScript : InteractableBase
     {
+        // when it starts the script is disabled
         public void Awake()
         {
             GetComponent<MiniPuzzleScript>().enabled = false;
         }
 
 
-
+        // variables and postitions
         public GameObject piece1;
 
         public GameObject pos1;

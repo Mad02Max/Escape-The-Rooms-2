@@ -8,8 +8,10 @@ namespace VHS
     {
         public override void OnInteract()
         {
+            // calls on OnInteract
             base.OnInteract();
 
+            // Destroys the object
             Destroy(gameObject);
 
         }
