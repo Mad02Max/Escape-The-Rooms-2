@@ -40,8 +40,8 @@ public class LightFlicker : MonoBehaviour
         Timer();
     }
 
-    //Here it checks so wethever on if true or false, depending on what it is; the light is the same.
-    //Under it lowers the timer between the flickering, and once that timer is 0, it switches "on" to the opposite of what it is,
+    //Here it checks if "on" is true or false, depending on what it is; the light is the same.
+    //Below it lowers the timer between the flickering, and once that timer is 0, it switches "on" to the opposite of what it is,
     //It also starts the two methods, which changes the timing, and starts the timer.
     //It also currently changes colour, but that was just because I was bored.
     public void Update()
