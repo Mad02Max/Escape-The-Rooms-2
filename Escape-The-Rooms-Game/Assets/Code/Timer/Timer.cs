@@ -66,10 +66,10 @@ public class Timer : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
-        /*if (Input.GetKey(KeyCode.Alpha8))
+        if (Input.GetKey(KeyCode.Alpha8))
         {
             timer = 0;
-        }*/
+        }
 
     }
 }
