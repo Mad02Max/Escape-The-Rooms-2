@@ -19,6 +19,10 @@ public class Box1 : MonoBehaviour
     public bool no;
     public GameObject target;
 
+    public bool upUpAndAway;
+
+    public Rigidbody rigidbodyForCursor;
+
     //Connects the visual studio rigidbody and transfom to the unity ones
     //Sets the target for rotation. 
     void Start()
@@ -33,6 +37,8 @@ public class Box1 : MonoBehaviour
     {
         movePiece = false;
         no = false;
+        rigidbodyForCursor = GameObject.FindGameObjectWithTag("Cursor").GetComponent<Rigidbody>();
+        upUpAndAway = false;
     }
 
     //Makes the pieces able to move and rotate when movePiece is true
@@ -79,6 +85,18 @@ public class Box1 : MonoBehaviour
                 if (no == false)
                 {
                     movePiece = !movePiece;
+                    if (upUpAndAway == false)
+                    {
+                        rigidPieces.transform.position = transform.position + new Vector3(0, 5f, 0);
+                        rigidbodyForCursor.transform.position = transform.position + new Vector3(0.5f, 1f, 0.5f);
+                        upUpAndAway = true;
+                    }
+                    if (upUpAndAway == true)
+                    {
+                        rigidPieces.transform.position = transform.position + new Vector3(0, -5f, 0);
+                        rigidbodyForCursor.transform.position = transform.position + new Vector3(0f, -1f, 0f);
+                        upUpAndAway = false;
+                    }
                 }
             }
 
