@@ -8034,7 +8034,7 @@ PrefabInstance:
       objectReference: {fileID: 1124100826}
     - target: {fileID: 1422503184030621012, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: rayDistance
-      value: 25
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1422503184030621014, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: m_Name
