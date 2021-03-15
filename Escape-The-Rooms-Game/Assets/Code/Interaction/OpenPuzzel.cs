@@ -10,6 +10,13 @@ namespace VHS
 {
     public class OpenPuzzel : InteractableBase
     {
+
+        public Toggle openPuzzle;
+
+        public Toggle closePuzzle;
+
+        public bool close = false;
+
         //Creates cameras
         
         public Camera characterCam;
@@ -61,6 +68,17 @@ namespace VHS
 
             // Activerar Puzzle Cameran och stänger av den
             puzzleCam.SetActive(!puzzleCamActiveSelf);
+
+            openPuzzle.isOn = true;
+
+            if(close == true)
+            {
+
+                closePuzzle.isOn = true;
+
+            }
+
+            close = true;
 
 
             /*interactionUI.SetActive(!active);
