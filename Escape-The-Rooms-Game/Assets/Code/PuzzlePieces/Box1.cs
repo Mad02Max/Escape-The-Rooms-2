@@ -89,9 +89,6 @@ public class Box1 : MonoBehaviour
             {
                 if (no == false)
                 {
-                    movePiece = !movePiece;
-                    
-
                     if (upUpAndAway == true)
                     {
                         Down();
@@ -102,6 +99,7 @@ public class Box1 : MonoBehaviour
                     }
 
                     upUpAndAway = !upUpAndAway;
+                    movePiece = upUpAndAway;
                 }
             }
 

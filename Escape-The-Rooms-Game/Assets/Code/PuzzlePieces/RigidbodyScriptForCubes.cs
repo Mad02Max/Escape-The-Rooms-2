@@ -13,6 +13,7 @@ public class RigidbodyScriptForCubes : MonoBehaviour
     void Start()
     {
         rb3dn2 = GetComponent<Rigidbody>();
+        GetComponent<Box1>().enabled = false;
     }
 
     //We are doing so that the tetris pieces can't move once they are on the platform.
@@ -24,14 +25,14 @@ public class RigidbodyScriptForCubes : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             rb3dn2.constraints = RigidbodyConstraints.FreezeAll;
-            StartCoroutine(Waiter());
+            //StartCoroutine(Waiter());
         }
     }
 
     //Makes it so that the script is disabled 1 sec after start, this makes everything work later
-    IEnumerator Waiter()
+    /*IEnumerator Waiter()
     {
         yield return new WaitForSeconds(1);
         GetComponent<Box1>().enabled = false;
-    }
+    }*/
 }
