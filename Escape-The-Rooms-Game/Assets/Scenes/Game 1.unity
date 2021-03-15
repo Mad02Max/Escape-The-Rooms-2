@@ -6655,6 +6655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cursor
       objectReference: {fileID: 0}
+    - target: {fileID: 8899170275235072542, guid: 19f79051e931fc8489c7578e6ebcc42b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8899170275235072543, guid: 19f79051e931fc8489c7578e6ebcc42b, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6665,7 +6669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8899170275235072545, guid: 19f79051e931fc8489c7578e6ebcc42b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.5
+      value: 19.5
       objectReference: {fileID: 0}
     - target: {fileID: 8899170275235072545, guid: 19f79051e931fc8489c7578e6ebcc42b, type: 3}
       propertyPath: m_LocalPosition.z
