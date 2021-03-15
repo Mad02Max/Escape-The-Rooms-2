@@ -424,6 +424,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3898014033480836227, guid: 68b4e778e6c83854ab4b04305e3f6a30, type: 3}
   pos: {fileID: 6473217976645900992}
 --- !u!65 &28884502
@@ -604,6 +605,7 @@ MonoBehaviour:
   batterText: {fileID: 1355695761}
   flashlight: {fileID: 38488874}
   batterySlider: {fileID: 765907610}
+  flashLight: {fileID: 1930128297}
 --- !u!1 &52306554 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 99d3405437cdd2e43af5fa9f21e24bfc, type: 3}
@@ -755,6 +757,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 294940122681064806, guid: 3cdb51d418e507a4b88c6efaf92abaf8, type: 3}
   pos: {fileID: 899900172}
 --- !u!65 &112502062
@@ -899,6 +902,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 6894609761116571726, guid: 693237964e43cd747a589bf04405cacc, type: 3}
   pos: {fileID: 6473217976645900979}
 --- !u!65 &179511128
@@ -1441,6 +1445,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3898014033480836227, guid: 68b4e778e6c83854ab4b04305e3f6a30, type: 3}
   pos: {fileID: 6473217976645900994}
 --- !u!65 &251895265
@@ -1710,6 +1715,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 6894609761116571726, guid: 693237964e43cd747a589bf04405cacc, type: 3}
   pos: {fileID: 6473217976645900977}
 --- !u!65 &269503069
@@ -3244,6 +3250,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 6894609761116571726, guid: 693237964e43cd747a589bf04405cacc, type: 3}
   pos: {fileID: 6473217976645900975}
 --- !u!65 &720258300
@@ -3929,6 +3936,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 2345663064362994210, guid: aa0fdc17a1803c344a0709e64623071a, type: 3}
   pos: {fileID: 6473217976645900990}
 --- !u!65 &827480551
@@ -4311,6 +4319,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 2345663064362994210, guid: aa0fdc17a1803c344a0709e64623071a, type: 3}
   pos: {fileID: 6473217976645900989}
 --- !u!65 &880052997
@@ -4646,6 +4655,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3580271644415420160, guid: 35d3f46c351b09f4c9f7132c2ec7adff, type: 3}
   pos: {fileID: 2045825926}
 --- !u!65 &933857448
@@ -4938,6 +4948,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3580271644415420160, guid: 35d3f46c351b09f4c9f7132c2ec7adff, type: 3}
   pos: {fileID: 713150808}
 --- !u!1 &999173361
@@ -4977,6 +4988,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3580271644415420160, guid: 35d3f46c351b09f4c9f7132c2ec7adff, type: 3}
   pos: {fileID: 1095514516}
 --- !u!65 &999173363
@@ -5106,6 +5118,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 6894609761116571726, guid: 693237964e43cd747a589bf04405cacc, type: 3}
   pos: {fileID: 6473217976645900976}
 --- !u!65 &1000283420
@@ -5824,6 +5837,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3451568717871629337, guid: cf9ace8366cbc2d41911bec49492d984, type: 3}
   pos: {fileID: 6473217976645900985}
 --- !u!65 &1085448189
@@ -6423,6 +6437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1153541703}
+  - component: {fileID: 1153541704}
   m_Layer: 5
   m_Name: PickUp
   m_TagString: Untagged
@@ -6451,6 +6466,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1153541704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153541702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c84574e08939b1749aa7cd998328bdef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressE: {fileID: 217037820}
+  holdE: {fileID: 1574354228}
+  puzzleTutorial: {fileID: 1795678987}
 --- !u!1 &1210618917
 GameObject:
   m_ObjectHideFlags: 0
@@ -6612,6 +6642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1235868137}
+  - component: {fileID: 1235868138}
   m_Layer: 5
   m_Name: Move Tutorial
   m_TagString: Untagged
@@ -6640,6 +6671,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1235868138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235868136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcb226066d414b4aa3612f2b3b405bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {fileID: 415267358}
+  flashlight: {fileID: 1930128297}
+  pickUpTutorial: {fileID: 1153541702}
 --- !u!1001 &1243548905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7764,6 +7810,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3451568717871629337, guid: cf9ace8366cbc2d41911bec49492d984, type: 3}
   pos: {fileID: 6473217976645900986}
 --- !u!65 &1363412377
@@ -8058,6 +8105,14 @@ PrefabInstance:
       propertyPath: Position
       value: 
       objectReference: {fileID: 647912180}
+    - target: {fileID: 1422503184030621018, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
+      propertyPath: move
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422503184030621018, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
+      propertyPath: WASD
+      value: 
+      objectReference: {fileID: 415267358}
     - target: {fileID: 1422503184030621019, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
       propertyPath: m_Drag
       value: 40
@@ -8380,6 +8435,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 294940122681064806, guid: 3cdb51d418e507a4b88c6efaf92abaf8, type: 3}
   pos: {fileID: 126415183}
 --- !u!65 &1462066105
@@ -8500,6 +8556,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 6894609761116571726, guid: 693237964e43cd747a589bf04405cacc, type: 3}
   pos: {fileID: 6473217976645900978}
 --- !u!65 &1477640541
@@ -8805,6 +8862,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 441533948601761046, guid: 7fb84f6adcb53d04dabd3ec27d129461, type: 3}
   pos: {fileID: 6473217976645900974}
 --- !u!65 &1516254914
@@ -9218,6 +9276,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3898014033480836227, guid: 68b4e778e6c83854ab4b04305e3f6a30, type: 3}
   pos: {fileID: 6473217976645900993}
 --- !u!65 &1542434698
@@ -9613,19 +9672,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1422503184030621014, guid: 15ae30f7732bd2141a0dd98cd7fd51b2, type: 3}
   m_PrefabInstance: {fileID: 1440669517}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1633929439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633929438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d24f702f5338a7f4ca677004c2343dc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: f48e016cddad97046a97c1bd6dc1610d, type: 2}
 --- !u!114 &1633929441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9829,6 +9875,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 541858864946304990, guid: 98f8c5d91e0a9fb4f9cf2caeca01364c, type: 3}
   pos: {fileID: 6473217976645900995}
 --- !u!65 &1685539424
@@ -9949,6 +9996,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3451568717871629337, guid: cf9ace8366cbc2d41911bec49492d984, type: 3}
   pos: {fileID: 6473217976645900984}
 --- !u!65 &1695859210
@@ -10379,6 +10427,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 541858864946304990, guid: 98f8c5d91e0a9fb4f9cf2caeca01364c, type: 3}
   pos: {fileID: 6473217976645900996}
 --- !u!65 &1779039554
@@ -10670,11 +10719,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61023995ace7534aafd401e64e607a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holdDuration: 15
-  holdInteract: 0
+  holdDuration: 8
+  holdInteract: 1
   multipleUse: 0
   isInteractable: 1
   text: Open Chest
+  holdE: {fileID: 1574354228}
   piece1: {fileID: 2345663064362994210, guid: aa0fdc17a1803c344a0709e64623071a, type: 3}
   pos1: {fileID: 6473217976645900987}
   piece2: {fileID: 441533948601761046, guid: 7fb84f6adcb53d04dabd3ec27d129461, type: 3}
@@ -10880,6 +10930,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 294940122681064806, guid: 3cdb51d418e507a4b88c6efaf92abaf8, type: 3}
   pos: {fileID: 411335072}
 --- !u!65 &1861289780
@@ -11230,6 +11281,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 4955802944871325428, guid: 42ddf54bfa0fe8745a68939af1c5e22e, type: 3}
   pos: {fileID: 6473217976645900983}
 --- !u!65 &1939953831
@@ -11345,6 +11397,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3898014033480836227, guid: 68b4e778e6c83854ab4b04305e3f6a30, type: 3}
   pos: {fileID: 6473217976645900991}
 --- !u!65 &1953269484
@@ -11823,6 +11876,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3451568717871629337, guid: cf9ace8366cbc2d41911bec49492d984, type: 3}
   pos: {fileID: 705871248}
 --- !u!65 &1988914965
@@ -11938,6 +11992,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 4955802944871325428, guid: 42ddf54bfa0fe8745a68939af1c5e22e, type: 3}
   pos: {fileID: 6473217976645900981}
 --- !u!65 &1992913622
@@ -12181,6 +12236,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 4955802944871325428, guid: 42ddf54bfa0fe8745a68939af1c5e22e, type: 3}
   pos: {fileID: 6473217976645900980}
 --- !u!65 &2021029478
@@ -12363,6 +12419,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 0}
   piece: {fileID: 3451568717871629337, guid: cf9ace8366cbc2d41911bec49492d984, type: 3}
   pos: {fileID: 705871248}
 --- !u!1 &2045825926 stripped
@@ -12421,6 +12478,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Interact
+  pressE: {fileID: 217037820}
   piece: {fileID: 3580271644415420160, guid: 35d3f46c351b09f4c9f7132c2ec7adff, type: 3}
   pos: {fileID: 119424896}
 --- !u!65 &2047945325

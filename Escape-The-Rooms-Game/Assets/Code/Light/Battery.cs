@@ -20,7 +20,9 @@ public class Battery : MonoBehaviour
     public Light flashlight;
     public Slider batterySlider;
 
+    bool q = false;
 
+    public Toggle flashLight;
 
     //Turns on to false at the start.
     //Makes current battery equal to battery life at the start.
@@ -55,6 +57,8 @@ public class Battery : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             on = !on;
+
+            q = true;
         }
 
         if (batteryLife <= 0)
@@ -67,6 +71,11 @@ public class Battery : MonoBehaviour
         batterText.text = "Seconds left in battery = " + currentBattery;
 
         batterySlider.value = currentBattery;
+
+        if(q == true)
+        {
+            flashLight.isOn = true;
+        }
     }
 
 }

@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace VHS
 {
     public class MiniPuzzleScript : InteractableBase
     {
+
+        public Toggle holdE;
+        
         // when it starts the script is disabled
         public void Awake()
         {
@@ -41,6 +45,7 @@ namespace VHS
             Instantiate(piece3, pos3.transform.position, Quaternion.identity);
             Instantiate(piece4, pos4.transform.position, Quaternion.identity);
 
+            holdE.isOn = true;
 
             // Destroys object
             Destroy(gameObject);

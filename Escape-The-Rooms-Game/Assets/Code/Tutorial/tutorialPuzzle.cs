@@ -2,17 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TutorialController : MonoBehaviour
+public class tutorialPuzzle : MonoBehaviour
 {
-
-    public bool w = false;
-
-    public bool s = false;
-
-    public bool d = false;
-
-    public bool a = false;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +13,6 @@ public class TutorialController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
         
-
     }
 }

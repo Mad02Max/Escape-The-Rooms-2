@@ -21,7 +21,16 @@ public class Movement : MonoBehaviour
     //This will show the players cordinates, it is here for testing reasons
     public Text Position;
 
-    
+    public bool w = false;
+
+    public bool s = false;
+
+    public bool d = false;
+
+    public bool a = false;
+
+    public Toggle WASD;
+
     //We are doing so the rigidbody objekt in visual studio is interacting with the rigidbody of the unity objekt.
     void Start()
     {        
@@ -32,6 +41,7 @@ public class Movement : MonoBehaviour
     public void Awake()
     {
         moveYes = true;
+
     } 
 
     //We are using "AddForce" to change the possition of the player. 
@@ -49,22 +59,36 @@ public class Movement : MonoBehaviour
             {
                 rb3d.AddForce(transform.rotation * Vector3.forward * speed * Time.deltaTime);
                 //Debug.Log("W is pressed");
+
+                w = true;
             }
             if (Input.GetKey(KeyCode.A))
             {
                 rb3d.AddForce(transform.rotation * Vector3.left * speed * Time.deltaTime);
                 //Debug.Log("A is pressed");
+
+                a = true;
             }
             if (Input.GetKey(KeyCode.S))
             {
                 rb3d.AddForce(transform.rotation * Vector3.back * speed * Time.deltaTime);
                 //Debug.Log("S is pressed");
+
+                s = true;
             }
             if (Input.GetKey(KeyCode.D))
             {
                 rb3d.AddForce(transform.rotation * Vector3.right * speed * Time.deltaTime);
                 //Debug.Log("D is pressed");
+
+                d = true;
             }
+
+            if(w == true && s == true && a == true && d == true)
+            {
+                WASD.isOn = true;
+            }
+            
         }
 
         //Text telling player cordinate
