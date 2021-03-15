@@ -44,7 +44,7 @@ public class CursorMove : MonoBehaviour
     //Also starts the waiter method, which will turn of the script till further input.
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Platform")
+        /*if (collision.gameObject.tag == "Platform")
         {
             rigidCur.constraints = RigidbodyConstraints.FreezeAll;
             StartCoroutine(Waiter());
@@ -53,15 +53,15 @@ public class CursorMove : MonoBehaviour
         {
             rigidCur.constraints = RigidbodyConstraints.FreezeAll;
             StartCoroutine(Waiter());
-        }
+        }*/
     }
 
     //Makes it so that the script is disabled 1 sec after start, this makes everything work later
-    IEnumerator Waiter()
+    /*IEnumerator Waiter()
     {
         yield return new WaitForSeconds(1);
         GetComponent<CursorMove>().enabled = false;
-    }
+    }*/
 
 
 }
