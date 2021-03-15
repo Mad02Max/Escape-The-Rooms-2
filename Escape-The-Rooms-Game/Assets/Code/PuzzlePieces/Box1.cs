@@ -24,6 +24,7 @@ public class Box1 : MonoBehaviour
     public Rigidbody rigidbodyForCursor;
 
 
+
     //Connects the visual studio rigidbody and transfom to the unity ones
     //Sets the target for rotation. 
     void Start()
@@ -156,13 +157,13 @@ public class Box1 : MonoBehaviour
     {
         rigidPieces.transform.position = transform.position + new Vector3(0, 5f, 0);
         Debug.Log("It went up");
-        rigidbodyForCursor.transform.position = transform.position + new Vector3(0.5f, 1f, 0.5f);
+        rigidbodyForCursor.transform.position = rigidbodyForCursor.transform.position + new Vector3(0, 5f, 0);
     }
 
     public void Down()
     {
         rigidPieces.transform.position = transform.position + new Vector3(0, -5f, 0);
         Debug.Log("It went down");
-        rigidbodyForCursor.transform.position = transform.position + new Vector3(0.5f, -0.00005f, 0.5f);
+        rigidbodyForCursor.transform.position = rigidbodyForCursor.transform.position + new Vector3(0, -5f, 0);
     }
 }
