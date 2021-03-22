@@ -18,7 +18,9 @@ public class CollisionForCubes : MonoBehaviour
     {
         if (counter == 144)
         {
-            StartCoroutine(Waiter());
+            SceneManager.LoadScene(sceneName: "Victory");
+            Cursor.lockState = CursorLockMode.None;
+            //StartCoroutine(Waiter());
         }
     }
 
@@ -64,11 +66,11 @@ public class CollisionForCubes : MonoBehaviour
     //This is the method that waits for x seconds. Curently: 10 sec.
     //After this time, you win.
     //Unlocks the cursor so that the player can choose options in the menu
-    IEnumerator Waiter()
+    /*IEnumerator Waiter()
     {
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene(sceneName: "Victory");
         Cursor.lockState = CursorLockMode.None;
 
-    }
+    }*/
 }
