@@ -95,9 +95,7 @@ public class Box1 : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
-
-                    grounded = false;
-
+                      grounded = false;
 
 
                     if (grounded == false)
@@ -110,11 +108,6 @@ public class Box1 : MonoBehaviour
                         {
                             UP();
                         }
-
-
-
-                        iLuften = !iLuften;
-                        movePiece = iLuften;
 
 
                         iLuften = !iLuften;
@@ -130,7 +123,6 @@ public class Box1 : MonoBehaviour
         }
 
 
-
         /*if (collision.gameObject.tag == "Platform")
         {
             iLuften = false;
@@ -143,7 +135,6 @@ public class Box1 : MonoBehaviour
             movePiece = false;
             flying = false;
         }*/
-
 
 
     }
