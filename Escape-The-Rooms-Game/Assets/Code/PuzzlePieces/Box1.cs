@@ -104,6 +104,9 @@ public class Box1 : MonoBehaviour
                         if (iLuften == true)
                         {
                             Down();
+                            iLuften = false;
+                            movePiece = false;
+                            flying = false;
                         }
                         if (iLuften == false)
                         {
@@ -111,16 +114,27 @@ public class Box1 : MonoBehaviour
                         }
 
 
-
                     }
                 }
             }
+
             //David did this(start)
             //GetComponent<Renderer>().material.color = new Color32(255, 255, 0, 255);
             //David did this(stop)
         }
 
-        
+        if (collision.gameObject.tag == "Platform")
+        {
+            iLuften = false;
+            movePiece = false;
+            flying = false;
+        }
+        if (collision.gameObject.tag == "Floor")
+        {
+            iLuften = false;
+            movePiece = false;
+            flying = false;
+        }
 
     }
 
