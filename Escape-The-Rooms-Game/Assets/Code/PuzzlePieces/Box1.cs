@@ -24,7 +24,8 @@ public class Box1 : MonoBehaviour
     public bool no;
     public GameObject target;
 
-    public bool upUpAndAway;
+    public bool iLuften;
+    public bool grounded;
 
     public Rigidbody rigidbodyForCursor;
 
@@ -45,7 +46,8 @@ public class Box1 : MonoBehaviour
         movePiece = false;
         no = false;
         rigidbodyForCursor = GameObject.FindGameObjectWithTag("Cursor").GetComponent<Rigidbody>();
-        upUpAndAway = false;
+        iLuften = false;
+        grounded = true;
     }
 
     //Makes the pieces able to move and rotate when movePiece is true
@@ -87,23 +89,26 @@ public class Box1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cursor")
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (no == false)
             {
-                if (no == false)
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    if (upUpAndAway == true)
+                    if (grounded == false)
                     {
-                        Down();
-                        putDownPiece.isOn = true;
-                    }
-                    if (upUpAndAway == false)
-                    {
-                        UP();
-                        pickUpPiece.isOn = true;
-                    }
+                        if (iLuften == true)
+                        {
+                            Down();
+                            putDownPiece.isOn = true;
+                        }
+                        if (iLuften == false)
+                        {
+                            UP();
+                            pickUpPiece.isOn = true;
+                        }
 
-                    upUpAndAway = !upUpAndAway;
-                    movePiece = upUpAndAway;
+                        iLuften = !iLuften;
+                        movePiece = iLuften;
+                    }
                 }
             }
 

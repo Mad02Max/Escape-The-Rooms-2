@@ -37,6 +37,15 @@ public class CursorMove : MonoBehaviour
         {
             rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
         }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            rigidCur.transform.position = rigidCur.transform.position + new Vector3(0, 5f, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            rigidCur.transform.position = rigidCur.transform.position + new Vector3(0, -5f, 0);
+        }
     }
 
     //Freezes the cursor's rigidbody constraints when it touches the playboard, or the "table".

@@ -27,6 +27,19 @@ public class RigidbodyScriptForCubes : MonoBehaviour
             rb3dn2.constraints = RigidbodyConstraints.FreezeAll;
             //StartCoroutine(Waiter());
         }
+
+        if(collision.gameObject.tag == "1")
+        {
+            gameObject.GetComponent<Box1>().UP();
+        }
+        if (collision.gameObject.tag == "2")
+        {
+            gameObject.GetComponent<Box1>().UP();
+        }
+        if (collision.gameObject.tag == "4")
+        {
+            gameObject.GetComponent<Box1>().UP();
+        }
     }
 
     //Makes it so that the script is disabled 1 sec after start, this makes everything work later
