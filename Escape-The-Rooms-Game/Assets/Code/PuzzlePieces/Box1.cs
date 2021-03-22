@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 //By Caleb
 
 public class Box1 : MonoBehaviour
 {
 
-    
+    public Toggle pickUpPiece;
+
+    public Toggle putDownPiece;
 
     //Creating a rigidbody and a transfom in visual studio.
     //Creating a bool that will allow/hinder the pieces regarding movement.
@@ -92,10 +94,12 @@ public class Box1 : MonoBehaviour
                     if (upUpAndAway == true)
                     {
                         Down();
+                        putDownPiece.isOn = true;
                     }
                     if (upUpAndAway == false)
                     {
                         UP();
+                        pickUpPiece.isOn = true;
                     }
 
                     upUpAndAway = !upUpAndAway;

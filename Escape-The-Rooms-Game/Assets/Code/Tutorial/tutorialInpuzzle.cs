@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-
-public class tutorialPuzzle : MonoBehaviour
+public class tutorialInpuzzle : MonoBehaviour
 {
     public Toggle PickUpPiece;
 
