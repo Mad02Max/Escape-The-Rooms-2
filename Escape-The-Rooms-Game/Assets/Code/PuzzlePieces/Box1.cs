@@ -84,6 +84,10 @@ public class Box1 : MonoBehaviour
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, 90);
             }
         }
+
+
+        movePiece = flying;
+
     }
 
     //Makes it so that if the cursor is on a piece, "no" is false, and if the spacebar is pressed, the pieces will be able to move
@@ -104,7 +108,6 @@ public class Box1 : MonoBehaviour
                         if (iLuften == true)
                         {
                             Down();
-                            iLuften = false;
                             movePiece = false;
                             flying = false;
                         }
@@ -113,6 +116,8 @@ public class Box1 : MonoBehaviour
                             UP();
                         }
 
+                        //iLuften = !iLuften;
+                        //movePiece = iLuften;
 
                     }
                 }
@@ -128,12 +133,14 @@ public class Box1 : MonoBehaviour
             iLuften = false;
             movePiece = false;
             flying = false;
+            grounded = true;
         }
         if (collision.gameObject.tag == "Floor")
         {
             iLuften = false;
             movePiece = false;
             flying = false;
+            grounded = true;
         }
 
     }
@@ -200,7 +207,8 @@ public class Box1 : MonoBehaviour
         iLuften = true;
         movePiece = true;
         flying = true;
-        pickUpPiece.isOn = true;
+        //pickUpPiece.isOn = true;
+
     }
 
     public void Down()
@@ -208,6 +216,6 @@ public class Box1 : MonoBehaviour
         rigidPieces.transform.position = transform.position + new Vector3(0, -5f, 0);
         Debug.Log("It went down");
         rigidbodyForCursor.transform.position = rigidbodyForCursor.transform.position + new Vector3(0, -5f, 0);
-        putDownPiece.isOn = true;
+        //putDownPiece.isOn = true;
     }
 }
