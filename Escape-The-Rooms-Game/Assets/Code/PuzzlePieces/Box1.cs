@@ -20,7 +20,7 @@ public class Box1 : MonoBehaviour
     //Creates a gameobject to use as a point for rotation.
     private Rigidbody rigidPieces;
     private Transform pieceTrans;
-    public bool movePiece;    
+    public bool movePiece;
     float speed = 1f;
     float negativeSpeed = -1f;
     public bool no;
@@ -98,12 +98,15 @@ public class Box1 : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     grounded = false;
-                    
+
                     if (grounded == false)
                     {
                         if (iLuften == true)
                         {
                             Down();
+                            iLuften = false;
+                            movePiece = false;
+                            flying = false;
                         }
                         if (iLuften == false)
                         {
@@ -115,14 +118,12 @@ public class Box1 : MonoBehaviour
                 }
             }
 
-            
-
             //David did this(start)
             //GetComponent<Renderer>().material.color = new Color32(255, 255, 0, 255);
             //David did this(stop)
         }
 
-        if(collision.gameObject.tag == "Platform")
+        if (collision.gameObject.tag == "Platform")
         {
             iLuften = false;
             movePiece = false;
@@ -142,7 +143,7 @@ public class Box1 : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Cursor")
-        {       
+        {
             //Don't delete this if-statement
         }
 
