@@ -28,6 +28,7 @@ public class Box1 : MonoBehaviour
 
     public bool iLuften;
     public bool grounded;
+    public bool flying;
 
     public Rigidbody rigidbodyForCursor;
 
@@ -49,7 +50,8 @@ public class Box1 : MonoBehaviour
         no = false;
         rigidbodyForCursor = GameObject.FindGameObjectWithTag("Cursor").GetComponent<Rigidbody>();
         iLuften = false;
-        grounded = false;
+        grounded = true;
+        flying = false;
     }
 
     //Makes the pieces able to move and rotate when movePiece is true
@@ -95,8 +97,7 @@ public class Box1 : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
-                      grounded = false;
-
+                    grounded = false;
 
                     if (grounded == false)
                     {
@@ -109,10 +110,6 @@ public class Box1 : MonoBehaviour
                             UP();
                         }
 
-
-                        iLuften = !iLuften;
-                        movePiece = iLuften;
-
                     }
                 }
             }
@@ -121,7 +118,6 @@ public class Box1 : MonoBehaviour
             //GetComponent<Renderer>().material.color = new Color32(255, 255, 0, 255);
             //David did this(stop)
         }
-
 
         /*if (collision.gameObject.tag == "Platform")
         {
@@ -135,7 +131,6 @@ public class Box1 : MonoBehaviour
             movePiece = false;
             flying = false;
         }*/
-
 
     }
 
@@ -186,9 +181,21 @@ public class Box1 : MonoBehaviour
 
     public void UP()
     {
+        if (grounded == true)
+        {
+            return;
+        }
+        if (flying == true)
+        {
+            return;
+        }
+
         rigidPieces.transform.position = transform.position + new Vector3(0, 5f, 0);
         Debug.Log("It went up");
         rigidbodyForCursor.transform.position = rigidbodyForCursor.transform.position + new Vector3(0, 5f, 0);
+        iLuften = true;
+        movePiece = true;
+        flying = true;
         pickUpPiece.isOn = true;
     }
 
