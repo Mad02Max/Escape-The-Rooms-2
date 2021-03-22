@@ -10,7 +10,12 @@ public class tutorialInpuzzle : MonoBehaviour
 
     public GameObject tutorial;
 
+    private void Awake()
+    {
+        PickUpPiece.isOn = false;
 
+        PutDownPiece.isOn = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -18,7 +23,9 @@ public class tutorialInpuzzle : MonoBehaviour
 
         if (PickUpPiece.isOn == true && PutDownPiece.isOn == true)
         {
-            gameObject.SetActive(true);
+            tutorial.SetActive(true);
+            
+            Destroy(gameObject);
         }
 
     }

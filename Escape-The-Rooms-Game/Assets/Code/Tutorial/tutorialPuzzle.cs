@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class tutorialPuzzle : MonoBehaviour
 {
-    public Toggle PickUpPiece;
+    public Toggle openPuzzle;
 
-    public Toggle PutDownPiece;
+    public Toggle closePuzzle;
 
     public GameObject tutorial;
 
@@ -18,9 +18,11 @@ public class tutorialPuzzle : MonoBehaviour
     void Update()
     {
 
-        if (PickUpPiece.isOn == true && PutDownPiece.isOn == true)
+        if (openPuzzle.isOn == true && closePuzzle.isOn == true)
         {
-            gameObject.SetActive(true);
+            tutorial.SetActive(true);
+
+            Destroy(gameObject);
         }
 
     }
