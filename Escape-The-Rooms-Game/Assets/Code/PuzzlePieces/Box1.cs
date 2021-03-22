@@ -119,7 +119,7 @@ public class Box1 : MonoBehaviour
             //David did this(stop)
         }
 
-        if (collision.gameObject.tag == "Platform")
+        /*if (collision.gameObject.tag == "Platform")
         {
             iLuften = false;
             movePiece = false;
@@ -130,7 +130,7 @@ public class Box1 : MonoBehaviour
             iLuften = false;
             movePiece = false;
             flying = false;
-        }
+        }*/
 
     }
 
