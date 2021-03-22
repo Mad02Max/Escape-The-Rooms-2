@@ -47,7 +47,7 @@ public class Box1 : MonoBehaviour
         no = false;
         rigidbodyForCursor = GameObject.FindGameObjectWithTag("Cursor").GetComponent<Rigidbody>();
         iLuften = false;
-        grounded = true;
+        grounded = false;
     }
 
     //Makes the pieces able to move and rotate when movePiece is true
@@ -98,12 +98,10 @@ public class Box1 : MonoBehaviour
                         if (iLuften == true)
                         {
                             Down();
-                            putDownPiece.isOn = true;
                         }
                         if (iLuften == false)
                         {
                             UP();
-                            pickUpPiece.isOn = true;
                         }
 
                         iLuften = !iLuften;
@@ -168,6 +166,7 @@ public class Box1 : MonoBehaviour
         rigidPieces.transform.position = transform.position + new Vector3(0, 5f, 0);
         Debug.Log("It went up");
         rigidbodyForCursor.transform.position = rigidbodyForCursor.transform.position + new Vector3(0, 5f, 0);
+        pickUpPiece.isOn = true;
     }
 
     public void Down()
@@ -175,5 +174,6 @@ public class Box1 : MonoBehaviour
         rigidPieces.transform.position = transform.position + new Vector3(0, -5f, 0);
         Debug.Log("It went down");
         rigidbodyForCursor.transform.position = rigidbodyForCursor.transform.position + new Vector3(0, -5f, 0);
+        putDownPiece.isOn = true;
     }
 }
