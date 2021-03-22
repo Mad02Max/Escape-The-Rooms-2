@@ -11,6 +11,8 @@ public class Box1 : MonoBehaviour
 
     public Toggle putDownPiece;
 
+
+
     // Slut Max
 
     //Creating a rigidbody and a transfom in visual studio.

@@ -61,8 +61,8 @@ public class Cockroch : MonoBehaviour
     //Randomises two floats.
     public void Roller()
     {
-        rngOn = Random.Range(4, 8);
-        rngOff = Random.Range(8, 12);
+        rngOn = Random.Range(1, 4);
+        rngOff = Random.Range(12, 30);
     }
 
     //Makes two floats the same as the random ones
