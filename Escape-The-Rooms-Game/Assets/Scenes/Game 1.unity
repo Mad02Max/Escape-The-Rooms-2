@@ -5321,9 +5321,13 @@ MonoBehaviour:
   movePiece: 0
   no: 1
   target: {fileID: 202373492}
+<<<<<<< HEAD
   iLuften: 0
   grounded: 0
   flying: 0
+=======
+  upUpAndAway: 0
+>>>>>>> parent of 7e3c12b (a lot of small things)
   rigidbodyForCursor: {fileID: 0}
 --- !u!4 &1026678695
 Transform:
@@ -6047,9 +6051,13 @@ MonoBehaviour:
   movePiece: 0
   no: 1
   target: {fileID: 202373492}
+<<<<<<< HEAD
   iLuften: 0
   grounded: 0
   flying: 0
+=======
+  upUpAndAway: 0
+>>>>>>> parent of 7e3c12b (a lot of small things)
   rigidbodyForCursor: {fileID: 0}
 --- !u!65 &1088315476
 BoxCollider:
@@ -9301,9 +9309,13 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 202373492}
+<<<<<<< HEAD
   iLuften: 0
   grounded: 0
   flying: 0
+=======
+  upUpAndAway: 0
+>>>>>>> parent of 7e3c12b (a lot of small things)
   rigidbodyForCursor: {fileID: 0}
 --- !u!65 &1525829654
 BoxCollider:
@@ -12267,9 +12279,13 @@ MonoBehaviour:
   movePiece: 0
   no: 0
   target: {fileID: 202373492}
+<<<<<<< HEAD
   iLuften: 0
   grounded: 0
   flying: 0
+=======
+  upUpAndAway: 0
+>>>>>>> parent of 7e3c12b (a lot of small things)
   rigidbodyForCursor: {fileID: 0}
 --- !u!65 &2002463983
 BoxCollider:
