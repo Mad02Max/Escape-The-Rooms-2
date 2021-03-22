@@ -6,12 +6,10 @@ using UnityEngine.UI;
 
 public class Box1 : MonoBehaviour
 {
-    // Max
+
     public Toggle pickUpPiece;
 
     public Toggle putDownPiece;
-
-    // Slut Max
 
     //Creating a rigidbody and a transfom in visual studio.
     //Creating a bool that will allow/hinder the pieces regarding movement.
