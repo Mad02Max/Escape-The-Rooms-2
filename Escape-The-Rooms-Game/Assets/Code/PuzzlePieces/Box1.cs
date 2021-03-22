@@ -110,17 +110,27 @@ public class Box1 : MonoBehaviour
                             UP();
                         }
 
-
-
                     }
                 }
             }
+
             //David did this(start)
             //GetComponent<Renderer>().material.color = new Color32(255, 255, 0, 255);
             //David did this(stop)
         }
 
-        
+        if (collision.gameObject.tag == "Platform")
+        {
+            iLuften = false;
+            movePiece = false;
+            flying = false;
+        }
+        if (collision.gameObject.tag == "Floor")
+        {
+            iLuften = false;
+            movePiece = false;
+            flying = false;
+        }
 
     }
 

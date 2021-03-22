@@ -5316,14 +5316,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpPiece: {fileID: 1659403111}
-  putDownPiece: {fileID: 1412710417}
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 1
   target: {fileID: 202373492}
-  iLuften: 0
-  grounded: 0
-  flying: 0
+  upUpAndAway: 0
   rigidbodyForCursor: {fileID: 0}
 --- !u!4 &1026678695
 Transform:
@@ -5844,8 +5842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2f4ec96dea6ef40b4d77cb85527527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openPuzzle: {fileID: 0}
-  closePuzzle: {fileID: 0}
+  PickUpPiece: {fileID: 1659403111}
+  PutDownPiece: {fileID: 1412710417}
   tutorial: {fileID: 743607090}
 --- !u!1 &1085448186
 GameObject:
@@ -6042,14 +6040,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpPiece: {fileID: 1659403111}
-  putDownPiece: {fileID: 1412710417}
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 1
   target: {fileID: 202373492}
-  iLuften: 0
-  grounded: 0
-  flying: 0
+  upUpAndAway: 0
   rigidbodyForCursor: {fileID: 0}
 --- !u!65 &1088315476
 BoxCollider:
@@ -9296,14 +9292,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpPiece: {fileID: 1659403111}
-  putDownPiece: {fileID: 1412710417}
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 202373492}
-  iLuften: 0
-  grounded: 0
-  flying: 0
+  upUpAndAway: 0
   rigidbodyForCursor: {fileID: 0}
 --- !u!65 &1525829654
 BoxCollider:
@@ -10651,8 +10645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2f4ec96dea6ef40b4d77cb85527527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openPuzzle: {fileID: 0}
-  closePuzzle: {fileID: 0}
+  PickUpPiece: {fileID: 0}
+  PutDownPiece: {fileID: 0}
   tutorial: {fileID: 1082016308}
 --- !u!1 &1809717044
 GameObject:
@@ -12262,14 +12256,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpPiece: {fileID: 1659403111}
-  putDownPiece: {fileID: 1412710417}
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 202373492}
-  iLuften: 0
-  grounded: 0
-  flying: 0
+  upUpAndAway: 0
   rigidbodyForCursor: {fileID: 0}
 --- !u!65 &2002463983
 BoxCollider:
