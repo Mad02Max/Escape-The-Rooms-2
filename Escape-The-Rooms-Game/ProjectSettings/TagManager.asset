@@ -28,6 +28,7 @@ TagManager:
   - Light
   - Flashlight
   - MiniPuzzle
+  - BoardBorders
   layers:
   - Default
   - TransparentFX
