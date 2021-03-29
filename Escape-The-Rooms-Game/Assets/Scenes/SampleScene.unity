@@ -537,7 +537,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &96794809
 GameObject:
@@ -738,7 +738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0700bb75144cdc14ca8026ee90991c64, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0700bb75144cdc14ca8026ee90991c64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -930,9 +930,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &139571503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1123,9 +1130,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &145331478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1351,9 +1365,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &185027274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1741,7 +1762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c8f6a5c95d20ce49bcdc00220bde21c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c8f6a5c95d20ce49bcdc00220bde21c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2377,9 +2398,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &307550412
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2711,6 +2739,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328995775}
   m_Mesh: {fileID: -4034538669550850240, guid: e724605941fa07a4a94cebf6e2024d50, type: 3}
+--- !u!1001 &362642539
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.342668
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.493537
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1891170103797119449, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_Name
+      value: small_objects_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995031925321933880, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe1c4c3a4ccbeb640aea337b7a410eae, type: 2}
+    - target: {fileID: 3651711391864122590, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe1c4c3a4ccbeb640aea337b7a410eae, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49192420def25ae41b3471aed58e8d17, type: 3}
 --- !u!1 &401920819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2789,9 +2886,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &401920824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2965,9 +3069,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &421624142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3154,9 +3265,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &432032932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3463,7 +3581,7 @@ Transform:
   - {fileID: 1456163849}
   - {fileID: 1375186769}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &468290121
 GameObject:
@@ -3624,9 +3742,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &503962617
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3962,9 +4087,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &551917648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4781,9 +4913,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &659404437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5404,7 +5543,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 20, z: 0}
 --- !u!1 &739301829
 GameObject:
@@ -5466,9 +5605,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &739301833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5579,9 +5725,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &745113976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5781,9 +5934,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &759111180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5970,9 +6130,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &768270888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6078,9 +6245,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &771411646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6476,9 +6650,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &846453681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6542,7 +6723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84a02405cae5ef744999654c48c568b0, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84a02405cae5ef744999654c48c568b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7127,9 +7308,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &947706893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7318,7 +7506,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 87.85, y: 0, z: 0}
 --- !u!1 &964010107
 GameObject:
@@ -7399,9 +7587,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &964010112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8096,9 +8291,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!1 &1051935883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3018508254227586887, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
@@ -8305,9 +8507,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1054289918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8494,9 +8703,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1073914925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8641,7 +8857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f7f56e6743ffabe4b8cd8201a8c307a1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f7f56e6743ffabe4b8cd8201a8c307a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8759,7 +8975,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1115048949
 GameObject:
@@ -9164,9 +9380,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1164904218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9503,9 +9726,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!1 &1211225844
 GameObject:
   m_ObjectHideFlags: 0
@@ -9842,7 +10072,7 @@ Transform:
   m_LocalScale: {x: 50, y: 1, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1261143552
 GameObject:
@@ -9992,9 +10222,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!1 &1265171623
 GameObject:
   m_ObjectHideFlags: 0
@@ -10029,6 +10266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b266a9c07aaa8418bce07b03cbd1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedChanger: 0
 --- !u!114 &1265171625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10134,7 +10372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1270650083
 GameObject:
@@ -10296,9 +10534,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1272449185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10524,7 +10769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e03e43d28108e4c4dbebdd7490b9b916, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e03e43d28108e4c4dbebdd7490b9b916, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11614,9 +11859,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1378541438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11926,7 +12178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da444f88f4cdc054c8d30b2f38cabd14, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12647,9 +12899,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1505518834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12917,9 +13176,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1528145214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13106,9 +13372,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1536284554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14133,9 +14406,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1720834799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14443,9 +14723,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1748563555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14579,7 +14866,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755518628
 GameObject:
@@ -14740,9 +15027,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1771928789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14997,9 +15291,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1807087052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15225,7 +15526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7bbe58e4c99d7e46b2dfec13607d7a2, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7bbe58e4c99d7e46b2dfec13607d7a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15390,9 +15691,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1878804133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16248,9 +16556,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &2020846176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16442,9 +16757,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d35c60ef10a24eb0cac09a537d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpPiece: {fileID: 0}
+  putDownPiece: {fileID: 0}
   movePiece: 0
   no: 0
   target: {fileID: 1265171623}
+  iLuften: 0
+  grounded: 0
+  flying: 0
+  rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &2044346712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17403,7 +17725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6964624992330062262, guid: da24f5ae4c291fe4fa5f6de0f7432379, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6964624992330062262, guid: da24f5ae4c291fe4fa5f6de0f7432379, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17571,7 +17893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082638255119791426, guid: 9f18b430037529a4ebfe55964fdd5a75, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4082638255119791426, guid: 9f18b430037529a4ebfe55964fdd5a75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
