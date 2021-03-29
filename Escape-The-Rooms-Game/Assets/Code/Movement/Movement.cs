@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour
     //Makes it so that the player can't move when in the puzzle camera
     public bool moveYes;
 
+    public bool crouch;
+
     //This will show the players cordinates, it is here for testing reasons
     public Text Position;
 
@@ -41,6 +43,7 @@ public class Movement : MonoBehaviour
     public void Awake()
     {
         moveYes = true;
+        crouch = false;
 
     } 
 
@@ -84,6 +87,22 @@ public class Movement : MonoBehaviour
                 d = true;
             }
 
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                crouch = !crouch;
+                if (crouch == true)
+                {
+                    rb3d.transform.localScale = rb3d.transform.localScale + new Vector3(0, -5, 0);
+                    rb3d.transform.position = rb3d.transform.position + new Vector3(0, -10, 0);
+                }
+                if (crouch == false)
+                {
+                    rb3d.transform.localScale = rb3d.transform.localScale + new Vector3(0, 5, 0);
+                    rb3d.transform.position = rb3d.transform.position + new Vector3(0, 10, 0);
+
+                }
+            }
+
             if(w == true && s == true && a == true && d == true)
             {
                 WASD.isOn = true;
@@ -93,5 +112,8 @@ public class Movement : MonoBehaviour
 
         //Text telling player cordinate
         Position.text = "position is " + transform.position;
+
+        
+
     }
 }
