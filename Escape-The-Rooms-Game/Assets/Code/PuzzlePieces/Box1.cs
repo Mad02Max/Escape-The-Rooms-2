@@ -39,7 +39,7 @@ public class Box1 : MonoBehaviour
 
     public Rigidbody rigidbodyForCursor;
 
-
+    public bool speedChanger2;
 
     //Connects the visual studio rigidbody and transfom to the unity ones
     //Sets the target for rotation. 
@@ -69,20 +69,34 @@ public class Box1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.A))
             {
-                rigidPieces.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
+                pieceTrans.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.D))
             {
-                rigidPieces.transform.position = transform.position + new Vector3(speed, 0, 0);
+                pieceTrans.transform.position = transform.position + new Vector3(speed, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.W))
             {
-                rigidPieces.transform.position = transform.position + new Vector3(0, 0, speed);
+                pieceTrans.transform.position = transform.position + new Vector3(0, 0, speed);
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
-                rigidPieces.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
+                pieceTrans.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
             }
+
+            speedChanger2 = GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMove>().speedChanger;
+
+            if (speedChanger2 == false)
+            {
+                speed = 1;
+                negativeSpeed = -1;
+            }
+            if (speedChanger2 == true)
+            {
+                speed = 2;
+                negativeSpeed = -2;
+            }
+
             if (Input.GetKeyDown(KeyCode.V))
             {
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, -90);
