@@ -12,10 +12,13 @@ public class CursorMove : MonoBehaviour
     float speed = 1f;
     float negativeSpeed = -1f;
 
+    public bool speedChanger;
+
     //Connects the visual studio rigidbody to the unity rigidbody.
     void Start()
     {
-        rigidCur = GetComponent<Rigidbody>();        
+        rigidCur = GetComponent<Rigidbody>();
+        speedChanger = false;
     }
 
     //Makes the character able to move.
@@ -37,6 +40,23 @@ public class CursorMove : MonoBehaviour
         {
             rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
         }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            speedChanger = !speedChanger;
+        }
+        if (speedChanger == false)
+        {
+            speed = 1;
+            negativeSpeed = -1;
+        }
+        if (speedChanger == true)
+        {
+            speed = 2;
+            negativeSpeed = -2;
+        }
+
+
 
         if (Input.GetKeyDown(KeyCode.L))
         {
