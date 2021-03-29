@@ -40,16 +40,7 @@ public class RigidbodyScriptForCubes : MonoBehaviour
         {
             gameObject.GetComponent<Box1>().UP();
         }
-        if (collision.gameObject.tag == "BoardBorders")
-        {
-            gameObject.GetComponent<Box1>().UP();
-        }
     }
-
-
-
-
-    
 
     //Makes it so that the script is disabled 1 sec after start, this makes everything work later
     /*IEnumerator Waiter()
