@@ -21,19 +21,19 @@ public class CursorMove : MonoBehaviour
     //Makes the character able to move.
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             rigidCur.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             rigidCur.transform.position = transform.position + new Vector3(speed, 0, 0);
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             rigidCur.transform.position = transform.position + new Vector3(0, 0, speed);
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
         }

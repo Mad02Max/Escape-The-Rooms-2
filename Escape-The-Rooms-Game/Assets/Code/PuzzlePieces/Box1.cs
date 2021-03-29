@@ -67,19 +67,19 @@ public class Box1 : MonoBehaviour
 
         if (movePiece == true)
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.A))
             {
                 rigidPieces.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
             }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.D))
             {
                 rigidPieces.transform.position = transform.position + new Vector3(speed, 0, 0);
             }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 rigidPieces.transform.position = transform.position + new Vector3(0, 0, speed);
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.S))
             {
                 rigidPieces.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
             }
