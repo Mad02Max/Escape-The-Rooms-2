@@ -5674,6 +5674,7 @@ MonoBehaviour:
   grounded: 0
   flying: 0
   rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!4 &1026678695
 Transform:
   m_ObjectHideFlags: 0
@@ -6400,6 +6401,7 @@ MonoBehaviour:
   grounded: 0
   flying: 0
   rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1088315476
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10024,6 +10026,7 @@ MonoBehaviour:
   grounded: 0
   flying: 0
   rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &1525829654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10403,7 +10406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1632035863
 Light:
   m_ObjectHideFlags: 0
@@ -10532,7 +10535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1673539946
 Light:
   m_ObjectHideFlags: 0
@@ -10545,7 +10548,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 450
   m_SpotAngle: 120
   m_InnerSpotAngle: 1
@@ -10622,10 +10625,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   on: 0
   spot: {fileID: 1673539946}
-  rng: 0
-  timer: 0
-  start: 2
-  end: 8
+  rngOn: 0
+  rngOff: 0
+  timerOn: 0
+  timerOff: 0
+  startOn: 4
+  endOn: 8
+  startOff: 2
+  endOff: 4
   scriptWork: 0
   r: 0
   g: 0
@@ -13065,6 +13072,7 @@ MonoBehaviour:
   grounded: 0
   flying: 0
   rigidbodyForCursor: {fileID: 0}
+  speedChanger2: 0
 --- !u!65 &2002463983
 BoxCollider:
   m_ObjectHideFlags: 0
