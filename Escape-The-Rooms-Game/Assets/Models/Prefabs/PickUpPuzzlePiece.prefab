@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 155277973359855691}
   m_Layer: 5
   m_Name: PickUpPuzzlePiece
-  m_TagString: Pick
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

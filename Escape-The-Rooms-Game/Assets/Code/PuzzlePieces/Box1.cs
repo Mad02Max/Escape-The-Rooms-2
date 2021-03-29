@@ -11,9 +11,8 @@ public class Box1 : MonoBehaviour
 
     public Toggle putDownPiece;
 
-    private Toggle rotateLeft;
 
-    private Toggle rotateRight;
+
     // Slut Max
 
     //Creating a rigidbody and a transfom in visual studio.
@@ -60,16 +59,6 @@ public class Box1 : MonoBehaviour
     //Makes the pieces able to move and rotate when movePiece is true
     void Update()
     {
-
-        pickUpPiece = GameObject.FindGameObjectWithTag("Pick").GetComponent<Toggle>();
-
-        putDownPiece = GameObject.FindGameObjectWithTag("Down").GetComponent<Toggle>();
-
-        rotateLeft = GameObject.FindGameObjectWithTag("Left").GetComponent<Toggle>();
-
-        rotateRight = GameObject.FindGameObjectWithTag("Right").GetComponent<Toggle>();
-
-
         if (movePiece == true)
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -91,14 +80,10 @@ public class Box1 : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.V))
             {
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, -90);
-
-                rotateLeft.isOn = true;
             }
             if (Input.GetKeyDown(KeyCode.B))
             {
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, 90);
-
-                rotateRight.isOn = true;
             }
         }
 
@@ -224,7 +209,7 @@ public class Box1 : MonoBehaviour
         iLuften = true;
         movePiece = true;
         flying = true;
-        pickUpPiece.isOn = true;
+        //pickUpPiece.isOn = true;
 
     }
 
@@ -233,6 +218,6 @@ public class Box1 : MonoBehaviour
         rigidPieces.transform.position = transform.position + new Vector3(0, -5f, 0);
         Debug.Log("It went down");
         rigidbodyForCursor.transform.position = rigidbodyForCursor.transform.position + new Vector3(0, -5f, 0);
-        putDownPiece.isOn = true;
+        //putDownPiece.isOn = true;
     }
 }
