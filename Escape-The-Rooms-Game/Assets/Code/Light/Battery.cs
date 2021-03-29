@@ -37,6 +37,12 @@ public class Battery : MonoBehaviour
         on = false;
         currentBattery = batteryLife;
         flashlight.enabled = false;
+
+        battery1.enabled = false;
+        battery2.enabled = false;
+        battery3.enabled = false;
+        battery4.enabled = false;
+        battery5.enabled = false;
     }
 
     //Makes it so that the ligft is off if on is false.
@@ -125,10 +131,6 @@ public class Battery : MonoBehaviour
                     }
                 }
             }
-
         }
-
-
     }
-
 }

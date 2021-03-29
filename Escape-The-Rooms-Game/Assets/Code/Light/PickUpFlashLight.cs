@@ -10,6 +10,12 @@ namespace VHS
     {
         public GameObject flashlight;
 
+
+        public void Start()
+        {
+            flashlight.active = false;
+        }
+
         //Creates a visual studio object to interact with the unity batteries.
 
         //Makes it so that the battery is added to on interaction.
