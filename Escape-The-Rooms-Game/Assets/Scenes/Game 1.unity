@@ -5841,11 +5841,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1082016308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2f4ec96dea6ef40b4d77cb85527527, type: 3}
+  m_Script: {fileID: 11500000, guid: ed641913c479a464f8eb2c6b53f99783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openPuzzle: {fileID: 0}
-  closePuzzle: {fileID: 0}
+  PickUpPiece: {fileID: 1659403111}
+  PutDownPiece: {fileID: 1412710417}
   tutorial: {fileID: 743607090}
 --- !u!1 &1085448186
 GameObject:
@@ -7282,7 +7282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1338262436
 Transform:
   m_ObjectHideFlags: 0
@@ -10651,8 +10651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2f4ec96dea6ef40b4d77cb85527527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openPuzzle: {fileID: 0}
-  closePuzzle: {fileID: 0}
+  openPuzzle: {fileID: 670741947}
+  closePuzzle: {fileID: 1966517347}
   tutorial: {fileID: 1082016308}
 --- !u!1 &1809717044
 GameObject:
