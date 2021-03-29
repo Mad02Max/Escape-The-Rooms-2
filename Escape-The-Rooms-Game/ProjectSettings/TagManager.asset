@@ -29,6 +29,10 @@ TagManager:
   - Flashlight
   - MiniPuzzle
   - BoardBorders
+  - Down
+  - Pick
+  - Left
+  - Right
   layers:
   - Default
   - TransparentFX

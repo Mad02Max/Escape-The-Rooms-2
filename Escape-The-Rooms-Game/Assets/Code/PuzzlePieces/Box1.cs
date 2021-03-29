@@ -14,6 +14,10 @@ public class Box1 : MonoBehaviour
     private Toggle rotateLeft;
 
     private Toggle rotateRight;
+
+    private bool left = false;
+
+    private bool right = false;
     // Slut Max
 
     //Creating a rigidbody and a transfom in visual studio.
@@ -61,15 +65,6 @@ public class Box1 : MonoBehaviour
     void Update()
     {
 
-        pickUpPiece = GameObject.FindGameObjectWithTag("Pick").GetComponent<Toggle>();
-
-        putDownPiece = GameObject.FindGameObjectWithTag("Down").GetComponent<Toggle>();
-
-        rotateLeft = GameObject.FindGameObjectWithTag("Left").GetComponent<Toggle>();
-
-        rotateRight = GameObject.FindGameObjectWithTag("Right").GetComponent<Toggle>();
-
-
         if (movePiece == true)
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -105,6 +100,14 @@ public class Box1 : MonoBehaviour
 
         movePiece = flying;
 
+
+        pickUpPiece = GameObject.FindGameObjectWithTag("Pick").GetComponent<Toggle>();
+
+        putDownPiece = GameObject.FindGameObjectWithTag("Down").GetComponent<Toggle>();
+
+        rotateLeft = GameObject.FindGameObjectWithTag("Left").GetComponent<Toggle>();
+
+        rotateRight = GameObject.FindGameObjectWithTag("Right").GetComponent<Toggle>();
     }
 
     //Makes it so that if the cursor is on a piece, "no" is false, and if the spacebar is pressed, the pieces will be able to move
