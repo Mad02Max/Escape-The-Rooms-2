@@ -46,6 +46,8 @@ namespace VHS
             Instantiate(piece4, pos4.transform.position, Quaternion.identity);
 
             holdE.isOn = true;
+            GameObject.FindGameObjectWithTag("Door").GetComponent<Open>().open = true;
+            GameObject.FindGameObjectWithTag("Lock").GetComponent<Open>().open = true;
 
             // Destroys object
             Destroy(gameObject);
