@@ -20,6 +20,13 @@ public class Battery : MonoBehaviour
     public Light flashlight;
     public Slider batterySlider;
 
+    public Image battery1;
+    public Image battery2;
+    public Image battery3;
+    public Image battery4;
+    public Image battery5;
+
+
     public Toggle flashLight;
 
     //Turns on to false at the start.
@@ -69,6 +76,59 @@ public class Battery : MonoBehaviour
         batterText.text = "Seconds left in battery = " + currentBattery;
 
         batterySlider.value = currentBattery;
+
+        if (batteryLife == 0)
+        {
+            battery1.enabled = false;
+            battery2.enabled = false;
+            battery3.enabled = false;
+            battery4.enabled = false;
+            battery5.enabled = true;
+        }
+        if (batteryLife > 270)
+        {
+            battery1.enabled = true;
+            battery2.enabled = false;
+            battery3.enabled = false;
+            battery4.enabled = false;
+            battery5.enabled = false;
+        }
+        if (batteryLife > 0)
+        {
+            if (batteryLife < 91)
+            {
+                battery1.enabled = false;
+                battery2.enabled = false;
+                battery3.enabled = false;
+                battery4.enabled = true;
+                battery5.enabled = false;
+            }
+            if (batteryLife > 90)
+            {
+                if (batteryLife < 181)
+                {
+                    battery1.enabled = false;
+                    battery2.enabled = false;
+                    battery3.enabled = true;
+                    battery4.enabled = false;
+                    battery5.enabled = false;
+                }
+                if (batteryLife > 180)
+                {
+                    if (batteryLife <= 270)
+                    {
+                        battery1.enabled = false;
+                        battery2.enabled = true;
+                        battery3.enabled = false;
+                        battery4.enabled = false;
+                        battery5.enabled = false;
+                    }
+                }
+            }
+
+        }
+
+
     }
 
 }
