@@ -17,10 +17,10 @@ public class LightFlicker : MonoBehaviour
     public float rngOff;
     public float timerOn;
     public float timerOff;
-    public float startOn = 4f;
-    public float endOn = 8f;
-    public float startOff = 2f;
-    public float endOff = 4f;
+    public float startOn = 1f;
+    public float endOn = 20f;
+    public float startOff = 1f;
+    public float endOff = 20f;
 
     //This was just for testing, turning the flickering on/off.
     public bool scriptWork;
@@ -32,6 +32,10 @@ public class LightFlicker : MonoBehaviour
     public float rc;
     public float gc;
     public float bc;
+
+    public float minIntensity = 1f;
+    public float maxIntensity = 2.5f;
+    
 
     //In awake, the light is turned on, the visual studio light is connected to the unity light.
     //and the two methods controlling the random flickering is activated for the first time.
@@ -54,17 +58,19 @@ public class LightFlicker : MonoBehaviour
         {
             if (on == false)
             {
-                spot.enabled = false;
+                //spot.enabled = false;
+                //spot.intensity = 1f;
+                spot.intensity = spot.intensity - Time.deltaTime;
                 timerOff = timerOff - 1 * Time.deltaTime;
             }
             if (on == true)
             {
-                spot.enabled = true;
+                //spot.enabled = true;
+                //spot.intensity = 2.5f;
+                spot.intensity = spot.intensity + Time.deltaTime;
+
                 timerOn = timerOn - 1 * Time.deltaTime;
             }
-
-
-
 
             if (timerOn <= 0)
             {
@@ -84,10 +90,20 @@ public class LightFlicker : MonoBehaviour
             }
         }
 
-        /*if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             scriptWork = !scriptWork;
-        }*/
+        }
+
+        if (spot.intensity > maxIntensity)
+        {
+            spot.intensity = maxIntensity;
+        }
+
+        if (spot.intensity < minIntensity)
+        {
+            spot.intensity = minIntensity;
+        }
     }
 
     //Randomise rng.
@@ -102,7 +118,6 @@ public class LightFlicker : MonoBehaviour
     {
         timerOn = rngOn;
         timerOff = rngOff;
-        
     }
     
     public void TimerEnd()
@@ -120,5 +135,4 @@ public class LightFlicker : MonoBehaviour
         gc = g / 255f;
         bc = b / 255f;
     }
-
 }
