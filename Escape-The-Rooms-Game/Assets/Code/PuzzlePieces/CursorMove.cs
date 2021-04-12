@@ -1,11 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //All done by Caleb
 
 public class CursorMove : MonoBehaviour
 {
+
+    //Max
+
+    public Toggle moveWASD;
+
+    public bool w = false;
+    public bool a = false;
+    public bool s = false;
+    public bool d = false;
+
+    // End Max
+
     //Creates a rigidbody in visual studio.
     //Creates an int for the speed of the cursor.
     private Rigidbody rigidCur;
@@ -27,18 +40,27 @@ public class CursorMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             rigidCur.transform.position = transform.position + new Vector3(negativeSpeed, 0, 0);
+            a = true;
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
             rigidCur.transform.position = transform.position + new Vector3(speed, 0, 0);
+            d = true;
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
             rigidCur.transform.position = transform.position + new Vector3(0, 0, speed);
+            w = true;
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
             rigidCur.transform.position = transform.position + new Vector3(0, 0, negativeSpeed);
+            s = true;
+        }
+
+        if(w == true && a == true && s == true && d == true)
+        {
+            moveWASD.isOn = true;
         }
 
         if (Input.GetKeyDown(KeyCode.Tab))
