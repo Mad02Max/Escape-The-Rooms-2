@@ -15,6 +15,8 @@ public class Timer : MonoBehaviour
     public int timeDefiner;
     public Text timerText;
 
+    public Slider timerSlider;
+
     //Time definer is randomly decided, and timer is decided as such.
     void Start()
     {
@@ -48,7 +50,9 @@ public class Timer : MonoBehaviour
                     }
                 }
             }
-        }        
+        }
+
+        timerSlider.maxValue = timer;
     }
 
     //The timer counts down
@@ -70,6 +74,8 @@ public class Timer : MonoBehaviour
         {
             timer = 0;
         }
-
+        
+        
+        timerSlider.value = timer;
     }
 }

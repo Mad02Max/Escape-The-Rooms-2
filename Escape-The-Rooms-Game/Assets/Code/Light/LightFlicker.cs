@@ -13,10 +13,14 @@ public class LightFlicker : MonoBehaviour
     //Creates a minimum(start), and maximum(end) for what the rng value can be,
     public bool on;
     public Light spot;
-    public float rng;
-    public float timer;
-    public float start = 2f;
-    public float end = 8f;
+    public float rngOn;
+    public float rngOff;
+    public float timerOn;
+    public float timerOff;
+    public float startOn = 4f;
+    public float endOn = 8f;
+    public float startOff = 2f;
+    public float endOff = 4f;
 
     //This was just for testing, turning the flickering on/off.
     public bool scriptWork;
@@ -51,16 +55,28 @@ public class LightFlicker : MonoBehaviour
             if (on == false)
             {
                 spot.enabled = false;
+                timerOff = timerOff - 1 * Time.deltaTime;
             }
             if (on == true)
             {
                 spot.enabled = true;
+                timerOn = timerOn - 1 * Time.deltaTime;
             }
 
-            timer = timer - 1 * Time.deltaTime;
-            if (timer <= 0)
+
+
+
+            if (timerOn <= 0)
             {
-                on = !on;
+                TimerEnd();
+                //spot.color = new Vector4(rc, gc, bc);
+                //Roller2();
+                Roller();
+                Timer();
+            }
+            if (timerOff <= 0)
+            {
+                TimerEnd();
                 //spot.color = new Vector4(rc, gc, bc);
                 //Roller2();
                 Roller();
@@ -77,15 +93,23 @@ public class LightFlicker : MonoBehaviour
     //Randomise rng.
     public void Roller()
     {
-        rng = Random.Range(start, end);
+        rngOn = Random.Range(startOn, endOn);
+        rngOff = Random.Range(startOff, endOff);
     }
 
     //Makes timer equal to rng
     public void Timer()
     {
-        timer = rng;
+        timerOn = rngOn;
+        timerOff = rngOff;
+        
     }
     
+    public void TimerEnd()
+    {
+        on = !on;
+    }
+
     //This is the thing that makes the colour random
     public void Roller2()
     {
