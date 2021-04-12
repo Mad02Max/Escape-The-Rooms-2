@@ -11,9 +11,9 @@ public class Box1 : MonoBehaviour
 
     public Toggle putDownPiece;
 
-    private Toggle rotateLeft;
+    public Toggle rotateLeft;
 
-    private Toggle rotateRight;
+    public Toggle rotateRight;
 
     private bool left = false;
 
@@ -101,17 +101,32 @@ public class Box1 : MonoBehaviour
             {
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, -90);
 
-                rotateLeft.isOn = true;
+                //left = true;
             }
             if (Input.GetKeyDown(KeyCode.B))
             {
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, 90);
 
-                rotateRight.isOn = true;
+               //right = true;
             }
         }
 
 
+        // = GameObject.FindGameObjectWithTag("Left").GetComponent<Toggle>();
+
+        //rotateRight = GameObject.FindGameObjectWithTag("Right").GetComponent<Toggle>();
+        /*
+        if (left == true)
+        {
+
+            rotateLeft.isOn = true;
+
+        }
+
+        if(right == true)
+        {
+            rotateRight.isOn = true;
+        }*/
         movePiece = flying;
 
 
@@ -119,9 +134,6 @@ public class Box1 : MonoBehaviour
 
         putDownPiece = GameObject.FindGameObjectWithTag("Down").GetComponent<Toggle>();
 
-        rotateLeft = GameObject.FindGameObjectWithTag("Left").GetComponent<Toggle>();
-
-        rotateRight = GameObject.FindGameObjectWithTag("Right").GetComponent<Toggle>();
     }
 
     //Makes it so that if the cursor is on a piece, "no" is false, and if the spacebar is pressed, the pieces will be able to move
