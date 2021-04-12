@@ -19,7 +19,7 @@ public class RotateTutorial : MonoBehaviour
 
         if (pressB.isOn == true && pressV.isOn == true)
         {
-            tutorialBackgorund.SetActive(false);
+            tutorialBackgorund.transform.position = transform.position + new Vector3(-325, 0, 0);
 
             Destroy(gameObject);
         }

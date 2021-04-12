@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 //By Caleb
 
 namespace VHS
@@ -10,6 +10,7 @@ namespace VHS
     {
         public GameObject flashlight;
 
+        public Toggle PickUpFlaslight;
 
         public void Start()
         {
@@ -25,6 +26,8 @@ namespace VHS
             base.OnInteract();
 
             flashlight.active = true;
+
+            PickUpFlaslight.isOn = true;
 
             Destroy(gameObject);
         }
