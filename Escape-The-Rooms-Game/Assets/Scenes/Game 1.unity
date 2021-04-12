@@ -11946,7 +11946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1632035863
 Light:
   m_ObjectHideFlags: 0
@@ -12181,6 +12181,8 @@ MonoBehaviour:
   rc: 0
   gc: 0
   bc: 0
+  minIntensity: 1
+  maxIntensity: 2.5
 --- !u!1 &1681588284
 GameObject:
   m_ObjectHideFlags: 0
