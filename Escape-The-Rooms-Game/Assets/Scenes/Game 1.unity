@@ -1549,6 +1549,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Battery++
+  pickUp: {fileID: 217037820}
   battery: {fileID: 211955434}
 --- !u!23 &211955436
 MeshRenderer:
@@ -2393,6 +2394,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Battery++
+  pickUp: {fileID: 217037820}
   battery: {fileID: 291303010}
 --- !u!23 &291303012
 MeshRenderer:
@@ -8409,6 +8411,7 @@ MonoBehaviour:
   multipleUse: 0
   isInteractable: 1
   text: Battery++
+  pickUp: {fileID: 217037820}
   battery: {fileID: 1141783099}
 --- !u!23 &1141783101
 MeshRenderer:
