@@ -35,6 +35,7 @@ TagManager:
   - Right
   - Door
   - Lock
+  - interactibleBase
   layers:
   - Default
   - TransparentFX

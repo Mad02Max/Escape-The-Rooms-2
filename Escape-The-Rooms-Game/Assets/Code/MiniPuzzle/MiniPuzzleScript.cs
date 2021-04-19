@@ -17,7 +17,7 @@ namespace VHS
         }
         public void Start()
         {
-            
+            GameObject.FindGameObjectWithTag("interactibleBase").GetComponent<InteractableBase>().enabled = false;
         }
 
 
