@@ -101,21 +101,21 @@ public class Box1 : MonoBehaviour
             {
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, -90);
 
-                //left = true;
+                left = true;
             }
             if (Input.GetKeyDown(KeyCode.B))
             {
                 pieceTrans.transform.RotateAround(target.transform.position, Vector3.up, 90);
 
-               //right = true;
+                right = true;
             }
         }
 
 
-        // = GameObject.FindGameObjectWithTag("Left").GetComponent<Toggle>();
+        rotateLeft = GameObject.FindGameObjectWithTag("Left").GetComponent<Toggle>();
 
-        //rotateRight = GameObject.FindGameObjectWithTag("Right").GetComponent<Toggle>();
-        /*
+        rotateRight = GameObject.FindGameObjectWithTag("Right").GetComponent<Toggle>();
+        
         if (left == true)
         {
 
@@ -126,7 +126,8 @@ public class Box1 : MonoBehaviour
         if(right == true)
         {
             rotateRight.isOn = true;
-        }*/
+        }
+
         movePiece = flying;
 
 
