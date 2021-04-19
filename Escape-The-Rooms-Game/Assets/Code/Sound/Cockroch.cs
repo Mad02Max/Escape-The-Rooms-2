@@ -6,7 +6,7 @@ using UnityEngine.UI;
 //By Caleb
 
 public class Cockroch : MonoBehaviour
-{
+{/*
     //Connects the sounds between visual studio and unity.
     //Vreates a bool that turns the sounds on and off.
     //Creates a rng and timer, each, for how long the sound will be on and off.
@@ -71,4 +71,5 @@ public class Cockroch : MonoBehaviour
         timerOn = rngOn;
         timerOff = rngOff;
     }
+*/
 }

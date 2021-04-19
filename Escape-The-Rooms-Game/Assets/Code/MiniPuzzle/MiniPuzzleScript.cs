@@ -9,17 +9,26 @@ namespace VHS
     {
 
         public Toggle holdE;
+
+        public bool interact;
         
         // when it starts the script is disabled
         public void Awake()
         {
-            
+            interact = false;
         }
         public void Start()
         {
-            GameObject.FindGameObjectWithTag("interactibleBase").GetComponent<InteractableBase>().enabled = false;
+            
         }
 
+        public void Update()
+        {
+            if (interact == false)
+            {
+                GameObject.FindGameObjectWithTag("interactibleBase").GetComponent<InteractableBase>().enabled = false;
+            }
+        }
 
         // variables and postitions
         public GameObject piece1;

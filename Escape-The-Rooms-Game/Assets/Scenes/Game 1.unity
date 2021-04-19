@@ -13275,6 +13275,7 @@ MonoBehaviour:
   isInteractable: 1
   text: Open Chest
   holdE: {fileID: 1574354228}
+  interact: 0
   piece1: {fileID: 2345663064362994210, guid: aa0fdc17a1803c344a0709e64623071a, type: 3}
   pos1: {fileID: 6473217976645900987}
   piece2: {fileID: 441533948601761046, guid: 7fb84f6adcb53d04dabd3ec27d129461, type: 3}
@@ -14245,7 +14246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933683457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32371068, y: 7.7485733, z: 89}
+  m_LocalPosition: {x: 0.32371068, y: 7.7485733, z: 114.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1719779672}

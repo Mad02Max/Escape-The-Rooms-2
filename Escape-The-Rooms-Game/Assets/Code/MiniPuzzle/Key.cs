@@ -31,10 +31,11 @@ namespace VHS
         {
             base.OnInteract();
 
-            GameObject.FindGameObjectWithTag("interactibleBase").GetComponent<InteractableBase>().enabled = true;
+            
 
             foreach (MiniPuzzleScript script in pickUpScript)
             {
+                GameObject.FindGameObjectWithTag("MiniPuzzle").GetComponent<MiniPuzzleScript>().interact = true;
                 script.enabled = !script.enabled;
             }
 
