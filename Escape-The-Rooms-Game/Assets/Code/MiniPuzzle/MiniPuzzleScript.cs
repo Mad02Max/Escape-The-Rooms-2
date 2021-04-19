@@ -17,7 +17,7 @@ namespace VHS
         }
         public void Start()
         {
-            StartCoroutine(Waiter());
+            
         }
 
 
@@ -57,11 +57,7 @@ namespace VHS
             Destroy(gameObject);
 
         }
-        IEnumerator Waiter()
-        {
-            yield return new WaitForSeconds(1);
-            GetComponent<MiniPuzzleScript>().enabled = false;
-        }
+        
 
     }
 
