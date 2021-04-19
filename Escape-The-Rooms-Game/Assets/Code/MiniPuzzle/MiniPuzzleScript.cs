@@ -13,7 +13,11 @@ namespace VHS
         // when it starts the script is disabled
         public void Awake()
         {
-            GetComponent<MiniPuzzleScript>().enabled = false;
+            
+        }
+        public void Start()
+        {
+            StartCoroutine(Waiter());
         }
 
 
@@ -53,7 +57,14 @@ namespace VHS
             Destroy(gameObject);
 
         }
-
+        IEnumerator Waiter()
+        {
+            yield return new WaitForSeconds(1);
+            GetComponent<MiniPuzzleScript>().enabled = false;
+        }
 
     }
+
+    
+
 }
