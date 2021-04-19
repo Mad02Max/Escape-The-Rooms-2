@@ -28,29 +28,29 @@ public class Timer : MonoBehaviour
 
         if (timeDefiner == 1)
         {
-            timer = 100;
+            timer = 300;
         }
         if (timeDefiner == 100)
         {
-            timer = 100;
+            timer = 3600;
         }
         if (timeDefiner >= 2)
         {
             if (timeDefiner <= 31)
             {
-                timer = 100;
+                timer = 600;
             }
             if (timeDefiner >= 32)
             {
                 if (timeDefiner <= 81)
                 {
-                    timer = 100;
+                    timer = 900;
                 }
                 if (timeDefiner >= 82)
                 {
                     if (timeDefiner <= 99)
                     {
-                        timer = 100;
+                        timer = 1800;
                     }
                 }
             }
