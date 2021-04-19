@@ -3398,7 +3398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &462114544
 Transform:
   m_ObjectHideFlags: 0
@@ -3427,7 +3427,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8923,7 +8923,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9299,7 +9299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1271674759
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12437,6 +12437,7 @@ MonoBehaviour:
   timeDefiner: 0
   timerText: {fileID: 1829411328}
   timerSlider: {fileID: 2013641219}
+  Violin: {fileID: 462114545}
 --- !u!224 &1659403110 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6761649624301638460, guid: 066e61ddaff983f43b2ff8e25025f794, type: 3}

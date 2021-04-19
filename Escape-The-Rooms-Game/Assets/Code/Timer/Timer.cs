@@ -17,36 +17,40 @@ public class Timer : MonoBehaviour
 
     public Slider timerSlider;
 
+    public AudioSource Violin;
+
     //Time definer is randomly decided, and timer is decided as such.
     void Start()
     {
+        Violin.enabled = false;
+
         timeDefiner = Random.Range(1, 101);
 
         if (timeDefiner == 1)
         {
-            timer = 300;
+            timer = 100;
         }
         if (timeDefiner == 100)
         {
-            timer = 3600;
+            timer = 100;
         }
         if (timeDefiner >= 2)
         {
             if (timeDefiner <= 31)
             {
-                timer = 600;
+                timer = 100;
             }
             if (timeDefiner >= 32)
             {
                 if (timeDefiner <= 81)
                 {
-                    timer = 900;
+                    timer = 100;
                 }
                 if (timeDefiner >= 82)
                 {
                     if (timeDefiner <= 99)
                     {
-                        timer = 1800;
+                        timer = 100;
                     }
                 }
             }
@@ -77,5 +81,12 @@ public class Timer : MonoBehaviour
         
         
         timerSlider.value = timer;
+
+        if (timer <= 90)
+        {
+            Violin.enabled = true;
+        }
+
+
     }
 }
